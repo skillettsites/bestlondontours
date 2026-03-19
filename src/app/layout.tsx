@@ -3,7 +3,7 @@ import { Geist } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from '@/lib/constants';
-import { websiteSchema } from '@/lib/schema';
+import { websiteSchema, organizationSchema } from '@/lib/schema';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
@@ -62,6 +62,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">

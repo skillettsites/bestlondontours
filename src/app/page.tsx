@@ -196,6 +196,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* London Tours at a Glance */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">London Tours at a Glance</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="text-center bg-blue-50 rounded-xl p-6">
+            <div className="text-3xl font-bold text-blue-900">{tours.length}</div>
+            <div className="text-sm text-gray-600 mt-1">Hand-Picked Tours</div>
+          </div>
+          <div className="text-center bg-blue-50 rounded-xl p-6">
+            <div className="text-3xl font-bold text-blue-900">{categories.length}</div>
+            <div className="text-sm text-gray-600 mt-1">Categories</div>
+          </div>
+          <div className="text-center bg-blue-50 rounded-xl p-6">
+            <div className="text-3xl font-bold text-blue-900">{guides.length}</div>
+            <div className="text-sm text-gray-600 mt-1">Travel Guides</div>
+          </div>
+          <div className="text-center bg-blue-50 rounded-xl p-6">
+            <div className="text-3xl font-bold text-blue-900">From &pound;17</div>
+            <div className="text-sm text-gray-600 mt-1">Lowest Price</div>
+          </div>
+        </div>
+      </section>
+
       {/* GYG City Widget */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-2">More London Experiences</h2>
@@ -207,6 +230,59 @@ export default function HomePage() {
           data-gyg-widget="city"
           data-gyg-partner-id={GYG_PARTNER_ID}
         />
+      </section>
+
+      {/* Explore London - Internal Links */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Explore London</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">By Category</h3>
+              <ul className="space-y-2">
+                {categories.map((cat) => (
+                  <li key={cat.slug}>
+                    <Link href={`/category/${cat.slug}`} className="text-blue-900 hover:underline text-sm">
+                      {cat.icon} {cat.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">Travel Guides</h3>
+              <ul className="space-y-2">
+                {guides.map((guide) => (
+                  <li key={guide.slug}>
+                    <Link href={`/guides/${guide.slug}`} className="text-blue-900 hover:underline text-sm">
+                      {guide.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-3">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/tours" className="text-blue-900 hover:underline text-sm">
+                    All London Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/guides" className="text-blue-900 hover:underline text-sm">
+                    All Travel Guides
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="text-blue-900 hover:underline text-sm">
+                    About Best London Tours
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

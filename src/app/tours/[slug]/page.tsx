@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { tours, getTourBySlug, getRelatedTours } from '@/data/tours';
+import { categories } from '@/data/categories';
+import { guides } from '@/data/guides';
 import { tourSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -9,6 +12,14 @@ import StarRating from '@/components/ui/StarRating';
 import FAQ from '@/components/ui/FAQ';
 import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import TourCard from '@/components/ui/TourCard';
+
+const categoryGuideMap: Record<string, string[]> = {
+  landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'free-things-to-do-london'],
+  'river-cruises': ['thames-cruise-guide', 'london-one-day-itinerary'],
+  'day-trips': ['day-trips-from-london', 'first-time-visiting-london'],
+  'food-tours': ['london-food-guide', 'free-things-to-do-london'],
+  'family-fun': ['london-with-kids', 'first-time-visiting-london', 'free-things-to-do-london'],
+};
 
 export function generateStaticParams() {
   return tours.map((tour) => ({ slug: tour.slug }));
@@ -60,15 +71,15 @@ export default async function TourPage({ params }: { params: Params }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main content */}
           <div className="lg:col-span-2">
-            {/* Hero image placeholder */}
-            <div className="aspect-[16/9] rounded-xl bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 flex items-center justify-center mb-8">
-              <span className="text-7xl opacity-30">
-                {tour.categories.includes('landmarks') ? '🏰' :
-                 tour.categories.includes('river-cruises') ? '⛵' :
-                 tour.categories.includes('day-trips') ? '🚌' :
-                 tour.categories.includes('food-tours') ? '🍽️' : '🎉'}
-              </span>
-            </div>
+            {/* Hero image */}
+            <Image
+              src={tour.imageUrl}
+              alt={tour.imageAlt}
+              width={1200}
+              height={675}
+              className="rounded-xl object-cover w-full mb-8"
+              priority
+            />
 
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">{tour.title}</h1>
 
@@ -196,6 +207,65 @@ export default async function TourPage({ params }: { params: Params }) {
             </div>
           </div>
         </div>
+
+        {/* Category Links */}
+        {tour.categories.length > 0 && (
+          <section className="mt-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Browse More Tours</h2>
+            <div className="flex flex-wrap gap-3">
+              {tour.categories.map((catSlug) => {
+                const cat = categories.find((c) => c.slug === catSlug);
+                if (!cat) return null;
+                return (
+                  <Link
+                    key={cat.slug}
+                    href={`/category/${cat.slug}`}
+                    className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:border-blue-300 hover:shadow-sm transition-all"
+                  >
+                    {cat.icon} {cat.title}
+                  </Link>
+                );
+              })}
+              <Link
+                href="/tours"
+                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-blue-900 hover:border-blue-300 hover:shadow-sm transition-all"
+              >
+                All London Tours
+              </Link>
+            </div>
+          </section>
+        )}
+
+        {/* More London Guides */}
+        {(() => {
+          const guideSlugSet = new Set<string>();
+          tour.categories.forEach((catSlug) => {
+            const mapped = categoryGuideMap[catSlug];
+            if (mapped) mapped.forEach((gs) => guideSlugSet.add(gs));
+          });
+          const relevantGuides = Array.from(guideSlugSet)
+            .map((gs) => guides.find((g) => g.slug === gs))
+            .filter((g): g is NonNullable<typeof g> => g !== undefined)
+            .slice(0, 3);
+
+          if (relevantGuides.length === 0) return null;
+
+          return (
+            <section className="mt-12 bg-gray-50 rounded-xl p-6">
+              <h2 className="text-xl font-bold text-gray-900 mb-4">More London Guides</h2>
+              <ul className="space-y-3">
+                {relevantGuides.map((guide) => (
+                  <li key={guide.slug}>
+                    <Link href={`/guides/${guide.slug}`} className="group flex items-start gap-3">
+                      <span className="text-blue-900 font-medium group-hover:underline">{guide.title}</span>
+                    </Link>
+                    <p className="text-sm text-gray-500 mt-0.5">{guide.excerpt}</p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })()}
 
         {/* Related Tours */}
         {relatedTours.length > 0 && (

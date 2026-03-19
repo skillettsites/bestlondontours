@@ -33,6 +33,12 @@ export default function Header() {
             <Link href="/guides" className="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors">
               Guides
             </Link>
+            <Link href="/trending" className="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors">
+              Trending
+            </Link>
+            <Link href="/local-tips" className="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors">
+              Local Tips
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -69,6 +75,12 @@ export default function Header() {
             ))}
             <Link href="/guides" onClick={() => setMenuOpen(false)} className="block py-2 text-sm font-medium text-gray-700 hover:text-blue-900">
               Guides
+            </Link>
+            <Link href="/trending" onClick={() => setMenuOpen(false)} className="block py-2 text-sm font-medium text-gray-700 hover:text-blue-900">
+              Trending
+            </Link>
+            <Link href="/local-tips" onClick={() => setMenuOpen(false)} className="block py-2 text-sm font-medium text-gray-700 hover:text-blue-900">
+              Local Tips
             </Link>
           </div>
         )}

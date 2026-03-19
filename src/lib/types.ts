@@ -12,6 +12,7 @@ export interface Tour {
   rating: number;
   reviewCount: number;
   imageAlt: string;
+  imageUrl: string;
   categories: string[];
   highlights: string[];
   includes: string[];

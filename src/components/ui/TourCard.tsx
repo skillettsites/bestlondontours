@@ -1,21 +1,21 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Tour } from '@/lib/types';
 import StarRating from './StarRating';
 
 export default function TourCard({ tour }: { tour: Tour }) {
   return (
     <article className="group bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
-      {/* Gradient placeholder image */}
+      {/* Tour image */}
       <Link href={`/tours/${tour.slug}`} className="block">
-        <div className="aspect-[16/10] bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 relative overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-5xl opacity-30">
-              {tour.categories.includes('landmarks') ? '🏰' :
-               tour.categories.includes('river-cruises') ? '⛵' :
-               tour.categories.includes('day-trips') ? '🚌' :
-               tour.categories.includes('food-tours') ? '🍽️' : '🎉'}
-            </span>
-          </div>
+        <div className="aspect-[16/10] relative overflow-hidden">
+          <Image
+            src={tour.imageUrl}
+            alt={tour.imageAlt}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
             <span className="text-white text-sm font-medium">{tour.duration}</span>
           </div>

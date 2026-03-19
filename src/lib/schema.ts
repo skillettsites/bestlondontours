@@ -1,5 +1,5 @@
 import { Tour, Category, Guide, FAQ } from './types';
-import { SITE_NAME, SITE_URL } from './constants';
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from './constants';
 
 export function websiteSchema() {
   return {
@@ -16,6 +16,17 @@ export function websiteSchema() {
   };
 }
 
+export function organizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    sameAs: [],
+  };
+}
+
 export function tourSchema(tour: Tour) {
   return {
     '@context': 'https://schema.org',
@@ -23,6 +34,9 @@ export function tourSchema(tour: Tour) {
     name: tour.title,
     description: tour.description,
     url: `${SITE_URL}/tours/${tour.slug}`,
+    ...(tour.imageUrl ? { image: tour.imageUrl } : {}),
+    touristType: tour.bestFor,
+    availableLanguage: 'English',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: tour.rating,
@@ -37,6 +51,20 @@ export function tourSchema(tour: Tour) {
       availability: 'https://schema.org/InStock',
       url: tour.affiliateUrl,
     },
+  };
+}
+
+export function itemListSchema(tours: Tour[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    numberOfItems: tours.length,
+    itemListElement: tours.map((tour, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: tour.title,
+      url: `${SITE_URL}/tours/${tour.slug}`,
+    })),
   };
 }
 
