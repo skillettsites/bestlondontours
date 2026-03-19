@@ -15,7 +15,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 28991,
     imageAlt: 'Tower of London fortress on the Thames riverbank',
-    imageUrl: 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1747857340643-6072b555d34b?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'See the spectacular Crown Jewels collection',
@@ -53,7 +53,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 36181,
     imageAlt: 'London Eye observation wheel against blue sky on South Bank',
-    imageUrl: 'https://images.unsplash.com/photo-1543799382-9a0208331ef7?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1662714188306-0275ce3df517?w=800&q=80',
     categories: ['landmarks', 'family-fun'],
     highlights: [
       '360-degree views from 135 metres above London',
@@ -91,7 +91,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 11472,
     imageAlt: 'Westminster Abbey Gothic facade in central London',
-    imageUrl: 'https://images.unsplash.com/photo-1574958269340-fa927503f3dd?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1633094625975-1b70f1ccf1df?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'Walk through the stunning Gothic nave',
@@ -205,7 +205,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 7395,
     imageAlt: 'Buckingham Palace front facade with Victoria Memorial',
-    imageUrl: 'https://images.unsplash.com/photo-1587321554931-1e557cc4e44f?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1572370666120-d171df6d8473?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'Explore 19 lavishly decorated State Rooms',
@@ -243,7 +243,7 @@ export const tours: Tour[] = [
     rating: 4.4,
     reviewCount: 7422,
     imageAlt: 'Red open-top double-decker sightseeing bus in London',
-    imageUrl: 'https://images.unsplash.com/photo-1543832923-44667a44c860?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1488747279002-c8523379faaa?w=800&q=80',
     categories: ['family-fun'],
     highlights: [
       'Open-top double-decker buses on multiple routes',
@@ -281,7 +281,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 9916,
     imageAlt: 'St Paul\'s Cathedral dome and facade in the City of London',
-    imageUrl: 'https://images.unsplash.com/photo-1575024357670-2b5164f470c3?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1741628668745-c5298f5b1d55?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'Climb to the Golden Gallery for panoramic London views',
@@ -320,7 +320,7 @@ export const tours: Tour[] = [
     rating: 4.8,
     reviewCount: 539,
     imageAlt: 'Borough Market food stalls with artisan produce in Southwark',
-    imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1662714211126-272335a71219?w=800&q=80',
     categories: ['food-tours'],
     highlights: [
       '6+ tastings of artisan food and drink',
@@ -358,7 +358,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 4353,
     imageAlt: 'London Dungeon entrance on the South Bank',
-    imageUrl: 'https://images.unsplash.com/photo-1520986606214-8b456906c813?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1639353126753-61b918750874?w=800&q=80',
     categories: ['family-fun'],
     highlights: [
       '19 interactive shows with live actors',
@@ -396,7 +396,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 21195,
     imageAlt: 'Madame Tussauds London entrance on Marylebone Road',
-    imageUrl: 'https://images.unsplash.com/photo-1533929736562-6f08e7e65b13?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1643113231904-ea2af9b4ebcb?w=800&q=80',
     categories: ['family-fun'],
     highlights: [
       'Lifelike wax figures of over 250 celebrities',
@@ -434,7 +434,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 8595,
     imageAlt: 'The Shard skyscraper and London skyline at sunset',
-    imageUrl: 'https://images.unsplash.com/photo-1604072483211-e34e6fd218e4?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1561234311-a9e16fa60b25?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'Views from floors 68, 69, and 72',
