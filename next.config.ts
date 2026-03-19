@@ -1,7 +1,47 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async headers() {
+    return [
+      {
+        source: '/tours/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=43200',
+          },
+        ],
+      },
+      {
+        source: '/category/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=43200',
+          },
+        ],
+      },
+      {
+        source: '/guides/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=43200',
+          },
+        ],
+      },
+    ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'bestlondontours.co.uk' }],
+        destination: 'https://www.bestlondontours.co.uk/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
