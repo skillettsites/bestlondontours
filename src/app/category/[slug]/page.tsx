@@ -7,6 +7,7 @@ import { categorySchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import FAQ from '@/components/ui/FAQ';
 
 const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: { slug: string; title: string }[] }> = {
@@ -147,6 +148,8 @@ export default async function CategoryPage({ params }: { params: Params }) {
             { label: category.title },
           ]}
         />
+
+        <AffiliateDisclosure />
 
         <div className="mb-8">
           <span className="text-4xl mb-4 block">{category.icon}</span>

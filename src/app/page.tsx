@@ -3,6 +3,7 @@ import { tours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
 import TourCard from '@/components/ui/TourCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import { GYG_PARTNER_ID } from '@/lib/constants';
 
 const featuredTourSlugs = [
@@ -128,6 +129,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Affiliate Disclosure */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
+        <AffiliateDisclosure />
+      </div>
 
       {/* Most Popular This Week */}
       <section className="bg-amber-50 py-12 sm:py-16">

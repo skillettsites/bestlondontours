@@ -3,6 +3,7 @@ import { tours } from '@/data/tours';
 import { SITE_URL, GYG_PARTNER_ID } from '@/lib/constants';
 import { itemListSchema, breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import CompareTable from './CompareTable';
 import Link from 'next/link';
 
@@ -38,6 +39,8 @@ export default function ComparePage() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Compare Tours' }]} />
+
+        <AffiliateDisclosure />
 
         <div className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">

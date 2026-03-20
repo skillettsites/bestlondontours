@@ -5,6 +5,7 @@ import { tours } from '@/data/tours';
 import { SITE_URL, GYG_PARTNER_ID } from '@/lib/constants';
 import { itemListSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import StarRating from '@/components/ui/StarRating';
 import FAQ from '@/components/ui/FAQ';
 
@@ -104,6 +105,8 @@ export default function FamilyPage() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Family Tours' }]} />
+
+        <AffiliateDisclosure />
 
         {/* Hero */}
         <div className="bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 rounded-2xl p-6 sm:p-10 mb-10">

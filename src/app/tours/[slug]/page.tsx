@@ -12,6 +12,7 @@ import StarRating from '@/components/ui/StarRating';
 import FAQ from '@/components/ui/FAQ';
 import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import TourCard from '@/components/ui/TourCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 const categoryGuideMap: Record<string, string[]> = {
   landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'london-history-guide'],
@@ -85,9 +86,12 @@ export default async function TourPage({ params }: { params: Params }) {
           items={[
             { label: 'Home', href: '/' },
             { label: 'Tours', href: '/tours' },
+
             { label: tour.shortTitle },
           ]}
         />
+
+        <AffiliateDisclosure />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main content */}

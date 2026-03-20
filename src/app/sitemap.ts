@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/about`, lastModified, changeFrequency: 'monthly', priority: 0.3 },
     { url: `${SITE_URL}/privacy`, lastModified, changeFrequency: 'monthly', priority: 0.2 },
     { url: `${SITE_URL}/terms`, lastModified, changeFrequency: 'monthly', priority: 0.2 },
+    { url: `${SITE_URL}/affiliate-disclosure`, lastModified, changeFrequency: 'monthly', priority: 0.2 },
   ];
 
   const tourPages: MetadataRoute.Sitemap = tours.map((tour) => ({

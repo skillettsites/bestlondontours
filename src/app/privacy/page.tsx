@@ -17,7 +17,7 @@ export default function PrivacyPage() {
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
 
       <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
-        <p>Last updated: 19 March 2026</p>
+        <p>Last updated: 20 March 2026</p>
 
         <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Who We Are</h2>
         <p>
@@ -44,7 +44,42 @@ export default function PrivacyPage() {
           <li>Google Analytics cookies (_ga, _gid): used to distinguish users and sessions</li>
           <li>GetYourGuide cookies: used to attribute bookings to our affiliate account</li>
         </ul>
-        <p>You can disable cookies in your browser settings at any time.</p>
+        <p>
+          You can manage your cookie preferences using the banner that appears on your first visit.
+          You can also disable cookies in your browser settings at any time. Note that disabling cookies
+          may affect affiliate tracking but will not change the price you pay for any bookings.
+        </p>
+
+        <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Cookie Consent</h2>
+        <p>
+          On your first visit, we display a cookie consent banner at the bottom of the screen. You can
+          choose to accept all cookies or limit usage to essential cookies only. Your preference is stored
+          in your browser&apos;s local storage and remembered for future visits. You can clear this preference
+          at any time by clearing your browser&apos;s local storage or site data.
+        </p>
+
+        <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Affiliate Links and Commission Tracking</h2>
+        <p>
+          Our site contains affiliate links to GetYourGuide and other booking platforms. When you click
+          an affiliate link, the booking provider may place a cookie in your browser to attribute the
+          referral to our site. If you complete a booking, we earn a small commission at no extra cost
+          to you. This is how we fund the site and keep it free for all visitors.
+        </p>
+        <p>
+          For full details about our affiliate partnerships, see our{' '}
+          <a href="/affiliate-disclosure" className="text-blue-900 hover:underline">
+            Affiliate Disclosure
+          </a>.
+        </p>
+
+        <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">GetYourGuide Cookies and Tracking</h2>
+        <p>
+          GetYourGuide is our primary affiliate partner. When you interact with GetYourGuide content or
+          click a booking link on our site, GetYourGuide may set cookies to track the referral and improve
+          your booking experience. These cookies are governed by GetYourGuide&apos;s own privacy policy, which
+          you can review on their website. We do not have access to the personal data GetYourGuide collects
+          through these cookies.
+        </p>
 
         <h2 className="text-xl font-bold text-gray-900 mt-8 mb-3">Third-Party Links</h2>
         <p>

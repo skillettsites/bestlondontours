@@ -140,6 +140,7 @@ export default function Footer() {
                 <li><Link href="/trending" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Trending</Link></li>
                 <li><Link href="/local-tips" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Local Tips</Link></li>
                 <li><Link href="/privacy" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Privacy Policy</Link></li>
+                <li><Link href="/affiliate-disclosure" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Affiliate Disclosure</Link></li>
                 <li><Link href="/terms" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Terms of Use</Link></li>
               </ul>
             </div>
@@ -159,9 +160,10 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <p className="text-xs text-gray-500">
-                &copy; {new Date().getFullYear()} Best London Tours. All rights reserved.
-              </p>
+              <div className="text-xs text-gray-500 space-y-1">
+                <p>&copy; {new Date().getFullYear()} Best London Tours. All rights reserved.</p>
+                <p>Contact: <a href="mailto:contact@bestlondontours.co.uk" className="hover:text-gray-300 transition-colors">contact@bestlondontours.co.uk</a></p>
+              </div>
               <p className="text-xs text-gray-500">
                 Prices shown are approximate and may vary by date and availability.
               </p>

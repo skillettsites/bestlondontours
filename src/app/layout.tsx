@@ -6,6 +6,7 @@ import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from '@/lib/constants';
 import { websiteSchema, organizationSchema } from '@/lib/schema';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import CookieConsent from '@/components/CookieConsent';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import GYGScript from '@/components/GYGScript';
 
@@ -74,6 +75,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsent />
         <Analytics />
       </body>
     </html>
