@@ -549,7 +549,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 6218,
     imageAlt: 'Giraffe at London Zoo in Regents Park',
-    imageUrl: 'https://images.unsplash.com/photo-1503918756811-bfbcfa25e78b?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1545581078-80a17b62651a?w=800&q=80',
     categories: ['family-fun'],
     highlights: [
       'See over 14,000 animals from 400+ species',
@@ -587,7 +587,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 4856,
     imageAlt: 'Hampton Court Palace red brick Tudor facade and gardens',
-    imageUrl: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1611831221903-d5cc46c19396?w=800&q=80',
     categories: ['landmarks', 'day-trips'],
     highlights: [
       'Explore Henry VIII\'s magnificent Tudor palace',
@@ -625,7 +625,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 3291,
     imageAlt: 'Kensington Palace facade and gardens in London',
-    imageUrl: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1578511312408-f24aa147c20b?w=800&q=80',
     categories: ['landmarks'],
     highlights: [
       'Visit the birthplace of Queen Victoria',
@@ -739,7 +739,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 4127,
     imageAlt: 'English medieval castle surrounded by gardens and a moat',
-    imageUrl: 'https://images.unsplash.com/photo-1590071089561-a4b4e09fe543?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1540848230733-c8da3b8fa0ca?w=800&q=80',
     categories: ['day-trips'],
     highlights: [
       'Private early morning access to Leeds Castle before public opening',
@@ -777,7 +777,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 3582,
     imageAlt: 'Historic Oxford University college buildings and dreaming spires',
-    imageUrl: 'https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1749225595496-06cd2c49fa2b?w=800&q=80',
     categories: ['day-trips'],
     highlights: [
       'Visit both Oxford and Cambridge in one day',
@@ -815,7 +815,7 @@ export const tours: Tour[] = [
     rating: 4.4,
     reviewCount: 3891,
     imageAlt: 'London skyline and Thames illuminated at night with reflections',
-    imageUrl: 'https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1725715443754-7269b5ac41b7?w=800&q=80',
     categories: ['river-cruises', 'evening-experiences'],
     highlights: [
       'Three-course dinner served on the Thames',
@@ -854,7 +854,7 @@ export const tours: Tour[] = [
     rating: 4.6,
     reviewCount: 4523,
     imageAlt: 'Foggy atmospheric London street at dusk with gas lamps',
-    imageUrl: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1762421028501-a536b29bb005?w=800&q=80',
     categories: ['walking-tours', 'evening-experiences'],
     highlights: [
       'Walk through London\'s most haunted streets and alleys',
@@ -892,7 +892,7 @@ export const tours: Tour[] = [
     rating: 4.5,
     reviewCount: 5234,
     imageAlt: 'Stonehenge ancient stone circle at golden hour on Salisbury Plain',
-    imageUrl: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1757560512273-ff7aef5aa18b?w=800&q=80',
     categories: ['day-trips'],
     highlights: [
       'Visit the 4,500-year-old Stonehenge monument',
@@ -930,7 +930,7 @@ export const tours: Tour[] = [
     rating: 4.7,
     reviewCount: 2156,
     imageAlt: 'Natural History Museum grand Romanesque facade in South Kensington',
-    imageUrl: 'https://images.unsplash.com/photo-1574236170878-f66e35f83207?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1456518563096-0ff5ee08204e?w=800&q=80',
     categories: ['museums-exhibitions', 'family-fun'],
     highlights: [
       'Expert guide brings 80 million specimens to life',
