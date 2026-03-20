@@ -14,11 +14,14 @@ import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import TourCard from '@/components/ui/TourCard';
 
 const categoryGuideMap: Record<string, string[]> = {
-  landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'free-things-to-do-london'],
-  'river-cruises': ['thames-cruise-guide', 'london-one-day-itinerary'],
-  'day-trips': ['day-trips-from-london', 'first-time-visiting-london'],
+  landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'london-history-guide'],
+  'river-cruises': ['thames-cruise-guide', 'romantic-things-london', 'london-one-day-itinerary'],
+  'day-trips': ['day-trips-from-london', 'first-time-visiting-london', 'london-three-day-itinerary'],
   'food-tours': ['london-food-guide', 'free-things-to-do-london'],
-  'family-fun': ['london-with-kids', 'first-time-visiting-london', 'free-things-to-do-london'],
+  'family-fun': ['london-with-kids', 'london-rainy-day-guide', 'free-things-to-do-london'],
+  'walking-tours': ['best-walking-tours-london', 'london-history-guide', 'free-things-to-do-london'],
+  'museums-exhibitions': ['london-rainy-day-guide', 'london-history-guide', 'london-with-kids'],
+  'evening-experiences': ['romantic-things-london', 'best-walking-tours-london', 'thames-cruise-guide'],
 };
 
 export function generateStaticParams() {

@@ -65,6 +65,42 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
     ],
   },
+  'walking-tours': {
+    paragraphs: [
+      'Walking tours are the most intimate way to experience London. With an expert local guide leading the way, you will discover stories, shortcuts, and details that even long-time residents do not know. The pace is relaxed, the groups are small, and the experience is far richer than any guidebook can offer.',
+      'London\'s walking tours cover an incredible range of themes. The Jack the Ripper tour is the most famous, taking you through the dark streets of Whitechapel where the infamous murders took place in 1888. Ghost tours explore haunted churchyards and plague pits. The Churchill War Rooms tour combines a Westminster walking tour with a visit to the underground bunker where WW2 was directed.',
+      'Evening walking tours are particularly atmospheric. As daylight fades and the streetlights come on, London takes on a completely different character. The Jack the Ripper and ghost tours are designed specifically for the evening, using the darkness and shadows to heighten the experience.',
+    ],
+    relatedGuides: [
+      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
+      { slug: 'london-history-guide', title: 'London for History Buffs' },
+      { slug: 'free-things-to-do-london', title: 'Free Things to Do in London' },
+    ],
+  },
+  'museums-exhibitions': {
+    paragraphs: [
+      'London has arguably the finest collection of museums in the world, and many of them are completely free to enter. The British Museum, Natural History Museum, V&A, National Gallery, and Tate Modern would each be worth a trip to London on their own. Together, they make London an unrivalled destination for culture and learning.',
+      'While free entry is wonderful, the sheer scale of these museums can be overwhelming. A guided tour solves this problem by taking you directly to the highlights, sharing stories and context that transform a casual browse into a memorable experience. The Natural History Museum guided tour, for example, helps you navigate 80 million specimens to find the most extraordinary ones.',
+      'Beyond the free nationals, London also has fascinating paid museums. The Churchill War Rooms are preserved exactly as they were in 1945, offering a powerful and immersive experience. The Imperial War Museum, Sir John Soane\'s Museum, and the Museum of London are all worth adding to your itinerary.',
+    ],
+    relatedGuides: [
+      { slug: 'london-rainy-day-guide', title: 'London on a Rainy Day' },
+      { slug: 'london-history-guide', title: 'London for History Buffs' },
+      { slug: 'london-with-kids', title: 'London with Kids Guide' },
+    ],
+  },
+  'evening-experiences': {
+    paragraphs: [
+      'London after dark is a completely different city. The landmarks light up, the Thames reflects the glittering skyline, and the atmosphere becomes more intimate and magical. Evening experiences let you see this transformation firsthand, whether from the deck of a dinner cruise or the cobblestones of a haunted street.',
+      'A Thames dinner cruise is the signature London evening experience. Sailing past illuminated landmarks like Tower Bridge, the Houses of Parliament, and St Paul\'s Cathedral while enjoying a three-course meal and live entertainment is unforgettable. It is perfect for anniversaries, birthdays, or any special occasion.',
+      'For something more adventurous, London\'s evening walking tours offer a completely different kind of experience. The Jack the Ripper tour through Whitechapel and the ghost tour through haunted streets and churchyards are both designed to take advantage of the evening atmosphere. They are affordable, fascinating, and unlike anything you will experience during the day.',
+    ],
+    relatedGuides: [
+      { slug: 'romantic-things-london', title: 'Romantic Things to Do in London' },
+      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
+      { slug: 'thames-cruise-guide', title: 'Complete Thames Cruise Guide' },
+    ],
+  },
 };
 
 export function generateStaticParams() {

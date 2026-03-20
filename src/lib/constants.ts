@@ -4,4 +4,4 @@ export const SITE_DESCRIPTION = 'Discover the best tours, attractions, and exper
 export const GYG_PARTNER_ID = 'LPT26IL';
 export const GYG_CAMPAIGN = 'best_london_tours';
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
-export const CONTENT_DATE = '2026-03-19';
+export const CONTENT_DATE = '2026-03-20';
