@@ -10,6 +10,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${SITE_URL}/tours`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/top-10`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/compare`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/budget`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/family`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/first-time`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/guides`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/trending`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/local-tips`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
