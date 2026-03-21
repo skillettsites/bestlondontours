@@ -45,6 +45,21 @@ const nextConfig: NextConfig = {
         destination: 'https://www.bestlondontours.co.uk/:path*',
         permanent: true,
       },
+      {
+        source: '/tours/warner-bros-studio-tour',
+        destination: '/tours/harry-potter-studio-tour',
+        permanent: true,
+      },
+      {
+        source: '/tours/warner-bros-harry-potter-tour',
+        destination: '/tours/harry-potter-studio-tour',
+        permanent: true,
+      },
+      {
+        source: '/tours/harry-potter-warner-bros-tour',
+        destination: '/tours/harry-potter-studio-tour',
+        permanent: true,
+      },
     ];
   },
 };
