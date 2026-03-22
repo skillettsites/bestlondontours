@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Tour } from '@/lib/types';
 import StarRating from './StarRating';
+import TrackedGYGLink from '@/components/TrackedGYGLink';
 
 function formatReviewCount(count: number): string {
   if (count >= 1000) {
@@ -93,10 +94,10 @@ export default function TourCard({ tour }: { tour: Tour }) {
 
       {/* Book Now CTA - affiliate link, separate from card link */}
       <div className="px-4 pb-4 sm:px-5 sm:pb-5">
-        <a
+        <TrackedGYGLink
           href={tour.affiliateUrl}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
+          tourName={tour.shortTitle}
+          section="tour-card-book"
           onClick={(e) => e.stopPropagation()}
           className="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-green-600/25 hover:from-green-500 hover:to-green-400 hover:shadow-xl hover:shadow-green-500/30 active:from-green-700 active:to-green-600 transition-all duration-200 active:scale-[0.98]"
         >
@@ -104,7 +105,7 @@ export default function TourCard({ tour }: { tour: Tour }) {
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
-        </a>
+        </TrackedGYGLink>
       </div>
     </article>
   );

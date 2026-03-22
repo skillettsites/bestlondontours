@@ -13,6 +13,7 @@ import FAQ from '@/components/ui/FAQ';
 import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import TourCard from '@/components/ui/TourCard';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
+import TrackedGYGLink from '@/components/TrackedGYGLink';
 
 const categoryGuideMap: Record<string, string[]> = {
   landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'london-history-guide'],
@@ -70,14 +71,14 @@ export default async function TourPage({ params }: { params: Params }) {
             <p className="text-sm font-semibold text-gray-900 truncate">{tour.shortTitle}</p>
             <p className="text-xs text-gray-500">From <span className="font-bold text-gray-900 text-sm">&pound;{tour.price}</span>/person</p>
           </div>
-          <a
+          <TrackedGYGLink
             href={tour.affiliateUrl}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
+            tourName={tour.shortTitle}
+            section="mobile-sticky-cta"
             className="shrink-0 rounded-xl bg-green-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg hover:bg-green-700 hover:shadow-xl transition-all duration-300 active:scale-95"
           >
             Book Now
-          </a>
+          </TrackedGYGLink>
         </div>
       </div>
 
@@ -277,10 +278,10 @@ export default async function TourPage({ params }: { params: Params }) {
                   <div className="text-4xl font-bold text-gray-900">&pound;{tour.price}</div>
                   <span className="text-sm text-gray-500">per person</span>
                 </div>
-                <a
+                <TrackedGYGLink
                   href={tour.affiliateUrl}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  tourName={tour.shortTitle}
+                  section="sidebar-book-cta"
                   className="group relative block w-full rounded-xl bg-gradient-to-r from-green-600 to-green-500 px-6 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-600/25 hover:shadow-xl hover:shadow-green-600/30 hover:from-green-700 hover:to-green-600 transition-all duration-300 active:scale-[0.98]"
                 >
                   <span className="absolute inset-0 rounded-xl animate-pulse bg-green-400/20 pointer-events-none" />
@@ -290,7 +291,7 @@ export default async function TourPage({ params }: { params: Params }) {
                     </svg>
                     Check Availability
                   </span>
-                </a>
+                </TrackedGYGLink>
                 <ul className="mt-5 space-y-3 text-sm">
                   <li className="flex items-center gap-2.5 text-gray-600">
                     <div className="flex h-5 w-5 items-center justify-center rounded-full bg-green-50">
