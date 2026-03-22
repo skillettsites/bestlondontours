@@ -30,13 +30,16 @@ export function organizationSchema() {
 export function tourSchema(tour: Tour) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
+    '@type': 'Product',
     name: tour.title,
     description: tour.description,
     url: `${SITE_URL}/tours/${tour.slug}`,
-    ...(tour.imageUrl ? { image: tour.imageUrl } : {}),
-    touristType: tour.bestFor,
-    availableLanguage: 'English',
+    image: tour.imageUrl || `${SITE_URL}/og-image.png`,
+    category: 'Tours & Activities',
+    brand: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+    },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: tour.rating,
@@ -50,6 +53,7 @@ export function tourSchema(tour: Tour) {
       priceCurrency: tour.currency,
       availability: 'https://schema.org/InStock',
       url: tour.affiliateUrl,
+      priceValidUntil: '2027-12-31',
     },
   };
 }

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { tours } from '@/data/tours';
 import { SITE_URL, GYG_PARTNER_ID } from '@/lib/constants';
-import { itemListSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
+import { itemListSchema, breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import StarRating from '@/components/ui/StarRating';
@@ -56,7 +56,6 @@ export default function Top10Page() {
       { name: 'Top 10 Tours', url: `${SITE_URL}/top-10` },
     ]),
     itemListSchema(rankedTours),
-    faqSchema(faqs),
   ];
 
   return (

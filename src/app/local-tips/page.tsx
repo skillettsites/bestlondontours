@@ -5,7 +5,6 @@ import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
 import { SITE_URL, SITE_NAME, CONTENT_DATE } from '@/lib/constants';
-import { faqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'London Local Tips 2026 | Insider Advice from Londoners',
@@ -84,11 +83,6 @@ export default function LocalTipsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
-      />
-
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Local Tips' }]} />
 
