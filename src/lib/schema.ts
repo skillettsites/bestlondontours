@@ -23,7 +23,21 @@ export function organizationSchema() {
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
-    sameAs: [],
+    sameAs: [
+      'https://postcodecheck.co.uk',
+      'https://carcostcheck.co.uk',
+      'https://findyourstay.com',
+      'https://askyourstay.com',
+      'https://aicareerswap.com',
+      'https://guardmybusiness.com',
+      'https://helpafterloss.co.uk',
+      'https://helpafterlife.com',
+      'https://the-best-tours.com',
+      'https://daveknowsai.com',
+      'https://davidskillett.com',
+      'https://aibetfinder.com',
+      'https://briefmynews.com',
+    ],
   };
 }
 
