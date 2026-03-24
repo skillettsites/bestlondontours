@@ -89,7 +89,7 @@ export default async function GuidePage({ params }: { params: Params }) {
             {guide.sections.map((section, i) => (
               <section key={i} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
                 <h2>{section.heading}</h2>
-                <p>{section.content}</p>
+                <div dangerouslySetInnerHTML={{ __html: section.content }} />
               </section>
             ))}
           </div>
