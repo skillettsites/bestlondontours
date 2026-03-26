@@ -9,6 +9,7 @@ import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/CookieConsent';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import GYGScript from '@/components/GYGScript';
+import { TrackPageview } from '@/components/TrackPageview';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -70,6 +71,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <TrackPageview />
         <GoogleAnalytics />
         <GYGScript />
         <Header />
