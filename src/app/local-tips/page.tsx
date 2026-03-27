@@ -250,6 +250,26 @@ export default function LocalTipsPage() {
             </div>
           </div>
 
+          {/* Explore More */}
+          <div className="mt-8 border-t border-gray-200 pt-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
+            <div className="flex flex-wrap gap-3">
+              <Link href="/tours" className="text-blue-900 hover:underline font-medium">All Tours</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/top-10" className="text-blue-900 hover:underline font-medium">Top 10 Tours</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/budget" className="text-blue-900 hover:underline font-medium">Budget Tours</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/family" className="text-blue-900 hover:underline font-medium">Family Tours</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/first-time" className="text-blue-900 hover:underline font-medium">First Time Visitors</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/compare" className="text-blue-900 hover:underline font-medium">Compare Tours</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/guides" className="text-blue-900 hover:underline font-medium">Travel Guides</Link>
+            </div>
+          </div>
+
           {/* Back link */}
           <div className="mt-8">
             <Link href="/guides" className="inline-flex items-center text-sm font-semibold text-blue-900 hover:underline">

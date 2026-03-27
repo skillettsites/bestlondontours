@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { tours, getTourBySlug, getRelatedTours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
-import { tourSchema } from '@/lib/schema';
+import { tourSchema, touristTripSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import StarRating from '@/components/ui/StarRating';
@@ -57,12 +57,26 @@ export default async function TourPage({ params }: { params: Params }) {
 
   const relatedTours = getRelatedTours(tour).slice(0, 3);
 
+  const schemas = [
+    tourSchema(tour),
+    touristTripSchema(tour),
+    breadcrumbSchema([
+      { name: 'Home', url: SITE_URL },
+      { name: 'Tours', url: `${SITE_URL}/tours` },
+      { name: tour.shortTitle, url: `${SITE_URL}/tours/${tour.slug}` },
+    ]),
+    faqSchema(tour.faqs),
+  ].filter(Boolean);
+
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema(tour)) }}
-      />
+      {schemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       {/* Sticky Mobile CTA Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100 shadow-[0_-4px_20px_rgba(0,0,0,0.12)] px-4 py-3">

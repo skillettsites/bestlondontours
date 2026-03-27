@@ -231,6 +231,12 @@ export default function BudgetPage() {
             <Link href="/first-time" className="text-blue-900 hover:underline font-medium">First Time Visitors</Link>
             <span className="text-gray-300">|</span>
             <Link href="/tours" className="text-blue-900 hover:underline font-medium">All Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/guides" className="text-blue-900 hover:underline font-medium">Travel Guides</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/trending" className="text-blue-900 hover:underline font-medium">Trending</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/local-tips" className="text-blue-900 hover:underline font-medium">Local Tips</Link>
           </div>
         </section>
       </div>

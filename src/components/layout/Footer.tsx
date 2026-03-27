@@ -85,7 +85,7 @@ export default function Footer() {
                 {popularTours.map((tour) => (
                   <li key={tour.slug}>
                     <Link
-                      href={`/tour/${tour.slug}`}
+                      href={`/tours/${tour.slug}`}
                       className="text-sm hover:text-white transition-colors flex items-center justify-between gap-2 min-h-[32px]"
                     >
                       <span>{tour.title}</span>
@@ -134,11 +134,16 @@ export default function Footer() {
 
             {/* Information */}
             <div>
-              <h4 className="text-white text-sm font-semibold mb-3 uppercase tracking-wide">Information</h4>
+              <h4 className="text-white text-sm font-semibold mb-3 uppercase tracking-wide">Explore</h4>
               <ul className="space-y-2">
-                <li><Link href="/about" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">About Us</Link></li>
+                <li><Link href="/top-10" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Top 10 Tours</Link></li>
+                <li><Link href="/budget" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Budget Tours</Link></li>
+                <li><Link href="/family" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Family Tours</Link></li>
+                <li><Link href="/first-time" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">First Time Visitors</Link></li>
+                <li><Link href="/compare" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Compare Tours</Link></li>
                 <li><Link href="/trending" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Trending</Link></li>
                 <li><Link href="/local-tips" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Local Tips</Link></li>
+                <li><Link href="/about" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">About Us</Link></li>
                 <li><Link href="/privacy" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Privacy Policy</Link></li>
                 <li><Link href="/affiliate-disclosure" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Affiliate Disclosure</Link></li>
                 <li><Link href="/terms" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Terms of Use</Link></li>

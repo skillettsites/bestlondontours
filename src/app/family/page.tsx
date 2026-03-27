@@ -322,6 +322,12 @@ export default function FamilyPage() {
             <Link href="/first-time" className="text-blue-900 hover:underline font-medium">First Time Visitors</Link>
             <span className="text-gray-300">|</span>
             <Link href="/category/family-fun" className="text-blue-900 hover:underline font-medium">Family Fun Category</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/tours" className="text-blue-900 hover:underline font-medium">All Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/guides" className="text-blue-900 hover:underline font-medium">Travel Guides</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/trending" className="text-blue-900 hover:underline font-medium">Trending</Link>
           </div>
         </section>
       </div>

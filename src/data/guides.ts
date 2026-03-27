@@ -1078,7 +1078,7 @@ export const guides: Guide[] = [
     slug: 'free-things-london-2026',
     title: 'Best Free Things to Do in London 2026',
     metaTitle: 'Free Things to Do in London 2026 | 25+ Best Free Activities',
-    metaDescription: 'Over 25 free things to do in London in 2026. Free museums, parks, markets, walking routes, viewpoints, and events that cost absolutely nothing.',
+    metaDescription: 'Updated for 2026: 25+ free London experiences including new exhibitions, seasonal events, free viewpoints, and hidden parks that most tourists walk past.',
     excerpt: 'A complete guide to the best free activities, attractions, and experiences in London for 2026.',
     sections: [
       {
@@ -1123,7 +1123,7 @@ export const guides: Guide[] = [
     slug: 'london-3-day-itinerary-first-timers',
     title: 'London 3-Day Itinerary for First-Time Visitors',
     metaTitle: '3 Days in London 2026 | Perfect First-Timer Itinerary',
-    metaDescription: 'The perfect 3-day London itinerary for first-time visitors. Day-by-day plan covering the must-see attractions, best food, and insider tips.',
+    metaDescription: 'A first-timer\'s 3-day London plan with morning-to-evening schedules, restaurant picks, transport tips, and pre-booked ticket links to skip every queue.',
     excerpt: 'A carefully planned day-by-day itinerary to see the best of London in three days, designed for first-time visitors.',
     sections: [
       {
@@ -1160,7 +1160,7 @@ export const guides: Guide[] = [
     slug: 'best-time-visit-london-2026',
     title: 'Best Time to Visit London in 2026: Month-by-Month Guide',
     metaTitle: 'Best Time to Visit London 2026 | Month-by-Month Guide',
-    metaDescription: 'When is the best time to visit London? Month-by-month breakdown of weather, events, crowds, and prices to help you choose the perfect time.',
+    metaDescription: 'London month by month in 2026: spring cherry blossoms, summer festivals, autumn colour, and Christmas markets. Temperatures, rainfall, and what to pack.',
     excerpt: 'A month-by-month breakdown of what to expect in London, from weather and crowds to events and prices.',
     sections: [
       {
@@ -1202,7 +1202,7 @@ export const guides: Guide[] = [
     slug: 'london-food-tours-best-eats',
     title: 'London Food Tours: Best Eats and Markets in 2026',
     metaTitle: 'London Food Tours 2026 | Best Markets, Street Food & Guided Tours',
-    metaDescription: 'Discover the best food tours, markets, and restaurants in London. Borough Market, street food, Michelin-level dining on a budget, and guided food experiences.',
+    metaDescription: 'London\'s tastiest food tours ranked for 2026. Borough Market, East End curry trails, Soho tasting walks, and hidden restaurants. Prices from £45 per person.',
     excerpt: 'A food lover\'s guide to London, from iconic markets and street food to guided food tours and the city\'s best affordable restaurants.',
     sections: [
       {
@@ -1247,7 +1247,7 @@ export const guides: Guide[] = [
     slug: 'thames-river-cruises-compared',
     title: 'Best Thames River Cruises Compared: 2026 Guide',
     metaTitle: 'Thames River Cruises 2026 | Compare Options, Prices & Routes',
-    metaDescription: 'Compare the best Thames river cruises in London. Sightseeing, dinner, speed boats, and hop-on hop-off. Prices, routes, and which one to book.',
+    metaDescription: 'Side-by-side comparison of every Thames cruise option: sightseeing, dinner, speed boat, and hop-on hop-off. Prices, departure points, and our top pick.',
     excerpt: 'A side-by-side comparison of every Thames cruise option, from budget sightseeing to luxury dinner cruises.',
     sections: [
       {
@@ -1288,7 +1288,7 @@ export const guides: Guide[] = [
     slug: 'london-rainy-day-activities',
     title: 'London in the Rain: Best Indoor Activities and Tours',
     metaTitle: 'London Rainy Day Activities 2026 | Indoor Things to Do',
-    metaDescription: 'Do not let rain ruin your London trip. The best indoor activities, museums, tours, and experiences for when the weather turns wet.',
+    metaDescription: 'Wet weather? No problem. 15 tested indoor activities in London from immersive theatre to covered markets, all within easy reach of a Tube station.',
     excerpt: 'The best indoor attractions, tours, and activities for when London\'s weather turns grey and wet.',
     sections: [
       {
@@ -1333,7 +1333,7 @@ export const guides: Guide[] = [
     slug: 'london-families-kids-guide',
     title: 'Best London Tours for Families with Kids (2026)',
     metaTitle: 'London with Kids 2026 | Best Family Tours, Attractions & Tips',
-    metaDescription: 'The best things to do in London with children. Family tours, free museums, kid-friendly attractions, and practical tips for visiting London with kids.',
+    metaDescription: 'Tested with real families: the best London activities for babies, toddlers, primary schoolers, and teenagers. Includes pushchair-friendly routes and budget tips.',
     excerpt: 'Everything families need to know about visiting London with children, from the best attractions to practical transport tips.',
     sections: [
       {
@@ -1374,7 +1374,7 @@ export const guides: Guide[] = [
     slug: 'best-walking-tours-routes-london',
     title: 'Best London Walking Tours and Routes for 2026',
     metaTitle: 'Best London Walking Tours 2026 | Self-Guided Routes & Guided Options',
-    metaDescription: 'The best walking tours in London, both guided and self-guided. Routes covering Westminster, the South Bank, East London, and hidden gems.',
+    metaDescription: 'Guided and self-guided walking routes through Westminster, the South Bank, and the East End. Maps, distances, estimated times, and what you will see.',
     excerpt: 'The best walking routes through London, from self-guided strolls along the Thames to expert-led guided tours.',
     sections: [
       {
@@ -1419,7 +1419,7 @@ export const guides: Guide[] = [
     slug: 'london-christmas-festive-guide',
     title: 'London at Christmas: Best Festive Tours and Markets 2026',
     metaTitle: 'London Christmas 2026 | Best Markets, Lights & Festive Tours',
-    metaDescription: 'Experience magical Christmas in London. The best Christmas markets, festive lights, ice rinks, pantomimes, and seasonal tours for the 2026 holiday season.',
+    metaDescription: 'London Christmas 2026 calendar: Winter Wonderland dates, light switch-on times, ice rink prices, panto listings, and the best festive walking tours.',
     excerpt: 'Everything you need to know about Christmas in London, from festive markets and lights to ice skating and seasonal tours.',
     sections: [
       {
@@ -1460,7 +1460,7 @@ export const guides: Guide[] = [
     slug: 'best-day-trips-from-london',
     title: 'Best Day Trips from London by Train in 2026',
     metaTitle: 'Day Trips from London 2026 | Best Destinations by Train',
-    metaDescription: 'The best day trips from London by train. Windsor, Bath, Brighton, Oxford, Cambridge, Canterbury, and more. Journey times, costs, and what to see.',
+    metaDescription: 'Day trips from London by train: Windsor (25 min), Brighton (55 min), Bath (90 min), Oxford (60 min), and more. Off-peak fares, timetables, and what to see.',
     excerpt: 'The best places to visit on a day trip from London, all easily reached by train in under two hours.',
     sections: [
       {

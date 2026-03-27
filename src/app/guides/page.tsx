@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { guides } from '@/data/guides';
+import { categories } from '@/data/categories';
+import { breadcrumbSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import { SITE_URL } from '@/lib/constants';
 
@@ -17,6 +19,14 @@ export const metadata: Metadata = {
 
 export default function GuidesPage() {
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+        { name: 'Home', url: SITE_URL },
+        { name: 'Travel Guides', url: `${SITE_URL}/guides` },
+      ])) }}
+    />
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
       <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Travel Guides' }]} />
 
@@ -52,6 +62,45 @@ export default function GuidesPage() {
           </Link>
         ))}
       </div>
+
+      {/* Browse Tours by Category */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Browse Tours by Category</h2>
+        <div className="flex flex-wrap gap-3">
+          {categories.map(cat => (
+            <Link
+              key={cat.slug}
+              href={`/category/${cat.slug}`}
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+            >
+              {cat.icon} {cat.title}
+            </Link>
+          ))}
+          <Link
+            href="/tours"
+            className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-green-700 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+          >
+            All London Tours
+          </Link>
+        </div>
+      </section>
+
+      {/* Internal links */}
+      <section className="mt-8 border-t border-gray-200 pt-8">
+        <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/top-10" className="text-blue-900 hover:underline font-medium">Top 10 Tours</Link>
+          <span className="text-gray-300">|</span>
+          <Link href="/budget" className="text-blue-900 hover:underline font-medium">Budget Tours</Link>
+          <span className="text-gray-300">|</span>
+          <Link href="/family" className="text-blue-900 hover:underline font-medium">Family Tours</Link>
+          <span className="text-gray-300">|</span>
+          <Link href="/first-time" className="text-blue-900 hover:underline font-medium">First Time Visitors</Link>
+          <span className="text-gray-300">|</span>
+          <Link href="/compare" className="text-blue-900 hover:underline font-medium">Compare Tours</Link>
+        </div>
+      </section>
     </div>
+    </>
   );
 }

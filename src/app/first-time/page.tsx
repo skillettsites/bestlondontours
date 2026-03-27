@@ -346,6 +346,12 @@ export default function FirstTimePage() {
             <Link href="/tours" className="text-blue-900 hover:underline font-medium">All Tours</Link>
             <span className="text-gray-300">|</span>
             <Link href="/guides/first-time-visiting-london" className="text-blue-900 hover:underline font-medium">First Time Visitor Guide</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/guides" className="text-blue-900 hover:underline font-medium">All Guides</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/trending" className="text-blue-900 hover:underline font-medium">Trending</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/local-tips" className="text-blue-900 hover:underline font-medium">Local Tips</Link>
           </div>
         </section>
       </div>

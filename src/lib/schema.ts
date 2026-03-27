@@ -72,6 +72,38 @@ export function tourSchema(tour: Tour) {
   };
 }
 
+export function touristTripSchema(tour: Tour) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: tour.title,
+    description: tour.description,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    image: tour.imageUrl,
+    touristType: tour.bestFor,
+    offers: {
+      '@type': 'Offer',
+      price: tour.price,
+      priceCurrency: tour.currency,
+      availability: 'https://schema.org/InStock',
+      url: tour.affiliateUrl,
+    },
+    provider: {
+      '@type': 'Organization',
+      name: 'GetYourGuide',
+      url: 'https://www.getyourguide.com',
+    },
+    itinerary: {
+      '@type': 'ItemList',
+      itemListElement: tour.highlights.map((h, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: h,
+      })),
+    },
+  };
+}
+
 export function itemListSchema(tours: Tour[]) {
   return {
     '@context': 'https://schema.org',

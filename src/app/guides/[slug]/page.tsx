@@ -3,7 +3,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { guides, getGuideBySlug } from '@/data/guides';
 import { getTourBySlug } from '@/data/tours';
-import { articleSchema } from '@/lib/schema';
+import { categories } from '@/data/categories';
+import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
@@ -44,10 +45,21 @@ export default async function GuidePage({ params }: { params: Params }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(guide)) }}
-      />
+      {[
+        articleSchema(guide),
+        breadcrumbSchema([
+          { name: 'Home', url: SITE_URL },
+          { name: 'Guides', url: `${SITE_URL}/guides` },
+          { name: guide.title, url: `${SITE_URL}/guides/${guide.slug}` },
+        ]),
+        faqSchema(guide.faqs),
+      ].filter(Boolean).map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs
@@ -108,6 +120,46 @@ export default async function GuidePage({ params }: { params: Params }) {
 
           {/* FAQ */}
           <FAQ faqs={guide.faqs} />
+
+          {/* Related Guides */}
+          {(() => {
+            const otherGuides = guides.filter(g => g.slug !== guide.slug).slice(0, 4);
+            return otherGuides.length > 0 ? (
+              <section className="mt-12 bg-gray-50 rounded-xl p-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">More London Guides</h2>
+                <ul className="space-y-3">
+                  {otherGuides.map(g => (
+                    <li key={g.slug}>
+                      <Link href={`/guides/${g.slug}`} className="text-green-700 font-medium hover:underline">{g.title}</Link>
+                      <p className="text-sm text-gray-500 mt-0.5">{g.excerpt}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null;
+          })()}
+
+          {/* Browse by Category */}
+          <section className="mt-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Browse Tours by Category</h2>
+            <div className="flex flex-wrap gap-3">
+              {categories.map(cat => (
+                <Link
+                  key={cat.slug}
+                  href={`/category/${cat.slug}`}
+                  className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+                >
+                  {cat.icon} {cat.title}
+                </Link>
+              ))}
+              <Link
+                href="/tours"
+                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-green-700 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+              >
+                All London Tours
+              </Link>
+            </div>
+          </section>
 
           {/* Back to guides */}
           <div className="mt-12 pt-8 border-t border-gray-200">

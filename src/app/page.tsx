@@ -563,6 +563,41 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/top-10" className="text-blue-900 hover:underline text-sm">
+                    Top 10 London Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/budget" className="text-blue-900 hover:underline text-sm">
+                    Budget Tours Under 30
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/family" className="text-blue-900 hover:underline text-sm">
+                    Family Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/first-time" className="text-blue-900 hover:underline text-sm">
+                    First Time Visitors
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/compare" className="text-blue-900 hover:underline text-sm">
+                    Compare All Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/trending" className="text-blue-900 hover:underline text-sm">
+                    Trending Tours
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/local-tips" className="text-blue-900 hover:underline text-sm">
+                    Local Tips
+                  </Link>
+                </li>
+                <li>
                   <Link href="/about" className="text-blue-900 hover:underline text-sm">
                     About Best London Tours
                   </Link>
@@ -589,7 +624,7 @@ export default function HomePage() {
           href="/tours"
           className="flex items-center justify-center gap-2 w-full rounded-xl bg-gradient-to-r from-green-600 to-green-500 py-3.5 text-base font-bold text-white shadow-lg active:scale-[0.98] transition-transform"
         >
-          Browse Tours &mdash; From &pound;17
+          Browse Tours: From &pound;17
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>

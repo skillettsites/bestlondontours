@@ -203,6 +203,21 @@ export default function TrendingPage() {
             <Link href="/category/day-trips" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
               Day Trips
             </Link>
+            <Link href="/top-10" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              Top 10 Tours
+            </Link>
+            <Link href="/budget" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              Budget Tours
+            </Link>
+            <Link href="/family" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              Family Tours
+            </Link>
+            <Link href="/first-time" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              First Time Visitors
+            </Link>
+            <Link href="/compare" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              Compare Tours
+            </Link>
           </div>
         </section>
 

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { categories, getCategoryBySlug } from '@/data/categories';
 import { getToursByCategory } from '@/data/tours';
-import { categorySchema } from '@/lib/schema';
+import { categorySchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { SITE_URL } from '@/lib/constants';
 import TourCard from '@/components/ui/TourCard';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -136,10 +136,20 @@ export default async function CategoryPage({ params }: { params: Params }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema(category)) }}
-      />
+      {[
+        categorySchema(category),
+        breadcrumbSchema([
+          { name: 'Home', url: SITE_URL },
+          { name: category.title, url: `${SITE_URL}/category/${category.slug}` },
+        ]),
+        faqSchema(category.faqs),
+      ].filter(Boolean).map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs
@@ -164,6 +174,28 @@ export default async function CategoryPage({ params }: { params: Params }) {
         </div>
 
         <FAQ faqs={category.faqs} />
+
+        {/* Other Categories */}
+        <section className="mt-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Browse Other Categories</h2>
+          <div className="flex flex-wrap gap-3">
+            {categories.filter(c => c.slug !== category.slug).map(cat => (
+              <Link
+                key={cat.slug}
+                href={`/category/${cat.slug}`}
+                className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+              >
+                {cat.icon} {cat.title}
+              </Link>
+            ))}
+            <Link
+              href="/tours"
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-green-700 hover:border-green-300 hover:shadow-sm transition-all duration-300"
+            >
+              All London Tours
+            </Link>
+          </div>
+        </section>
 
         {/* SEO Content Section */}
         {categorySeoContent[category.slug] && (
@@ -191,6 +223,23 @@ export default async function CategoryPage({ params }: { params: Params }) {
             )}
           </section>
         )}
+        {/* Internal links */}
+        <section className="mt-8 border-t border-gray-200 pt-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Explore More</h2>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/top-10" className="text-blue-900 hover:underline font-medium">Top 10 Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/budget" className="text-blue-900 hover:underline font-medium">Budget Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/family" className="text-blue-900 hover:underline font-medium">Family Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/first-time" className="text-blue-900 hover:underline font-medium">First Time Visitors</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/compare" className="text-blue-900 hover:underline font-medium">Compare Tours</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/guides" className="text-blue-900 hover:underline font-medium">Travel Guides</Link>
+          </div>
+        </section>
       </div>
     </>
   );
