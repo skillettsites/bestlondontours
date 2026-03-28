@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { tours, getTourBySlug } from '@/data/tours';
 import { SITE_URL, GYG_PARTNER_ID } from '@/lib/constants';
-import { itemListSchema, breadcrumbSchema } from '@/lib/schema';
+import { itemListSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import StarRating from '@/components/ui/StarRating';
@@ -71,6 +71,7 @@ export default function FirstTimePage() {
       { name: 'First Time Guide', url: `${SITE_URL}/first-time` },
     ]),
     itemListSchema(essentialTours),
+    faqSchema(faqs),
   ];
 
   const totalCost = essentialTours.reduce((s, t) => s + t.price, 0);

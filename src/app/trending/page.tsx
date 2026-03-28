@@ -6,6 +6,7 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import FAQ from '@/components/ui/FAQ';
 import { SITE_URL, CONTENT_DATE } from '@/lib/constants';
+import { breadcrumbSchema, itemListSchema, faqSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Trending in London 2026 | Most Popular Tours & Things to Do',
@@ -77,8 +78,25 @@ export default function TrendingPage() {
     .map((slug) => getTourBySlug(slug))
     .filter((t): t is NonNullable<typeof t> => t !== undefined);
 
+  const schemaData = [
+    breadcrumbSchema([
+      { name: 'Home', url: SITE_URL },
+      { name: 'Trending', url: `${SITE_URL}/trending` },
+    ]),
+    itemListSchema(popularTours),
+    faqSchema(faqs),
+  ];
+
   return (
     <>
+      {schemaData.filter(Boolean).map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
         <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Trending' }]} />
 
