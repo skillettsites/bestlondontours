@@ -9,6 +9,7 @@ import { SITE_URL } from '@/lib/constants';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
 import TourCard from '@/components/ui/TourCard';
+import InlineTourCTA from '@/components/ui/InlineTourCTA';
 
 export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));
@@ -96,14 +97,25 @@ export default async function GuidePage({ params }: { params: Params }) {
             </ul>
           </nav>
 
-          {/* Content */}
+          {/* Content with inline tour CTAs */}
           <div className="guide-content">
-            {guide.sections.map((section, i) => (
-              <section key={i} id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
-                <h2>{section.heading}</h2>
-                <div dangerouslySetInnerHTML={{ __html: section.content }} />
-              </section>
-            ))}
+            {guide.sections.map((section, i) => {
+              const ctaIndex = Math.floor((i - 1) / 3);
+              const showCTA = i > 0 && (i - 1) % 3 === 0 && relatedTours.length > 0;
+              const ctaTours = showCTA
+                ? relatedTours.slice(ctaIndex * 2, ctaIndex * 2 + 2).filter(Boolean)
+                : [];
+
+              return (
+                <div key={i}>
+                  <section id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
+                    <h2>{section.heading}</h2>
+                    <div dangerouslySetInnerHTML={{ __html: section.content }} />
+                  </section>
+                  {ctaTours.length > 0 && <InlineTourCTA tours={ctaTours} />}
+                </div>
+              );
+            })}
           </div>
 
           {/* Related Tours CTA */}

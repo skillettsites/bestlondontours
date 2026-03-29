@@ -33,7 +33,7 @@ export const guides: Guide[] = [
         content: 'London is generally safe, but stay aware of pickpockets in crowded tourist areas and on the Tube. Stand on the right on escalators (this is taken very seriously). Tipping is not mandatory but 10-12.5% is standard in restaurants. The UK uses Type G plugs (three rectangular pins), so bring an adapter. Tap water is safe to drink everywhere. The emergency number is 999.',
       },
     ],
-    relatedTourSlugs: ['tower-of-london-tickets', 'london-eye-tickets', 'hop-on-hop-off-bus', 'thames-sightseeing-cruise'],
+    relatedTourSlugs: ['tower-of-london-tickets', 'london-eye-tickets', 'hop-on-hop-off-bus', 'thames-sightseeing-cruise', 'westminster-abbey-tickets', 'buckingham-palace-tickets'],
     faqs: [
       { question: 'How many days do you need in London?', answer: '3 to 5 days is ideal for a first visit. You can see the major highlights in 3 days, but 5 days lets you explore at a relaxed pace and add a day trip.' },
       { question: 'Is London expensive to visit?', answer: 'London can be expensive, but there are many ways to save. Free museums, market food, and off-peak travel all help. Budget around £100-150 per person per day including accommodation, food, transport, and 1-2 paid attractions.' },
@@ -94,7 +94,7 @@ export const guides: Guide[] = [
         content: 'Wear comfortable, broken-in shoes with good support. London pavements are hard, and you will cover 3 to 8 kilometres on most tours. Bring a waterproof jacket regardless of the forecast; London weather changes quickly. Arrive 10 to 15 minutes early at the meeting point. Most tours run in groups of 15 to 25 people. If you want a more intimate experience, book a small-group or private tour. Tipping your guide is customary on paid tours (£5 to £10 per person is standard) and essential on free tours, where tips are the guide\'s only income.',
       },
     ],
-    relatedTourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'borough-market-food-tour', 'churchill-war-rooms-tour', 'harry-potter-studio-tour'],
+    relatedTourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'borough-market-food-tour', 'churchill-war-rooms-tour'],
     faqs: [
       { question: 'Are free walking tours in London really free?', answer: 'Yes, you can join without paying upfront. Guides work for tips, so you pay what you feel the tour was worth at the end. Most people tip £5 to £15 per person depending on the quality and length of the tour.' },
       { question: 'What is the best walking tour in London for first-time visitors?', answer: 'A free Westminster or South Bank walking tour is the best starting point. It covers the major landmarks and helps you get oriented. After that, consider a themed tour like the Jack the Ripper walk or Borough Market food tour.' },
@@ -146,7 +146,7 @@ export const guides: Guide[] = [
         content: 'Book the Studio Tour at least 4 to 6 weeks in advance. Summer months, half-term holidays, and the Hogwarts in the Snow period are the hardest to get. Morning entry slots (9am to 10am) are the quietest inside the studio. The tour is self-paced, so you can linger wherever you like. Photography is allowed throughout (no flash in some areas). There is a large gift shop at the end, so budget for souvenirs if you are visiting with children. For walking tours, book at least a few days ahead, especially in summer. Wear comfortable shoes as you will be on your feet for 2 hours or more. If you are visiting London specifically for Harry Potter, consider spreading the experiences over two days: walking tour and free locations on day one, Studio Tour on day two. This gives you enough time to enjoy everything without rushing. The closest Tube stations for the walking tours are usually London Bridge, King\'s Cross, or Bank, depending on the specific tour route.',
       },
     ],
-    relatedTourSlugs: ['harry-potter-studio-tour', 'hop-on-hop-off-bus', 'london-eye-tickets', 'natural-history-museum-tour'],
+    relatedTourSlugs: ['harry-potter-studio-tour', 'tower-of-london-tickets', 'hop-on-hop-off-bus', 'madame-tussauds-tickets'],
     faqs: [
       { question: 'How much do Harry Potter tours in London cost?', answer: 'Walking tours start from £15 to £25 per person. The Warner Bros. Studio Tour with coach transfer costs around £98. Platform 9 3/4 at King\'s Cross is free to visit.' },
       { question: 'Is the Warner Bros. Studio Tour worth it?', answer: 'Absolutely. It is consistently rated as one of the best attractions near London, with a 4.6-star rating from nearly 10,000 reviews. Even visitors who are not huge Potter fans find it impressive.' },
@@ -247,7 +247,7 @@ export const guides: Guide[] = [
         content: 'While London offers an incredible amount for free, some of the best value paid tours start from as little as £15. Free tip-based walking tours (where you pay what you think the tour is worth) are an excellent bridge between free and paid. After exploring London\'s free museums and parks, consider treating yourself to one or two standout paid experiences. The Jack the Ripper tour at £15 is one of the best value evening activities in any city. Book at /tours/jack-the-ripper-tour. The Thames sightseeing cruise at £17 gives you a completely different perspective on London from the water. Book at /tours/thames-sightseeing-cruise. For families, the Natural History Museum guided tour at £30 transforms a free museum visit into an expert-led adventure at /tours/natural-history-museum-tour. And the hop-on hop-off bus at £27 saves you money on Tube fares while doubling as a sightseeing tour. Book at /tours/hop-on-hop-off-bus. The key is to use London\'s free attractions as your foundation and spend selectively on the paid experiences that will create the most memorable moments.',
       },
     ],
-    relatedTourSlugs: ['hop-on-hop-off-bus', 'thames-sightseeing-cruise', 'jack-the-ripper-tour', 'natural-history-museum-tour', 'the-shard-tickets'],
+    relatedTourSlugs: ['thames-sightseeing-cruise', 'jack-the-ripper-tour', 'natural-history-museum-tour', 'the-shard-tickets', 'hop-on-hop-off-bus'],
     faqs: [
       { question: 'Are London museums really free?', answer: 'Yes, most major national museums in London are completely free, including the British Museum, National Gallery, Tate Modern, V&A, Natural History Museum, and Science Museum. Special exhibitions sometimes have a charge.' },
       { question: 'What is the best free thing to do in London?', answer: 'The British Museum and the South Bank walk (Westminster Bridge to Tower Bridge) are consistently rated as the top free experiences. The Changing of the Guard is also unmissable.' },
@@ -502,7 +502,7 @@ export const guides: Guide[] = [
         content: 'London pubs typically open at 11am or 12pm and close between 11pm and midnight, with later hours on Fridays and Saturdays. Sunday closing is usually 10:30pm. You order and pay at the bar (table service is becoming more common but is not universal). There is no table charge or cover charge in pubs. A pint of beer costs £6 to £8 in central London and £5 to £7 further out. Tipping is not expected in pubs, though you can say "and one for yourself" to buy the bartender a drink. Traditional cask ales are served at cellar temperature (around 12 degrees Celsius), not ice cold, which is intentional and delivers more flavour. If you prefer something cold, ask for a lager. Most pubs serve food until 9pm or 10pm. A proper pub meal (pie, fish and chips, or Sunday roast) costs £12 to £20. Pace yourself on a pub crawl; a half pint at some stops is perfectly acceptable. The best pub crawls focus on quality over quantity, savouring 4 to 5 carefully chosen pubs rather than rushing through 8 or 10.',
       },
     ],
-    relatedTourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'borough-market-food-tour', 'thames-sightseeing-cruise'],
+    relatedTourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'borough-market-food-tour', 'thames-dinner-cruise'],
     faqs: [
       { question: 'What is the oldest pub in London?', answer: 'Several pubs claim the title. Ye Olde Cheshire Cheese (rebuilt 1667), The Lamb and Flag (1638), and The Prospect of Whitby (1520) are among the oldest. The George Inn in Southwark is London\'s only surviving galleried coaching inn.' },
       { question: 'How much does a pint cost in London?', answer: 'A pint of beer in central London costs £6 to £8. Craft beer is typically £6 to £9 per pint. Prices are lower in pubs further from the centre and in East London.' },
