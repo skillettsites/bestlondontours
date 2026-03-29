@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google';
+import localFont from 'next/font/local';
+
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from '@/lib/constants';
@@ -11,9 +12,9 @@ import GoogleAnalytics from '@/components/GoogleAnalytics';
 import GYGScript from '@/components/GYGScript';
 import { TrackPageview } from '@/components/TrackPageview';
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: './geist-latin.woff2',
   variable: '--font-geist-sans',
-  subsets: ['latin'],
   display: 'swap',
 });
 
