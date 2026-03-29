@@ -14,6 +14,7 @@ import AvailabilityWidget from '@/components/ui/AvailabilityWidget';
 import TourCard from '@/components/ui/TourCard';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
+import { StickyBookingBar } from '@/components/StickyBookingBar';
 
 const categoryGuideMap: Record<string, string[]> = {
   landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'london-history-guide'],
@@ -95,6 +96,13 @@ export default async function TourPage({ params }: { params: Params }) {
           </TrackedGYGLink>
         </div>
       </div>
+
+      {/* Sticky Desktop Booking Bar */}
+      <StickyBookingBar
+        tourName={tour.shortTitle}
+        affiliateUrl={tour.affiliateUrl}
+        price={`\u00A3${tour.price}`}
+      />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 pb-28 lg:pb-8">
         <Breadcrumbs

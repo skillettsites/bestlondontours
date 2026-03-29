@@ -130,6 +130,30 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Quick Book: Most Popular Tours */}
+      <section className="bg-white py-10 sm:py-12 border-b border-gray-100 print:hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">Most Popular Tours</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {featuredTours.map((tour) => (
+              <a
+                key={tour.slug}
+                href={tour.affiliateUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gray-50 rounded-xl border border-gray-200 p-4 text-center hover:border-green-300 hover:shadow-md transition-all"
+              >
+                <p className="text-sm font-semibold text-gray-900 group-hover:text-green-700 transition-colors leading-tight mb-2">{tour.shortTitle}</p>
+                <p className="text-xs text-gray-500 mb-2">From &pound;{tour.price}</p>
+                <span className="inline-block px-3 py-1.5 bg-green-600 text-white text-xs font-bold rounded-lg group-hover:bg-green-700 transition-colors">
+                  Book Now
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Affiliate Disclosure */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
         <AffiliateDisclosure />
