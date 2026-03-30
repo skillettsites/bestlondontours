@@ -513,6 +513,334 @@ export const guides: Guide[] = [
     publishedDate: '2026-03-28',
     updatedDate: '2026-03-28',
   },
+  {
+    slug: 'london-tours-for-seniors',
+    title: 'Best London Tours for Seniors & Over 60s: Comfort-First Guide',
+    metaTitle: 'Best London Tours for Seniors & Over 60s | Comfort-First Guide 2026',
+    metaDescription: 'Discover the best London tours for seniors and over 60s. Covers low-walking options, accessible transport, rest stops, best times to visit, and booking tips for mobility needs.',
+    excerpt: 'A practical guide to the most comfortable and accessible tours in London for senior travellers and those with mobility considerations.',
+    sections: [
+      {
+        heading: 'Why London Is Great for Senior Travellers',
+        content: 'London has invested heavily in accessibility over the past decade, making it one of the most senior-friendly capital cities in Europe. Many major attractions now offer step-free access, priority seating, and dedicated assistance. The city\'s world-class public transport includes an increasing number of step-free Tube stations, and the bus network is fully wheelchair and mobility-aid accessible. Free entry to most major museums means you can take your time without worrying about getting your money\'s worth in a single visit. London rewards a slower pace, and there is no better way to enjoy it than without rushing.',
+      },
+      {
+        heading: 'Best Tours with Minimal Walking',
+        content: 'The hop-on hop-off bus tour is the ideal choice for anyone who wants to see the landmarks without spending hours on their feet. You stay seated while the bus passes Buckingham Palace, Westminster Abbey, the Tower of London, and St Paul\'s Cathedral, hopping off only at stops that interest you. Thames river cruises are another excellent low-walking option, offering panoramic views of the city from a comfortable seat. The Thames dinner cruise adds a three-course meal to the experience, making it a full evening out with almost no walking required.',
+      },
+      {
+        heading: 'Accessible Transport Tips',
+        content: 'The Elizabeth Line (opened 2022) is fully step-free at every station, making it the best Tube line for seniors. London buses all have low floors and ramps, and drivers will wait for you to sit down before moving off. Black cabs are wheelchair accessible by law and can be hailed anywhere. If you have a Blue Badge, you can park for free in many central London locations. Consider getting an Oyster card with a 60+ London photocard if you are a London resident, or simply use contactless payment for the daily fare cap.',
+      },
+      {
+        heading: 'Tours with Seating and Rest Stops',
+        content: 'Indoor attractions like Madame Tussauds, the Churchill War Rooms, and the London Dungeon all have benches and seating throughout. The Tower of London offers plenty of places to rest between exhibits, and the Yeoman Warder tours (included with entry) last about an hour with regular pauses. Buckingham Palace tours during the summer opening are self-paced, so you can rest whenever you need to. River cruises are entirely seated, and the commentary means you never miss anything while relaxing.',
+      },
+      {
+        heading: 'Best Times to Visit (Avoiding Crowds)',
+        content: 'The quietest months for London tourism are January, February, and November. If you prefer warmer weather, early September and late April offer mild temperatures without the summer crush. Weekday mornings are always calmer than weekends at major attractions. Booking timed entry tickets (available at the Tower of London, Westminster Abbey, and Buckingham Palace) guarantees you will not queue outside. Early morning slots, around 9:30am, tend to be the least crowded and give you the freshest energy for exploring.',
+      },
+      {
+        heading: 'Booking Tips for Mobility Needs',
+        content: 'Always book online in advance, as this often includes options to note accessibility requirements. GetYourGuide and Viator both allow you to filter tours by accessibility. When booking a walking tour, contact the operator beforehand to ask about pace, distance, and terrain. Many tour companies offer private or small-group options where the guide can adjust the pace to suit you. If you use a mobility scooter, check venue policies in advance because some historic buildings have narrow corridors that may not accommodate them.',
+      },
+    ],
+    relatedTourSlugs: ['hop-on-hop-off-bus', 'thames-sightseeing-cruise', 'buckingham-palace-tickets', 'westminster-abbey-tickets', 'thames-dinner-cruise'],
+    faqs: [
+      { question: 'Are London tours suitable for people with limited mobility?', answer: 'Yes. Bus tours, river cruises, and many indoor attractions are fully accessible. The hop-on hop-off bus and Thames cruises require minimal walking and offer comfortable seating throughout.' },
+      { question: 'Is there a senior discount for London attractions?', answer: 'Many attractions offer senior (60+) discounts of 10 to 20%. The London Pass occasionally has senior pricing. Always check the attraction\'s website before booking, and bring photo ID to prove your age.' },
+      { question: 'What is the best tour for someone who cannot walk far?', answer: 'The hop-on hop-off bus tour is the best option. You see all the major landmarks from a comfortable seat and can choose to get off only at stops that interest you. Thames cruises are another excellent low-walking choice.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'london-rainy-day-activities',
+    title: 'Best London Tours & Activities for Rainy Days',
+    metaTitle: 'Best London Tours & Activities for Rainy Days | Indoor Ideas 2026',
+    metaDescription: 'Rain in London? No problem. Discover the best indoor tours, museum visits, covered markets, and rainy day activities to make the most of a wet London day.',
+    excerpt: 'London is at its most atmospheric in the rain. Here are the best indoor tours, museums, and covered attractions for wet weather days.',
+    sections: [
+      {
+        heading: 'Why Rainy Days Can Be the Best Time to Tour',
+        content: 'London averages around 150 rainy days per year, so the city is well prepared for wet weather. Rainy days mean shorter queues at popular attractions, a more relaxed atmosphere in museums, and a genuinely atmospheric experience on evening walking tours. Some of London\'s best moments happen in the rain: watching the Thames from inside a warm cruise boat, exploring the echoing halls of the Natural History Museum with fewer crowds, or ducking into a centuries-old pub between showers. Pack a compact umbrella and waterproof shoes, and a rainy London day becomes a highlight rather than a setback.',
+      },
+      {
+        heading: 'Indoor Attractions Worth Visiting',
+        content: 'Madame Tussauds is an entirely indoor experience that typically takes 2 to 3 hours. The London Dungeon combines actors, special effects, and dark humour in a fully covered underground setting. The Churchill War Rooms take you deep beneath Whitehall into the bunker where Churchill directed the war effort; there is not a drop of rain to worry about. The Tower of London has extensive indoor exhibits including the Crown Jewels, and even the outdoor areas are manageable with an umbrella between buildings.',
+      },
+      {
+        heading: 'Covered Walking Tours',
+        content: 'Several walking tours in London are partially or fully undercover. The Jack the Ripper tour runs through the narrow streets of Whitechapel where overhanging buildings provide some shelter, and the atmosphere is genuinely better in wet, misty conditions. The Natural History Museum tour keeps you indoors for the full duration while covering an extraordinary range of exhibits. Harry Potter Studio Tour is entirely indoors and typically takes 3 to 4 hours, making it a perfect full rainy day outing.',
+      },
+      {
+        heading: 'Museums and Exhibitions',
+        content: 'London\'s free museums are the ultimate rainy day resource. The British Museum, National Gallery, V&A, Science Museum, and Natural History Museum could each fill an entire day. The Tate Modern on the South Bank is free and has a spectacular view from its upper floors even in grey weather. For something different, the Sir John Soane\'s Museum in Lincoln\'s Inn Fields is one of London\'s hidden gems: free, eccentric, and entirely indoors. The Design Museum in Kensington and the Museum of London (now relocated to Smithfield) are also excellent wet weather options.',
+      },
+      {
+        heading: 'Shopping Arcades and Markets',
+        content: 'London\'s covered markets and Victorian shopping arcades are perfect for rainy days. Borough Market is partially covered and offers incredible street food to warm you up. Leadenhall Market (also known as Diagon Alley from the Harry Potter films) has a stunning painted roof and upmarket shops. Burlington Arcade, Royal Opera Arcade, and Piccadilly Arcade are elegant covered passages with boutique shops. Covent Garden\'s covered market hall stays dry and hosts live performances. Camden Market has large indoor sections alongside its outdoor stalls.',
+      },
+      {
+        heading: 'Thames Cruises in the Rain',
+        content: 'A Thames cruise in the rain is surprisingly enjoyable. All sightseeing boats have fully enclosed, heated lower decks with panoramic windows. The rain on the river creates a moody, cinematic atmosphere that photographs beautifully. The Thames dinner cruise is particularly good in wet weather because you are inside for the entire experience, enjoying a three-course meal while London\'s illuminated skyline glides past the windows. Commentary is delivered through speakers inside the boat, so you miss nothing by staying dry.',
+      },
+    ],
+    relatedTourSlugs: ['natural-history-museum-tour', 'madame-tussauds-tickets', 'london-dungeon-tickets', 'tower-of-london-tickets', 'churchill-war-rooms-tour'],
+    faqs: [
+      { question: 'Do London tours run in the rain?', answer: 'Yes. Almost all London tours run rain or shine. Walking tours proceed as normal, and guides are well prepared for wet weather. River cruises have covered decks. Only a few outdoor experiences may be affected in extreme weather.' },
+      { question: 'What is the best indoor attraction in London?', answer: 'The Natural History Museum and the British Museum are two of the best free indoor options. For paid attractions, the Churchill War Rooms and Madame Tussauds are excellent choices that keep you fully indoors for 2 to 3 hours.' },
+      { question: 'Is it worth visiting London in winter when it rains a lot?', answer: 'Absolutely. Winter means fewer tourists, lower prices, and festive Christmas lights and markets from November onwards. London\'s museums, theatres, and indoor attractions make it a great city regardless of the weather.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'london-tours-for-teenagers',
+    title: 'Best London Tours for Teenagers: Cool Activities They\'ll Actually Enjoy',
+    metaTitle: 'Best London Tours for Teenagers | Cool Activities They\'ll Love 2026',
+    metaDescription: 'Struggling to entertain teenagers in London? These tours and activities are genuinely cool, from Harry Potter studios to street art walks, the London Dungeon, and evening experiences.',
+    excerpt: 'Forget boring museums. These London tours and activities are the ones teenagers actually want to do.',
+    sections: [
+      {
+        heading: 'Why Teenagers Love London',
+        content: 'London speaks the language of teenagers. It is the home of grime music, world-class football, TikTok-famous food spots, and some of the most iconic film and TV locations on the planet. The city\'s street culture, from Camden\'s alternative scene to Shoreditch\'s graffiti walls, resonates with younger visitors in a way that traditional sightseeing often does not. Getting around on the Tube feels like an adventure in itself, and the sheer diversity of things to do means there is always something that matches their interests.',
+      },
+      {
+        heading: 'Action and Adventure Tours',
+        content: 'The London Dungeon is a guaranteed hit with teenagers. Live actors, jump scares, and dark humour combine to create an experience that is part theme park, part history lesson. The London Eye offers incredible views and just enough height to feel thrilling. For something more active, climbing the O2 dome puts you on a walkway over the roof of one of London\'s most famous venues. The Shard\'s viewing platform at 310 metres is another adrenaline option with views stretching 40 miles on a clear day.',
+      },
+      {
+        heading: 'Harry Potter and Pop Culture',
+        content: 'The Warner Bros. Harry Potter Studio Tour is the single most requested activity for teenagers visiting London. It takes 3 to 4 hours and includes original sets, costumes, props, and the chance to drink butterbeer. In central London, Platform 9 3/4 at King\'s Cross is a free photo opportunity. Beyond Harry Potter, teenagers who love music can explore Abbey Road (Beatles), Camden (Amy Winehouse and punk), and the various filming locations from Sherlock, James Bond, and Doctor Who scattered across the city.',
+      },
+      {
+        heading: 'Street Art and Urban Exploration',
+        content: 'Shoreditch is an open-air gallery of world-class street art, and guided tours bring the stories behind the murals to life. Teenagers who are into art, design, or photography will find endless content here. Brick Lane adds vintage shopping, curry houses, and a weekend market with independent designers. Camden Town is another essential stop, with its famous lock market, alternative fashion shops, and street food stalls. These areas feel authentic and edgy in a way that appeals to teenagers far more than traditional tourist spots.',
+      },
+      {
+        heading: 'Food Tours Teens Enjoy',
+        content: 'Borough Market is a sensory overload that even the fussiest teenager will enjoy. The food tour option includes tastings of everything from fresh pasta to gourmet doughnuts. Camden Market\'s street food section has cuisine from every corner of the world, with many stalls run by young entrepreneurs creating viral dishes. Chinatown in Soho offers bubble tea, Japanese pancakes, and Hong Kong-style egg waffles. For something special, there are dessert-focused walking tours that visit London\'s best bakeries and chocolate shops.',
+      },
+      {
+        heading: 'Evening Activities for Older Teens',
+        content: 'Teenagers aged 16 and over have access to London\'s incredible theatre scene, with West End shows covering everything from Hamilton to The Mousetrap. The Jack the Ripper tour is a brilliantly atmospheric evening walk that appeals to true crime fans. Ghost tours offer similar thrills with a supernatural twist. For a more upscale evening, the Thames dinner cruise provides a memorable experience with London\'s skyline lit up after dark. Comedy clubs in Soho and Leicester Square often welcome over-16s for early shows.',
+      },
+    ],
+    relatedTourSlugs: ['harry-potter-studio-tour', 'london-dungeon-tickets', 'the-shard-tickets', 'borough-market-food-tour', 'london-eye-tickets'],
+    faqs: [
+      { question: 'What is the best London tour for a 14 year old?', answer: 'The Harry Potter Studio Tour and the London Dungeon are the two most popular choices. Both are interactive, entertaining, and suitable for ages 12 and up. The Studio Tour needs advance booking, often weeks ahead.' },
+      { question: 'Are there age restrictions on London evening tours?', answer: 'Most walking tours (Jack the Ripper, ghost tours) welcome all ages, though the content may be dark. The London Dungeon is suitable for ages 12+. Theatre shows vary; check individual shows for age guidance.' },
+      { question: 'How do I keep teenagers entertained in London on a budget?', answer: 'Free museums, Camden Market, Shoreditch street art, and Covent Garden performers cost nothing. The Tube itself is an experience. Budget around £15 to £20 per teenager per day for food from markets, and add one paid activity.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'london-solo-traveller-guide',
+    title: 'London for Solo Travellers: Best Tours & Tips for Going Alone',
+    metaTitle: 'London for Solo Travellers | Best Tours & Tips 2026',
+    metaDescription: 'Visiting London alone? This guide covers the best group tours for meeting people, safety tips, eating alone, free activities, and evening experiences safe for solo visitors.',
+    excerpt: 'London is one of the best cities in the world for solo travel. Here is how to make the most of it on your own.',
+    sections: [
+      {
+        heading: 'Why London Is Perfect for Solo Travel',
+        content: 'London is a city where being alone never feels lonely. The sheer volume of things to see and do means every day is full, and the city\'s culture actively supports solo visitors. Restaurants have counter seating, pubs welcome solo drinkers, and museums are naturally solo-friendly spaces. English being the primary language removes communication barriers, and London\'s diversity means no one stands out as a tourist. The efficient transport network makes it easy to navigate independently, and the city is safe enough to explore at all hours in most areas.',
+      },
+      {
+        heading: 'Best Group Tours for Meeting People',
+        content: 'Group walking tours are the single best way to meet fellow travellers. Free (tip-based) tours attract a sociable crowd, and the shared experience naturally sparks conversation. The Borough Market food tour is particularly good for solo travellers because the tastings create natural moments to chat with others in the group. Pub crawl tours are designed for socialising, with groups often continuing to other venues together after the official tour ends. The Jack the Ripper evening tour also attracts a friendly crowd, and the dark subject matter gives everyone something to talk about.',
+      },
+      {
+        heading: 'Safety Tips for Solo Visitors',
+        content: 'London is one of the safest major cities in the world, but sensible precautions still apply. Keep your phone and wallet in a front pocket or zipped bag, especially on the Tube and in crowded tourist areas. Stick to well-lit streets after dark, particularly in less central areas. Share your location with someone at home using your phone\'s built-in tracking. Avoid unlicensed minicabs; use black cabs or Uber instead. The emergency number in the UK is 999, and there is also 101 for non-emergency police contact. Most areas of central London feel perfectly safe at all hours.',
+      },
+      {
+        heading: 'Eating Alone in London',
+        content: 'Solo dining in London is completely normal and nobody will look twice. Markets are the easiest option: Borough Market, Camden Market, and Seven Dials Market all have communal seating where everyone is eating alone or in small groups. Many restaurants have bar or counter seating designed for solo diners. Dishoom (Indian), Barrafina (Spanish tapas), and the Wolseley (European brasserie) are all popular solo dining spots. For a truly memorable solo meal, book a counter seat at a ramen bar in Soho or sushi restaurant in the Japan Centre.',
+      },
+      {
+        heading: 'Free Activities for Solo Travellers',
+        content: 'London\'s free museums are a solo traveller\'s best friend. You can spend as long as you want in any gallery without worrying about someone else\'s pace. The British Museum, National Gallery, Tate Modern, V&A, and Natural History Museum are all free and could each fill half a day. Walking along the South Bank from Westminster Bridge to Tower Bridge is a free activity that takes about 90 minutes and passes the London Eye, Tate Modern, Shakespeare\'s Globe, and Borough Market. Hyde Park, Regent\'s Park, and Hampstead Heath are perfect for a solo afternoon stroll.',
+      },
+      {
+        heading: 'Evening Tours Safe for Solo Visitors',
+        content: 'Evening walking tours are safe and popular with solo travellers. The Jack the Ripper tour through Whitechapel, the London Ghost Tour through the City, and various pub-themed walks all take place in groups with a guide, so you are never alone in unfamiliar streets after dark. Thames evening cruises, including the dinner cruise option, welcome solo bookings and the atmosphere on board is sociable. West End theatre is a quintessential solo experience; sitting alone at a show is completely normal, and matinee performances let you enjoy the theatre while it is still daylight.',
+      },
+    ],
+    relatedTourSlugs: ['borough-market-food-tour', 'jack-the-ripper-tour', 'london-ghost-tour', 'hop-on-hop-off-bus', 'thames-dinner-cruise'],
+    faqs: [
+      { question: 'Is London safe for solo female travellers?', answer: 'Yes. London is generally very safe for solo female travellers. Stick to well-lit areas at night, use licensed taxis or Uber, and trust your instincts. Central London feels safe at all hours. Evening group tours are a great way to explore after dark without being alone.' },
+      { question: 'How do I meet people in London as a solo traveller?', answer: 'Join group walking tours, food tours, or pub crawls. Free (tip-based) walking tours attract a sociable crowd. Hostels with communal areas are also great for meeting people. Markets and communal dining spots naturally encourage conversation.' },
+      { question: 'Is it weird to eat alone in London?', answer: 'Not at all. Solo dining is completely normal in London. Markets have communal seating, many restaurants have counter seats, and the city\'s culture is very accepting of people doing things alone. No one will bat an eye.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'london-wheelchair-accessible-tours',
+    title: 'Wheelchair Accessible Tours & Attractions in London',
+    metaTitle: 'Wheelchair Accessible Tours & Attractions in London | 2026 Guide',
+    metaDescription: 'A comprehensive guide to wheelchair accessible tours, attractions, and transport in London. Covers step-free routes, accessible venues, and planning tips for wheelchair users.',
+    excerpt: 'London has made huge strides in accessibility. This guide covers the best wheelchair-friendly tours, attractions, and transport options.',
+    sections: [
+      {
+        heading: 'London\'s Accessibility Improvements',
+        content: 'London has transformed its accessibility over the past two decades. The Elizabeth Line is fully step-free, and over 90 Tube stations now have step-free access from street to platform. All London buses have low floors and wheelchair ramps. The 2012 Olympics left a legacy of accessible infrastructure in east London, and ongoing investment continues to improve access across the city. The Access Card and Disabled Persons Railcard offer discounts, and most major attractions have free carer admission when accompanying a disabled visitor.',
+      },
+      {
+        heading: 'Fully Accessible Attractions',
+        content: 'The London Eye has a dedicated wheelchair boarding process and the capsules are fully accessible. The Natural History Museum, British Museum, and Tate Modern are all step-free throughout with accessible toilets on every floor. The Shard viewing platform is wheelchair accessible via lifts. The Tower of London has improved its access significantly, though some areas of this 1,000-year-old fortress remain challenging; staff provide assistance and alternative routes. The Churchill War Rooms are accessible via a lift, and the exhibits are at wheelchair-friendly heights.',
+      },
+      {
+        heading: 'Wheelchair-Friendly Tours',
+        content: 'Thames river cruises are among the most accessible tour options in London. Boarding ramps are provided at all major piers, and the boats have accessible lower decks. Hop-on hop-off buses have wheelchair spaces on the lower deck, though the open-top upper deck is not accessible. The Natural History Museum tour is fully accessible throughout. For outdoor sightseeing, the Royal Parks (Hyde Park, Green Park, St James\'s Park) all have paved, level paths suitable for wheelchairs. Guided tours can often be arranged with accessible routes on request.',
+      },
+      {
+        heading: 'Accessible Transport Guide',
+        content: 'The Elizabeth Line and Jubilee Line have the best step-free coverage on the Tube. The DLR is fully step-free at all stations. All London buses are wheelchair accessible, and drivers deploy the ramp on request. Black cabs are wheelchair accessible by law, with a built-in ramp and space for a standard wheelchair. Uber WAV (wheelchair accessible vehicles) can be booked through the app. Thames Clippers river buses have accessible boarding at most piers. The TfL Go app shows real-time step-free access information for every station.',
+      },
+      {
+        heading: 'Planning Tips for Wheelchair Users',
+        content: 'Download the AccessAble app, which has detailed access guides for thousands of London venues including door widths, toilet dimensions, and step counts. Book attraction tickets online and note any access requirements in the booking. Call venues before visiting to confirm current access arrangements, as building works can temporarily affect routes. The blue wheelchair symbol on the Tube map indicates step-free stations. Allow extra time for journeys, as accessible routes sometimes involve longer walks between connections. London\'s Shopmobility scheme offers wheelchair and scooter hire in some areas.',
+      },
+      {
+        heading: 'Free Accessible Activities',
+        content: 'London\'s free museums are all wheelchair accessible and provide some of the best days out in the city. The South Bank walk from Westminster Bridge to Tower Bridge is mostly flat and paved, with dropped kerbs and accessible crossings throughout. Covent Garden\'s covered market is accessible and has free live performances daily. The Changing of the Guard at Buckingham Palace can be viewed from the wide pavements of The Mall. Greenwich Park has accessible paths leading to the Royal Observatory viewpoint. Borough Market is mostly accessible, though it gets very crowded at weekends.',
+      },
+    ],
+    relatedTourSlugs: ['thames-sightseeing-cruise', 'london-eye-tickets', 'hop-on-hop-off-bus', 'natural-history-museum-tour', 'the-shard-tickets'],
+    faqs: [
+      { question: 'Is the London Underground wheelchair accessible?', answer: 'Partially. Over 90 stations have step-free access, including most of the Elizabeth Line, Jubilee Line, and DLR. The TfL website and Go app show which stations are step-free. Buses are a fully accessible alternative for routes without step-free stations.' },
+      { question: 'Can wheelchair users go on London walking tours?', answer: 'Many walking tour routes are wheelchair accessible on flat, paved streets. Contact the tour operator in advance to discuss the route. Some operators offer dedicated accessible tours or can adapt their standard route. River cruises and bus tours are fully accessible alternatives.' },
+      { question: 'Do London attractions offer free carer admission?', answer: 'Most major attractions admit one carer free when accompanying a disabled visitor. You may need to show a valid Access Card, disability benefit letter, or Blue Badge. Check individual attraction websites for their specific policy before booking.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'london-3-day-itinerary',
+    title: 'Perfect 3-Day London Itinerary: What to See Each Day',
+    metaTitle: 'Perfect 3-Day London Itinerary 2026 | Day-by-Day Guide',
+    metaDescription: 'Plan your 3-day London trip with this day-by-day itinerary. Covers Royal London, museums, markets, hidden gems, budget tips, and transport advice for first-time visitors.',
+    excerpt: 'Three days is enough to see London\'s highlights if you plan well. Here is the perfect day-by-day itinerary.',
+    sections: [
+      {
+        heading: 'Day 1: Royal London and Landmarks',
+        content: 'Start your first morning at Westminster Abbey, arriving early to beat the crowds. Walk across Parliament Square to see the Houses of Parliament and Big Ben, then continue along the Thames to the London Eye for panoramic views of the city. After lunch at the South Bank Centre, cross Westminster Bridge and walk through St James\'s Park to Buckingham Palace for the Changing of the Guard (check timings, as it does not happen every day). End the afternoon at the Tower of London for the Crown Jewels and a Yeoman Warder tour. In the evening, take a Thames sightseeing cruise to see the city lit up.',
+      },
+      {
+        heading: 'Day 2: Culture and Museums',
+        content: 'Spend the morning at the British Museum, focusing on the Egyptian galleries, the Rosetta Stone, and the Parthenon Marbles. After lunch in Bloomsbury, head to the South Bank for the Tate Modern (free) or cross the Millennium Bridge to St Paul\'s Cathedral. In the afternoon, visit the Natural History Museum in South Kensington, which is free and could easily fill several hours. End the day with a West End show; book matinee tickets if you prefer an earlier finish. Leicester Square and Covent Garden are perfect for dinner before or after the theatre.',
+      },
+      {
+        heading: 'Day 3: Markets, Food, and Hidden Gems',
+        content: 'Start at Borough Market for breakfast, sampling fresh pastries, coffee, and whatever catches your eye from the food stalls. Join a food tour if you want a guided experience with tastings. After the market, walk to nearby Bermondsey Street for independent shops and galleries. In the afternoon, explore either Camden Town (alternative culture, street food, and canal walks) or Notting Hill (colourful houses, Portobello Road Market on Saturdays, and bookshops). Finish your trip with a Thames dinner cruise or an evening at a traditional London pub in Soho.',
+      },
+      {
+        heading: 'Budget Breakdown',
+        content: 'A well-planned 3-day London trip can cost between £150 and £400 per person excluding accommodation and flights. Transport runs about £15 to £20 per day using an Oyster card or contactless payment. Free museums save you a fortune compared to other capital cities. Budget around £30 to £50 per day for food if you mix market meals with one restaurant dinner. The Tower of London (£33), Westminster Abbey (£27), and London Eye (£35) are the main paid attractions on this itinerary. Booking online in advance typically saves 10 to 15% on ticket prices.',
+      },
+      {
+        heading: 'Transport Tips',
+        content: 'Get an Oyster card at any Tube station or use contactless payment (the daily cap means you never overpay). The Tube is fastest for longer distances, but walking is often quicker in central London where stations are close together. Bus route 11 from Liverpool Street to Fulham passes many landmarks and costs the same as the Tube. Thames Clippers are part of the TfL network and accept Oyster cards, making the river a practical (and scenic) transport option. Download the Citymapper app for real-time route planning that combines Tube, bus, walking, and river options.',
+      },
+      {
+        heading: 'Alternative Itinerary for Repeat Visitors',
+        content: 'If you have visited London before and want something different, swap Day 1 landmarks for Greenwich (Cutty Sark, Royal Observatory, and the Painted Hall). Replace Day 2 museums with Kew Gardens and Hampton Court Palace, both reachable by a scenic Thames boat ride. On Day 3, explore East London instead: Columbia Road Flower Market on Sunday, Brick Lane for street art and curry, and the Sky Garden for free panoramic views. The Churchill War Rooms and Kensington Palace are also excellent second-visit attractions that most first-timers miss.',
+      },
+    ],
+    relatedTourSlugs: ['tower-of-london-tickets', 'westminster-abbey-tickets', 'buckingham-palace-tickets', 'borough-market-food-tour', 'london-eye-tickets', 'thames-sightseeing-cruise'],
+    faqs: [
+      { question: 'Is 3 days enough for London?', answer: 'Three days is enough to see the major highlights. You will cover the key landmarks, a few museums, and some of London\'s best food and nightlife. Five days would allow a more relaxed pace and room for day trips, but three days gives a satisfying first visit.' },
+      { question: 'What is the best area to stay for a 3-day London trip?', answer: 'South Kensington, Bloomsbury, and Southwark offer the best balance of location, transport links, and value. All three are in Zone 1 with good Tube access to everything on this itinerary. Avoid staying too far out, as commuting eats into your limited time.' },
+      { question: 'Should I get a London Pass for 3 days?', answer: 'It depends on how many paid attractions you plan to visit. The 3-day London Pass costs around £130 and includes the Tower of London, Westminster Abbey, and many others. If you plan to visit 4 or more paid attractions, it can save money. If you prefer free museums with just 1 or 2 paid sites, buying individual tickets is cheaper.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'bus-tour-vs-boat-tour-london',
+    title: 'London Bus Tour vs Boat Tour: Which Is Better?',
+    metaTitle: 'London Bus Tour vs Boat Tour: Which Is Better? | 2026 Comparison',
+    metaDescription: 'Comparing London bus tours and boat tours side by side. Covers what you see, price, duration, comfort, and which is better for families, couples, seniors, and first-time visitors.',
+    excerpt: 'Bus tour or boat tour? Both are excellent ways to see London. Here is how to decide which one is right for you.',
+    sections: [
+      {
+        heading: 'Overview of Both Options',
+        content: 'The hop-on hop-off bus tour and the Thames sightseeing cruise are London\'s two most popular ways to see the city without exhausting yourself on foot. The bus tour uses open-top double-deckers that loop through the streets past all the major landmarks, with the freedom to hop off at any stop and rejoin later. The boat tour travels along the Thames, giving you a completely different perspective on the same landmarks from the water. Both include commentary, and both are available daily throughout the year.',
+      },
+      {
+        heading: 'What You See on Each',
+        content: 'The bus tour passes Buckingham Palace, Westminster Abbey, Big Ben, Trafalgar Square, St Paul\'s Cathedral, the Tower of London, and many more landmarks at street level. You see the detail of the architecture and feel the energy of the city. The boat tour shows you the Houses of Parliament, the London Eye, the Shard, Tower Bridge, the Globe Theatre, and the Tate Modern from the river, which gives a sense of scale and grandeur that you cannot get from the street. Some landmarks, like the Tower of London and Westminster, are visible from both, but the perspectives are completely different.',
+      },
+      {
+        heading: 'Price Comparison',
+        content: 'Hop-on hop-off bus tickets typically cost £35 to £40 for a 24-hour pass, with 48-hour options around £45 to £50. Thames sightseeing cruises range from £15 to £25 for a single journey or £20 to £30 for a hop-on hop-off river pass. The Thames dinner cruise is a premium experience at £70 to £90, including a three-course meal and live entertainment. On pure price, the river cruise offers better value for a single journey, but the bus pass gives you transport flexibility across a full day or two.',
+      },
+      {
+        heading: 'Duration and Convenience',
+        content: 'A full loop on the hop-on hop-off bus takes about 2 to 2.5 hours without getting off. The bus runs every 10 to 20 minutes and has stops near all major attractions, making it a practical way to get around as well as a sightseeing experience. A Thames cruise from Westminster to Greenwich takes about 1 hour each way, or 30 minutes to Tower Bridge. The dinner cruise lasts approximately 3 hours. Buses run from about 8:30am to 5:30pm; cruises run from 10am to around 6pm, with dinner cruises departing at 7:30pm or 8pm.',
+      },
+      {
+        heading: 'Best for Different Travellers',
+        content: 'For first-time visitors who want an overview of the city, the bus tour is hard to beat because it covers more ground and lets you hop off to explore. For couples or anyone wanting a more relaxed, romantic experience, the Thames dinner cruise is a clear winner. Families with young children tend to prefer the boat because kids love being on the water. Seniors and those with mobility issues should consider both: the bus has wheelchair space on the lower deck, and river cruises are fully accessible. Photography enthusiasts get better shots from the river, where the skyline spreads out without obstructions.',
+      },
+      {
+        heading: 'Verdict and Recommendation',
+        content: 'If you can only do one, choose the bus tour for a first visit to London and the boat tour for a return visit or a special occasion. The bus covers more of the city and doubles as transport between attractions. The boat offers a more memorable, atmospheric experience but covers less ground. The ideal solution is to do both: take the bus on your first morning to get oriented, then enjoy a Thames cruise later in the trip (ideally at sunset or in the evening). Many combination tickets bundle both at a discount.',
+      },
+    ],
+    relatedTourSlugs: ['hop-on-hop-off-bus', 'thames-sightseeing-cruise', 'thames-dinner-cruise', 'london-eye-tickets'],
+    faqs: [
+      { question: 'Can you do both the bus and boat tour in one day?', answer: 'Yes. A morning bus tour followed by an afternoon or evening cruise works well. Some operators sell combination tickets that include both at a discount. Allow about 3 hours for the bus and 1 to 3 hours for the cruise depending on the route.' },
+      { question: 'Which is better in bad weather?', answer: 'The river cruise is better in rain because the lower deck is fully enclosed and heated. The bus tour loses much of its appeal when it rains, as the open top deck is the main draw. Some bus companies provide ponchos, but it is not the same experience.' },
+      { question: 'Are bus and boat tours worth it or should I just use the Tube?', answer: 'They serve a different purpose to the Tube. The Tube gets you places quickly but you see nothing. Bus and boat tours are about sightseeing with commentary, and the bus tour doubles as hop-on hop-off transport. For first-time visitors, at least one is highly recommended.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
+  {
+    slug: 'best-hop-on-hop-off-london',
+    title: 'Best Hop-On Hop-Off Bus Tours in London: 2026 Comparison',
+    metaTitle: 'Best Hop-On Hop-Off Bus Tours London 2026 | Big Bus vs Original vs Golden',
+    metaDescription: 'Comparing London\'s three main hop-on hop-off bus operators: Big Bus Tours, The Original Tour, and Golden Tours. Covers routes, prices, features, and which is best for your trip.',
+    excerpt: 'Three companies run hop-on hop-off buses in London. Here is how they compare and which one to choose.',
+    sections: [
+      {
+        heading: 'How Hop-On Hop-Off Works',
+        content: 'Hop-on hop-off bus tours use open-top double-decker buses that follow set routes through central London, stopping at or near all major landmarks. You buy a pass (usually 24 or 48 hours) and can get on and off at any stop as many times as you like during that period. Each bus has live or recorded commentary explaining what you are seeing. The buses run on a loop, so you can ride the whole circuit for an overview or use them as transport between attractions. Most routes start between 8:30am and 9am and the last buses depart around 5pm to 5:30pm.',
+      },
+      {
+        heading: 'Big Bus Tours vs The Original Tour vs Golden Tours',
+        content: 'Big Bus Tours is the largest operator with the most frequent service and the widest route coverage. They offer live English-speaking guides on every bus, which gives a more engaging experience than recorded commentary. The Original Tour has been running since 1951 and offers recorded commentary in 11 languages, making it the best choice for non-English speakers. Golden Tours is the budget option, with lower prices and partnerships with major attractions for combination deals. All three cover the same core landmarks, but their routes, frequency, and extras differ.',
+      },
+      {
+        heading: 'Route Comparison',
+        content: 'Big Bus runs three colour-coded routes (Red, Blue, and Green) covering Westminster, the City, and Kensington. Their red route passes the most landmarks and is the one most visitors choose. The Original Tour has five routes including a dedicated kids\' route with a Horrible Histories-themed commentary. Golden Tours runs two main routes with a focus on the central sightseeing core. All three companies include a free Thames river cruise with their tickets, though the boat operators and departure points vary. Big Bus and The Original Tour both stop near the Tower of London, Buckingham Palace, and the London Eye.',
+      },
+      {
+        heading: 'Price Comparison',
+        content: 'Golden Tours is consistently the cheapest, with 24-hour tickets from around £30 and 48-hour tickets from £36. The Original Tour charges around £37 for 24 hours and £45 for 48 hours. Big Bus is the most expensive at approximately £40 for 24 hours and £50 for 48 hours, but includes live guides on every bus. All three offer online discounts of 10 to 15% when booked in advance. Family tickets (2 adults, 2 children) are available from all operators. Children under 5 travel free on all services. The included Thames cruise is worth £12 to £15 on its own, so factor that into the value comparison.',
+      },
+      {
+        heading: 'Which to Choose for Families',
+        content: 'For families with children under 10, The Original Tour edges ahead thanks to its dedicated kids\' commentary route, which uses Horrible Histories characters to make sightseeing fun. Big Bus is the best choice for families who want a live guide, as children can ask questions and the energy of a real person keeps younger passengers engaged. Golden Tours works well for budget-conscious families who want to save money for other attractions. All three allow pushchairs to be folded and stored on the lower deck. Sitting on the top deck at the front is the most exciting spot for children.',
+      },
+      {
+        heading: 'Tips for Getting the Most from Your Ticket',
+        content: 'Start early in the morning to make the most of your time window. Ride the full loop first without getting off, then use the rest of your pass to hop on and off at the stops that interest you most. Sit on the top deck for the best views and photo opportunities, but be prepared for wind and occasional rain (bring a light jacket even in summer). The front seats on the top deck fill up first, so boarding at quieter stops gives you the best chance of getting them. Combine your bus ticket with the included Thames cruise for variety. Avoid the buses during school holidays and weekends between 11am and 2pm, when they are busiest.',
+      },
+    ],
+    relatedTourSlugs: ['hop-on-hop-off-bus', 'london-eye-tickets', 'tower-of-london-tickets', 'buckingham-palace-tickets'],
+    faqs: [
+      { question: 'Which hop-on hop-off bus is best in London?', answer: 'Big Bus Tours is the best overall for English speakers thanks to live guides on every bus. The Original Tour is best for non-English speakers with commentary in 11 languages. Golden Tours is the best budget option with the lowest prices.' },
+      { question: 'Is 24 hours or 48 hours better for the hop-on hop-off bus?', answer: 'For most visitors, 24 hours is enough. You can ride the full loop and hop off at 3 to 4 stops in a day. The 48-hour pass is worth it if you want to ride multiple routes or use the bus as transport across two days of sightseeing.' },
+      { question: 'Do hop-on hop-off buses run in the rain?', answer: 'Yes, they run in all weather. The lower deck is fully enclosed, so you stay dry. The top deck is open, and some operators provide ponchos in wet weather. Rain is part of the London experience, and the views from the top deck are still worth it with a waterproof jacket.' },
+    ],
+    publishedDate: '2026-03-30',
+    updatedDate: '2026-03-30',
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

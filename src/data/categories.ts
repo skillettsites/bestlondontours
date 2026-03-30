@@ -39,7 +39,7 @@ export const categories: Category[] = [
     description: 'Some of England\'s greatest treasures lie just outside London. Day trips offer a chance to explore the English countryside, visit ancient monuments, and discover charming towns, all without the hassle of planning your own transport. Expert guides bring each destination to life with fascinating stories and local knowledge.',
     excerpt: 'Explore Windsor Castle, Stonehenge, Bath, and more on guided day trips from London.',
     icon: '🚌',
-    tourSlugs: ['windsor-stonehenge-bath-tour', 'harry-potter-studio-tour', 'leeds-castle-canterbury-dover-tour', 'oxford-cambridge-day-tour', 'stonehenge-bath-day-tour', 'hampton-court-palace-tickets'],
+    tourSlugs: ['windsor-stonehenge-bath-tour', 'harry-potter-studio-tour', 'leeds-castle-canterbury-dover-tour', 'oxford-cambridge-day-tour', 'stonehenge-bath-day-tour', 'hampton-court-palace-tickets', 'london-cotswolds-day-trip'],
     faqs: [
       { question: 'What are the best day trips from London?', answer: 'Windsor Castle, Stonehenge, and Bath can all be combined in one day. The Harry Potter Studio Tour is another popular choice. Oxford, Cambridge, and the Cotswolds are also excellent options.' },
       { question: 'How long are day trips from London?', answer: 'Most day trips are 10 to 12 hours, departing around 8am and returning by 7-8pm. The Harry Potter Studio Tour is approximately 7 hours.' },
@@ -54,7 +54,7 @@ export const categories: Category[] = [
     description: 'London is one of the world\'s great food cities, and the best way to discover it is with a local guide. Food tours take you beyond the tourist traps to the markets, delis, and street food stalls that Londoners love. Meet the producers, taste incredible food, and learn about the cultures that have shaped London\'s diverse food scene.',
     excerpt: 'Taste London\'s best food with expert local guides at markets and hidden gems.',
     icon: '🍽️',
-    tourSlugs: ['borough-market-food-tour'],
+    tourSlugs: ['borough-market-food-tour', 'london-afternoon-tea-experience', 'london-gin-distillery-tour'],
     faqs: [
       { question: 'What food tours are available in London?', answer: 'Borough Market food tours are the most popular, with 6+ tastings of artisan produce. There are also tours of Brick Lane, Soho, and the East End focusing on different cuisines.' },
       { question: 'Are London food tours suitable for vegetarians?', answer: 'Yes, most guides can accommodate vegetarian and vegan diets. Let them know your requirements when you book or at the start of the tour.' },
@@ -69,7 +69,7 @@ export const categories: Category[] = [
     description: 'London is packed with world-class attractions that the whole family can enjoy. From the magic of Harry Potter to the thrills of the London Dungeon, there is something to excite every age group. These family-friendly experiences combine entertainment with education, creating memories that last a lifetime.',
     excerpt: 'World-class attractions the whole family will love, from Harry Potter to the London Eye.',
     icon: '👨‍👩‍👧‍👦',
-    tourSlugs: ['london-eye-tickets', 'harry-potter-studio-tour', 'madame-tussauds-tickets', 'london-dungeon-tickets', 'hop-on-hop-off-bus', 'sea-life-london-tickets', 'london-zoo-tickets', 'natural-history-museum-tour'],
+    tourSlugs: ['london-eye-tickets', 'harry-potter-studio-tour', 'madame-tussauds-tickets', 'london-dungeon-tickets', 'hop-on-hop-off-bus', 'sea-life-london-tickets', 'london-zoo-tickets', 'natural-history-museum-tour', 'london-thames-kayak-tour', 'london-bike-tour', 'london-royal-parks-tour'],
     faqs: [
       { question: 'What are the best things to do in London with kids?', answer: 'The London Eye, Harry Potter Studio Tour, Natural History Museum (free), Madame Tussauds, and the Science Museum (free) are all excellent. The hop-on hop-off bus is also great for keeping kids entertained while sightseeing.' },
       { question: 'Are there discounts for children at London attractions?', answer: 'Most attractions offer reduced prices for children aged 3 to 15. Under 3s are usually free. Family tickets (2 adults + 2 children) are often available at a discount.' },
@@ -84,7 +84,7 @@ export const categories: Category[] = [
     description: 'Walking tours are the best way to discover London\'s hidden stories. Expert guides take you through atmospheric streets, sharing tales that you would never find in a guidebook. From the dark alleys of Jack the Ripper\'s Whitechapel to the wartime secrets of Westminster, these tours bring London\'s past vividly to life.',
     excerpt: 'Discover London\'s hidden stories on expert-led walking tours through the city\'s most atmospheric streets.',
     icon: '🚶',
-    tourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'churchill-war-rooms-tour'],
+    tourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'churchill-war-rooms-tour', 'london-street-art-tour', 'london-photography-tour', 'london-blitz-ww2-tour', 'london-tudor-history-tour', 'london-music-legends-tour', 'london-literary-tour', 'london-hidden-underground-tour', 'london-royal-parks-tour', 'london-architecture-tour', 'london-true-crime-tour'],
     faqs: [
       { question: 'What is the best walking tour in London?', answer: 'The Jack the Ripper tour is the most popular, with thousands of reviews. The Churchill War Rooms tour offers the best combination of walking tour and museum visit. Ghost tours are perfect for evening entertainment.' },
       { question: 'Are walking tours suitable for all fitness levels?', answer: 'Most walking tours cover 1 to 2 miles on flat ground over 1.5 to 2 hours. The pace is gentle with frequent stops. They are suitable for most fitness levels.' },
@@ -114,11 +114,41 @@ export const categories: Category[] = [
     description: 'London transforms after dark. The city\'s landmarks light up, the atmosphere shifts, and a different side of London emerges. Evening experiences let you see the city at its most magical, whether you are dining on the Thames, exploring haunted streets, or following in the footsteps of Jack the Ripper through the East End.',
     excerpt: 'See London after dark with dinner cruises, ghost tours, and atmospheric evening walks.',
     icon: '🌙',
-    tourSlugs: ['thames-dinner-cruise', 'jack-the-ripper-tour', 'london-ghost-tour'],
+    tourSlugs: ['thames-dinner-cruise', 'jack-the-ripper-tour', 'london-ghost-tour', 'london-music-legends-tour', 'london-gin-distillery-tour', 'london-true-crime-tour'],
     faqs: [
       { question: 'What is the best evening activity in London?', answer: 'A Thames dinner cruise is the most special evening experience, perfect for couples and celebrations. For something more adventurous, the Jack the Ripper tour and ghost tours offer atmospheric evening walks.' },
       { question: 'Are evening tours safe?', answer: 'Yes, all evening tours operate in well-lit, well-populated areas with experienced guides. London is generally very safe for tourists at night, especially in central areas.' },
       { question: 'What time do evening experiences start?', answer: 'Most evening tours and cruises begin between 7pm and 8pm, finishing by 10pm to 11pm. This leaves time for dinner before or drinks after.' },
+    ],
+  },
+  {
+    slug: 'history-tours',
+    title: 'History & Heritage Tours',
+    metaTitle: 'Best London History Tours 2026 | WW2, Tudor & More',
+    metaDescription: 'Book London history tours covering WW2, Tudor, medieval, and more. Expert guides bring London\'s past to life on atmospheric walking tours.',
+    description: 'London has more layers of history than almost any city on earth. From the remains of Roman Londinium to the Blitz-scarred streets of the East End, every corner tells a story. These expert-led history tours take you through the centuries, covering Tudor intrigue at Hampton Court, wartime secrets in Churchill\'s bunker, medieval plots at the Tower, and much more. Whether you are a casual visitor or a serious history enthusiast, a guided tour is the best way to connect with London\'s extraordinary past.',
+    excerpt: 'Walk through 2,000 years of history with expert guides covering WW2, Tudor, medieval, and more.',
+    icon: '📜',
+    tourSlugs: ['churchill-war-rooms-tour', 'london-blitz-ww2-tour', 'london-tudor-history-tour', 'tower-of-london-tickets', 'westminster-abbey-tickets', 'hampton-court-palace-tickets'],
+    faqs: [
+      { question: 'What periods of history do London tours cover?', answer: 'London history tours cover everything from Roman and medieval times through the Tudor era, the Great Fire, the Victorian period, and both World Wars. Specialist tours focus on specific eras for a deeper experience.' },
+      { question: 'Are history tours suitable for children?', answer: 'Yes, most history tours welcome children and guides are skilled at making stories engaging for younger visitors. The Tower of London and WW2 tours are particularly popular with families.' },
+      { question: 'Do I need any prior knowledge of London history?', answer: 'No prior knowledge is needed. Guides pitch their commentary for general audiences and are happy to answer questions. You will come away knowing far more than when you started.' },
+    ],
+  },
+  {
+    slug: 'outdoor-adventures',
+    title: 'Outdoor Adventures',
+    metaTitle: 'London Outdoor Activities 2026 | Kayaking, Cycling & Parks',
+    metaDescription: 'Book outdoor adventures in London. Thames kayaking, bike tours, royal parks walks, and more. Active experiences for all fitness levels.',
+    description: 'London might be famous for its museums and monuments, but the city also offers a surprising range of outdoor adventures. Kayak along the Thames with the skyline towering above you, cycle through historic neighbourhoods at your own pace, or explore the vast Royal Parks on foot with a knowledgeable guide. These active experiences give you a completely different perspective on London, combining fresh air and exercise with world-class sightseeing. Options are available for all fitness levels, from gentle park strolls to full-on paddling sessions.',
+    excerpt: 'Get active in London with kayaking, cycling, park walks, and more outdoor experiences.',
+    icon: '🚴',
+    tourSlugs: ['london-thames-kayak-tour', 'london-bike-tour', 'london-royal-parks-tour', 'london-photography-tour'],
+    faqs: [
+      { question: 'Do I need to be fit for outdoor activities in London?', answer: 'Most outdoor experiences cater to all fitness levels. Bike tours are at a relaxed pace with frequent stops, park walks are on flat ground, and kayak tours include full instruction for beginners.' },
+      { question: 'What happens if it rains on my outdoor tour?', answer: 'Tours run in light rain, and guides will provide tips on staying comfortable. In severe weather, operators may offer to reschedule. Waterproof clothing and sturdy shoes are always recommended.' },
+      { question: 'Are outdoor tours suitable for children?', answer: 'Yes, bike tours and park walks are great for families. Kayak tours typically have a minimum age of around 12. Check the specific tour listing for age requirements and family-friendly options.' },
     ],
   },
 ];
