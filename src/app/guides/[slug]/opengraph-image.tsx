@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { getGuideBySlug, guides } from '@/data/guides';
 
 export const runtime = 'nodejs';
@@ -15,6 +17,8 @@ type Params = Promise<{ slug: string }>;
 export default async function OGImage({ params }: { params: Params }) {
   const { slug } = await params;
   const guide = getGuideBySlug(slug);
+  const fontPath = join(process.cwd(), 'node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf');
+  const fontData = await readFile(fontPath);
 
   return new ImageResponse(
     (
@@ -26,7 +30,7 @@ export default async function OGImage({ params }: { params: Params }) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           background: 'linear-gradient(135deg, #1e3a5f 0%, #264b7a 50%, #2e5d95 100%)',
-          fontFamily: 'system-ui, sans-serif',
+          fontFamily: 'Geist',
           padding: 60,
         }}
       >
@@ -43,6 +47,9 @@ export default async function OGImage({ params }: { params: Params }) {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [{ name: 'Geist', data: fontData, style: 'normal', weight: 400 }],
+    }
   );
 }

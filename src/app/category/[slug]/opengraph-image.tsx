@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { getCategoryBySlug, categories } from '@/data/categories';
 
 export const runtime = 'nodejs';
@@ -15,6 +17,8 @@ type Params = Promise<{ slug: string }>;
 export default async function OGImage({ params }: { params: Params }) {
   const { slug } = await params;
   const category = getCategoryBySlug(slug);
+  const fontPath = join(process.cwd(), 'node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf');
+  const fontData = await readFile(fontPath);
 
   return new ImageResponse(
     (
@@ -27,10 +31,10 @@ export default async function OGImage({ params }: { params: Params }) {
           alignItems: 'center',
           justifyContent: 'center',
           background: 'linear-gradient(135deg, #1e3a5f 0%, #264b7a 50%, #2e5d95 100%)',
-          fontFamily: 'system-ui, sans-serif',
+          fontFamily: 'Geist',
         }}
       >
-        <div style={{ fontSize: 72, marginBottom: 20, display: 'flex' }}>{category?.icon || '🇬🇧'}</div>
+        <div style={{ fontSize: 18, color: '#93c5fd', marginBottom: 16, display: 'flex' }}>bestlondontours.co.uk</div>
         <div style={{ fontSize: 48, fontWeight: 800, color: 'white', textAlign: 'center', display: 'flex' }}>
           {category?.title || 'London Tours'}
         </div>
@@ -39,6 +43,9 @@ export default async function OGImage({ params }: { params: Params }) {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [{ name: 'Geist', data: fontData, style: 'normal', weight: 400 }],
+    }
   );
 }

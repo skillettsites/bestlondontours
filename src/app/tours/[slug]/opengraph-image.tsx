@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 import { getTourBySlug, tours } from '@/data/tours';
 
 export const runtime = 'nodejs';
@@ -15,10 +17,14 @@ type Params = Promise<{ slug: string }>;
 export default async function OGImage({ params }: { params: Params }) {
   const { slug } = await params;
   const tour = getTourBySlug(slug);
+  const fontPath = join(process.cwd(), 'node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf');
+  const fontData = await readFile(fontPath);
+  const fontConfig = [{ name: 'Geist', data: fontData, style: 'normal' as const, weight: 400 as const }];
+
   if (!tour) {
     return new ImageResponse(
-      (<div style={{ width: '100%', height: '100%', background: '#1e3a5f', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: 48, fontFamily: 'system-ui' }}>Best London Tours</div>),
-      { ...size }
+      (<div style={{ width: '100%', height: '100%', background: '#1e3a5f', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: 48, fontFamily: 'Geist' }}>Best London Tours</div>),
+      { ...size, fonts: fontConfig }
     );
   }
 
@@ -32,7 +38,7 @@ export default async function OGImage({ params }: { params: Params }) {
           flexDirection: 'column',
           justifyContent: 'space-between',
           background: 'linear-gradient(135deg, #1e3a5f 0%, #264b7a 50%, #2e5d95 100%)',
-          fontFamily: 'system-ui, sans-serif',
+          fontFamily: 'Geist',
           padding: 60,
         }}
       >
@@ -78,6 +84,9 @@ export default async function OGImage({ params }: { params: Params }) {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: fontConfig,
+    }
   );
 }

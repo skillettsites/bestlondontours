@@ -1,11 +1,16 @@
 import { ImageResponse } from 'next/og';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
 
 export const runtime = 'nodejs';
 export const alt = 'Best London Tours - Discover the best tours and attractions in London';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function OGImage() {
+export default async function OGImage() {
+  const fontPath = join(process.cwd(), 'node_modules/next/dist/compiled/@vercel/og/Geist-Regular.ttf');
+  const fontData = await readFile(fontPath);
+
   return new ImageResponse(
     (
       <div
@@ -17,10 +22,10 @@ export default function OGImage() {
           alignItems: 'center',
           justifyContent: 'center',
           background: 'linear-gradient(135deg, #1e3a5f 0%, #264b7a 50%, #2e5d95 100%)',
-          fontFamily: 'system-ui, sans-serif',
+          fontFamily: 'Geist',
         }}
       >
-        <div style={{ fontSize: 72, marginBottom: 20, display: 'flex' }}>🇬🇧</div>
+        <div style={{ fontSize: 52, marginBottom: 20, display: 'flex', color: '#93c5fd', fontWeight: 700 }}>LONDON</div>
         <div
           style={{
             fontSize: 52,
@@ -63,6 +68,9 @@ export default function OGImage() {
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [{ name: 'Geist', data: fontData, style: 'normal', weight: 400 }],
+    }
   );
 }
