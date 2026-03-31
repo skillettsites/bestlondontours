@@ -24,7 +24,7 @@ export default function InlineTourCTA({ tours }: { tours: Tour[] }) {
           </svg>
         </span>
         <h3 className="text-base font-bold text-gray-900">
-          {tours.length === 1 ? 'Recommended Tour' : 'Recommended Tours'}
+          {tours.length === 1 ? 'Ready to Book? Top Pick for This Experience' : 'Ready to Book? Top Picks for This Experience'}
         </h3>
       </div>
       <div className="space-y-4">
@@ -55,11 +55,12 @@ export default function InlineTourCTA({ tours }: { tours: Tour[] }) {
                 section="guide-inline-cta"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-green-600 px-4 py-2 text-sm font-bold text-white shadow-sm hover:bg-green-500 active:bg-green-700 transition-colors whitespace-nowrap"
               >
-                Book Now
+                Reserve Your Spot
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
               </TrackedGYGLink>
+              <span className="text-[10px] text-green-700 font-medium text-center whitespace-nowrap">Free cancellation</span>
             </div>
           </div>
         ))}

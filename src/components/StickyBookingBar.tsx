@@ -31,14 +31,17 @@ export function StickyBookingBar({ tourName, affiliateUrl, price }: { tourName: 
             </div>
           </div>
         </div>
-        <a
-          href={affiliateUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg text-sm transition-colors whitespace-nowrap"
-        >
-          Book Now
-        </a>
+        <div className="flex flex-col items-center gap-1">
+          <a
+            href={affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg text-sm transition-colors whitespace-nowrap"
+          >
+            Reserve Your Spot
+          </a>
+          <span className="text-[10px] text-green-700 font-medium">Free cancellation available</span>
+        </div>
       </div>
     </div>
   );
