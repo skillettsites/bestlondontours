@@ -319,7 +319,7 @@ export default function BestToursFirstTimeVisitors2026() {
               section={`guide-2026-${tour.slug}`}
               className="inline-block rounded-lg bg-green-700 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-800 transition-colors duration-200"
             >
-              Book This Tour
+              Reserve Your Spot, Free Cancellation
             </TrackedGYGLink>
           </section>
         ))}

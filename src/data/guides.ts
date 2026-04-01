@@ -893,6 +893,58 @@ export const guides: Guide[] = [
     publishedDate: '2026-03-31',
     updatedDate: '2026-03-31',
   },
+  {
+    slug: 'best-evening-tours-london-2026',
+    title: 'Best Evening Tours in London 2026: After-Dark Experiences Worth Booking',
+    metaTitle: 'Best Evening Tours in London 2026 | Night Tours, Cruises & Walks',
+    metaDescription: 'Discover the best evening tours in London for 2026. Covers ghost walks, Jack the Ripper tours, Thames dinner cruises, West End shows, sunset experiences, and rooftop bars with prices and booking links.',
+    excerpt: 'The best evening tours and after-dark experiences in London for 2026, from ghost walks and Thames dinner cruises to sunset views and historic pub crawls.',
+    sections: [
+      {
+        heading: 'Why Evening Tours Are Worth Booking',
+        content: 'London transforms after dark. The landmarks glow against the skyline, the crowds thin out, and the city takes on a completely different atmosphere. Evening tours let you experience a side of London that daytime visitors never see. Whether you want a spine-tingling ghost walk through medieval alleyways, a candlelit dinner cruise on the Thames, or a sunset view from one of the tallest buildings in Europe, there is an after-dark experience to match every interest and budget. Evening tours also make excellent use of your time. By exploring during the evening, you free up daylight hours for museums, parks, and attractions that are best visited during the day. Many evening tours include food, drinks, or entertainment, combining multiple experiences into a single booking.',
+      },
+      {
+        heading: 'Jack the Ripper Walking Tour',
+        content: 'The Jack the Ripper walking tour is the most popular evening experience in London, with a 4.6 rating from nearly 9,000 reviews. Expert Ripperologist guides lead you through the atmospheric streets of Whitechapel, retracing the steps of the infamous 1888 murders. The tour combines forensic analysis, historical evidence, and vivid storytelling to bring this cold case to life. Tours depart nightly after dark, typically starting around 7pm from Aldgate East station. The walk covers roughly 1 mile through narrow lanes and gaslit courtyards that feel genuinely eerie after sunset. At just £12 to £20 per person, this is one of the best-value evening activities in London. Groups are usually 15 to 25 people, and the tour lasts about 2 hours. Finish the night with a pint at one of the traditional Whitechapel pubs nearby.',
+      },
+      {
+        heading: 'London Ghost Tour',
+        content: 'If you prefer supernatural chills to true crime, the London Ghost Tour delivers 2 hours of haunted history through the oldest parts of the city. Rated 4.6 with over 4,500 reviews, this walk takes you past plague pits, execution sites, and haunted pubs while a theatrical guide shares stories that span 2,000 years of London\'s darkest moments. The route covers parts of the City of London and Southwark where the history is especially grim. You will learn about the ghosts that reportedly haunt the Tower of London, the spectral figures seen near old churchyards, and the cursed sites where terrible events left their mark. Tickets cost £15 to £20 per person. Ghost tours are popular with couples looking for something memorable and groups of friends who enjoy a good scare. The tour leaves plenty of time for dinner afterwards, and your guide will happily recommend nearby restaurants.',
+      },
+      {
+        heading: 'Thames Dinner Cruise',
+        content: 'A Thames dinner cruise is one of the most romantic evening experiences London has to offer. As you glide past the Houses of Parliament, Tower Bridge, the London Eye, and the Shard, you will enjoy a freshly prepared multi-course meal with panoramic views through floor-to-ceiling windows. Most cruises include live music or a DJ, creating the feel of a floating restaurant. Prices range from £60 to £120 per person depending on the menu and drinks package. Standard cruises last 2.5 to 3 hours, departing from Westminster or Embankment Pier between 7pm and 8pm. Premium options include Champagne receptions, window seats, and five-course tasting menus. For a more budget-friendly option, consider a sunset cruise with drinks and canapes, which typically runs 1.5 hours for around £35 to £50 per person. Thames dinner cruises are especially popular for anniversaries, birthdays, and proposals. Book at least 2 weeks in advance for weekend dates, as the best cruises sell out quickly.',
+      },
+      {
+        heading: 'Sunset Views from The Shard',
+        content: 'The View from The Shard at sunset is one of London\'s most breathtaking experiences. Standing 244 metres above the city on the open-air viewing platform (the highest in Western Europe), you watch the sun dip below the horizon as London\'s lights flicker on across the skyline. On a clear evening, you can see up to 40 miles in every direction. Sunset tickets cost £30 to £50 per person and should be booked well in advance, as specific time slots sell out during peak season. The viewing platform is on floors 68 to 72, and the experience lasts about 90 minutes. There is a bar on the upper level where you can buy Champagne, cocktails, and wine to enjoy while taking in the view. The Shard is located at London Bridge, making it easy to combine with a Borough Market dinner before or a Southwark walk afterwards. For the best sunset photos, visit between May and September when the sun sets in the west, directly over the city skyline.',
+      },
+      {
+        heading: 'West End Theatre Experience',
+        content: 'No evening in London is complete without considering a West End show. The Theatre District around Shaftesbury Avenue, Covent Garden, and the Strand is home to over 40 theatres staging everything from long-running musicals like Les Miserables, The Phantom of the Opera, and Wicked to new plays, comedies, and immersive theatre experiences. Evening performances typically start at 7:30pm and run 2 to 3 hours. Ticket prices range from £20 for restricted-view seats in the upper circle to £150 or more for premium stalls. The TKTS booth in Leicester Square sells same-day discounted tickets for selected shows, often at 30 to 50 percent off. For a guided experience, theatre tours take you backstage at iconic venues to see the sets, costumes, and technical equipment before the audience arrives. Combine your show with pre-theatre dining at one of the many restaurants around Covent Garden and Soho that offer fixed-price menus from £20 to £35 per person.',
+      },
+      {
+        heading: 'Historic Pub Crawl Tours',
+        content: 'A guided pub crawl through London\'s historic drinking establishments is one of the most entertaining evening tours available. Over 3 hours, expert guides lead you through 4 to 5 pubs that have been pouring pints for centuries, sharing stories of the writers, politicians, criminals, and royals who drank there before you. Prices range from £25 to £50 per person, with some drinks included. In the City of London, Ye Olde Cheshire Cheese on Fleet Street has served customers since 1667 and was a favourite of Charles Dickens. The Lamb and Flag in Covent Garden dates to 1623 and was once known as the "Bucket of Blood" for its bare-knuckle boxing matches. The George Inn in Southwark is London\'s last surviving galleried coaching inn. Pub tours typically start around 6pm or 7pm and work best on weekday evenings when the pubs are lively but not packed. Most tours focus on a theme: literary pubs, haunted pubs, or the drinking holes of a particular neighbourhood. Eat before you go, as most pub tours do not include food.',
+      },
+      {
+        heading: 'Practical Tips for Evening Tours',
+        content: 'Evening tours in London run year-round, but the experience varies by season. In summer (June to August), sunset falls around 9pm, so "evening" tours start later and you will walk in twilight rather than darkness. In winter (November to February), it gets dark by 4:30pm, which means ghost tours and Jack the Ripper walks feel more atmospheric but also colder. Dress in warm layers from October onwards, as most walking tours spend 2 hours outdoors. Comfortable shoes are essential for walking tours covering 1 to 3 miles. Most evening tours are suitable for ages 12 and up, though the Jack the Ripper and ghost tours include dark themes that may not suit younger children. Thames dinner cruises and The Shard sunset experience are suitable for all ages. Book evening tours at least a few days in advance, especially during summer and the Christmas season. Meeting points are usually near major Tube stations, so check the last train time for your return journey. The Tube runs until approximately midnight on most lines, or all night on Fridays and Saturdays on selected routes.',
+      },
+    ],
+    relatedTourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'thames-dinner-cruise', 'the-shard-tickets', 'london-gin-distillery-tour'],
+    faqs: [
+      { question: 'What is the best evening tour in London?', answer: 'The Jack the Ripper walking tour is the most popular and highest-rated evening experience, with a 4.6 rating from nearly 9,000 reviews. It offers outstanding value at just £12 to £20 per person for a 2-hour guided walk through Whitechapel.' },
+      { question: 'Are evening tours in London safe?', answer: 'Yes, London is generally safe in the evening, and guided tours stick to well-lit, well-populated areas. Walking tour guides are experienced and keep groups together. Thames cruises and The Shard are indoor or semi-indoor experiences with full security.' },
+      { question: 'How much do evening tours in London cost?', answer: 'Evening walking tours like the Jack the Ripper and ghost tours cost £12 to £20 per person. Thames dinner cruises range from £60 to £120. Sunset views from The Shard cost £30 to £50. Historic pub crawls cost £25 to £50 with some drinks included.' },
+      { question: 'Do I need to book evening tours in advance?', answer: 'Yes, booking in advance is strongly recommended. The Jack the Ripper tour, Thames dinner cruises, and The Shard sunset tickets all sell out during peak season. Book at least a few days ahead, or 2 weeks ahead for weekend dinner cruises.' },
+      { question: 'Are evening tours suitable for children?', answer: 'Thames dinner cruises and The Shard sunset experience are suitable for all ages. Ghost tours and the Jack the Ripper walk are best for ages 12 and up due to dark themes. Historic pub crawls are for adults over 18.' },
+      { question: 'What should I wear on an evening walking tour in London?', answer: 'Wear comfortable walking shoes and dress in layers. From October to March, bring a warm coat, hat, and gloves. A compact umbrella is always useful in London. Smart casual is fine for dinner cruises and The Shard.' },
+    ],
+    publishedDate: '2026-04-01',
+    updatedDate: '2026-04-01',
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
