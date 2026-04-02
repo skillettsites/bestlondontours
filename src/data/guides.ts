@@ -945,6 +945,66 @@ export const guides: Guide[] = [
     publishedDate: '2026-04-01',
     updatedDate: '2026-04-01',
   },
+  {
+    slug: 'best-london-tours-summer-2026',
+    title: 'Best London Tours for Summer 2026: Our Top Picks',
+    metaTitle: 'Best London Tours for Summer 2026 | Top 12 Picks for Sun, Sights & Fun',
+    metaDescription: 'Discover the 12 best London tours for summer 2026. Covers outdoor adventures, river cruises, walking tours, food experiences, and evening activities with prices and booking tips.',
+    excerpt: 'Our hand-picked selection of the best London tours to book this summer, from Thames cruises and park walks to food tours and evening experiences.',
+    sections: [
+      {
+        heading: 'Why Summer Is the Best Time for London Tours',
+        content: 'Summer in London means long daylight hours, warm weather, and a city buzzing with energy. From June through August, the sun rises before 5am and sets after 9pm, giving you nearly 16 hours of daylight to explore. Parks are in full bloom, outdoor markets are thriving, and the Thames sparkles under blue skies. Summer is also festival season, with events like Wimbledon, the Proms, and Notting Hill Carnival drawing visitors from around the world. The key to a great summer visit is booking early, starting your days before the midday crowds, and choosing tours that take advantage of the warm weather and long evenings.',
+      },
+      {
+        heading: 'Best Outdoor Tours for Summer',
+        content: 'Summer is the perfect time to explore London on foot, by bike, or on the water. The London Bike Tour takes you through Hyde Park, Kensington Gardens, and along the South Bank on a 3.5-hour guided ride that covers more ground than any walking tour. With a 4.8 rating and prices from just £30, it is one of the best-value ways to see the city. The London Royal Parks Tour offers a relaxing guided walk through St James\'s Park, Green Park, and Hyde Park, with commentary on royal history and wildlife. Both tours run throughout the summer months and benefit hugely from warm weather. For something more adventurous, the Thames Kayak Tour lets you paddle past the Houses of Parliament, the London Eye, and Tower Bridge from a completely unique perspective on the water.',
+      },
+      {
+        heading: 'Best River Cruises for Summer',
+        content: 'A Thames cruise is a summer essential. The breeze off the water keeps you cool while you take in panoramic views of London\'s skyline. The Thames Sightseeing Cruise from Westminster to Greenwich is the classic choice, with live commentary, open-air decks, and tickets from just £17 per person. For a more indulgent experience, the Thames Dinner Cruise offers a three-course meal with live music as you glide past illuminated landmarks on a warm summer evening. Dinner cruises run from around 7:30pm to 10:30pm, taking full advantage of the long twilight. Prices start from £70 per person. Both cruises should be booked at least a week in advance during peak summer months, as they regularly sell out.',
+      },
+      {
+        heading: 'Best Walking Tours for Summer',
+        content: 'Walking tours are at their best in summer, when dry weather and long days make exploring on foot a genuine pleasure. The Borough Market Food Tour combines a 3-hour guided walk with 6 tastings at one of London\'s oldest and most famous food markets. Rated 4.8, it is the top food experience in the city and ideal for a summer morning before the afternoon heat. The Churchill War Rooms Tour takes you through Westminster\'s hidden wartime history above ground before descending into the cool, air-conditioned bunker below, making it a great choice on a hot day. For literary fans, the London Literary Tour visits the haunts of Dickens, Shakespeare, and Woolf across Bloomsbury and the South Bank.',
+      },
+      {
+        heading: 'Best Food and Drink Tours for Summer',
+        content: 'London\'s food scene comes alive in summer, with outdoor markets, rooftop bars, and al fresco dining everywhere you look. The Borough Market Food Tour is the standout guided experience, offering 6 curated tastings over 3 hours for £75 per person. You will sample artisan cheeses, charcuterie, freshly baked bread, and seasonal British produce while learning about the market\'s 1,000-year history. For drinks lovers, the London Gin Distillery Tour takes you behind the scenes at a craft distillery where you will taste London dry gin at its source and learn the botanical secrets behind each recipe. Prices start from £35 per person. The London Afternoon Tea Experience offers a quintessentially British treat in an elegant setting, perfect for a relaxing summer afternoon.',
+      },
+      {
+        heading: 'Best Evening Tours for Summer',
+        content: 'Long summer evenings open up a whole extra dimension of London sightseeing. With sunset not until after 9pm in June and July, you can fit in an evening tour and still enjoy the golden hour light. The Jack the Ripper Tour through Whitechapel starts around 7pm and is one of London\'s most popular experiences, with a 4.6 rating from nearly 9,000 reviews. Tickets start at just £15. The London Ghost Tour offers 2 hours of spine-tingling history through the oldest parts of the city, finishing around 9:30pm in time for a late dinner. For something more romantic, the Thames Dinner Cruise catches the sunset over the water and returns around 10:30pm. The Shard also offers spectacular sunset views from the 72nd floor on clear summer evenings.',
+      },
+      {
+        heading: 'Best Family Tours for Summer',
+        content: 'Summer holidays mean families need activities to keep everyone entertained. The Hop-On Hop-Off Bus Tour is a reliable choice, letting you see all the major landmarks at your own pace with unlimited rides throughout the day. Kids love sitting on the open top deck in the sunshine. The London Zoo is another summer favourite, with outdoor animal encounters and splash zones that keep children cool. Sea Life London near the London Eye is a great indoor backup if the weather turns. For older children, the Harry Potter Studio Tour remains the most magical day out near London, with air-conditioned indoor sets and the outdoor Backlot area where you can try Butterbeer.',
+      },
+      {
+        heading: 'Day Trips from London in Summer',
+        content: 'Summer is the ideal time for a day trip from London, and two tours stand out. The Windsor, Stonehenge, and Bath tour is a full-day coach excursion that covers three of England\'s most famous destinations in one trip. You will see Windsor Castle, stand among the ancient stones at Stonehenge, and explore the Georgian city of Bath with its Roman Baths. The Cotswolds Day Trip takes you through some of the most beautiful countryside in England, with honey-coloured stone villages, rolling hills, and traditional pubs. Both tours depart from central London early in the morning and return by early evening, leaving you time for dinner in the city.',
+      },
+      {
+        heading: 'What to Wear on Summer Tours in London',
+        content: 'London summers are mild compared to southern Europe, with average highs of 20 to 25 degrees Celsius and occasional spikes above 30. Layer a light jacket or cardigan over a t-shirt, because mornings and evenings can feel cool. Always carry a compact waterproof layer; London rain can arrive suddenly even on the sunniest days. Comfortable walking shoes are essential for any tour. Sunscreen and sunglasses are a must for open-top bus tours, river cruises, and walking tours. If you are taking a Thames Kayak Tour, wear clothes you do not mind getting slightly wet and bring a change of shoes.',
+      },
+      {
+        heading: 'When to Book and How to Save Money',
+        content: 'Summer is peak tourist season in London, so booking early is critical. Popular tours like the Harry Potter Studio Tour sell out weeks in advance. River cruises and dinner cruises fill up fast on weekends. Book at least 2 weeks ahead for any tour, and 4 to 6 weeks for the most popular ones. To save money, look for weekday bookings (often slightly cheaper than weekends), book directly through our links for the best available prices, and take advantage of free cancellation policies that let you lock in a spot risk-free. Many tours offer a best price guarantee, so you will not find a lower rate elsewhere. Booking through GetYourGuide also gives you instant confirmation, mobile tickets, and 24/7 customer support.',
+      },
+    ],
+    relatedTourSlugs: ['thames-sightseeing-cruise', 'london-bike-tour', 'borough-market-food-tour', 'jack-the-ripper-tour', 'london-ghost-tour', 'thames-dinner-cruise', 'hop-on-hop-off-bus', 'london-royal-parks-tour', 'london-thames-kayak-tour', 'windsor-stonehenge-bath-tour', 'london-cotswolds-day-trip', 'london-gin-distillery-tour'],
+    faqs: [
+      { question: 'What are the best London tours for summer 2026?', answer: 'The best summer tours include the Thames Sightseeing Cruise, London Bike Tour, Borough Market Food Tour, and the Jack the Ripper evening walking tour. River cruises and outdoor walking tours are especially enjoyable in warm weather with long daylight hours.' },
+      { question: 'Is it worth visiting London in summer?', answer: 'Absolutely. Summer offers the longest days (up to 16 hours of daylight), the warmest weather, and a packed calendar of festivals and events. The main trade-off is larger crowds, which you can manage by booking in advance and starting early in the day.' },
+      { question: 'How far in advance should I book summer tours in London?', answer: 'Book at least 2 weeks in advance for most tours. For high-demand experiences like the Harry Potter Studio Tour, Thames dinner cruises, and weekend river cruises, book 4 to 6 weeks ahead. Free cancellation policies mean there is no risk in booking early.' },
+      { question: 'What should I wear on a London tour in summer?', answer: 'Wear light, breathable layers with a waterproof jacket in your bag. Comfortable walking shoes are essential. Bring sunscreen and sunglasses for outdoor tours. London summer temperatures average 20 to 25 degrees Celsius with occasional hotter days.' },
+      { question: 'Are London tours cheaper in summer?', answer: 'Prices are generally consistent year-round, but demand is higher in summer, so popular tours sell out faster. Booking in advance through our affiliate links ensures you get the best available price with free cancellation and instant confirmation.' },
+      { question: 'What if it rains during my summer tour?', answer: 'London rain showers are usually brief. Almost all tours run rain or shine. Carry a compact umbrella or waterproof jacket. Indoor options like the Churchill War Rooms Tour, Harry Potter Studio Tour, and Sea Life London are great rainy-day alternatives.' },
+    ],
+    publishedDate: '2026-04-02',
+    updatedDate: '2026-04-02',
+  },
 ];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
