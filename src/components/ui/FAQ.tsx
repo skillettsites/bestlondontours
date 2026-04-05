@@ -2,23 +2,14 @@
 
 import { useState } from 'react';
 import { FAQ as FAQType } from '@/lib/types';
-import { faqSchema } from '@/lib/schema';
 
 export default function FAQ({ faqs, title = 'Frequently Asked Questions' }: { faqs: FAQType[]; title?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   if (faqs.length === 0) return null;
 
-  const schema = faqSchema(faqs);
-
   return (
     <section className="mt-12">
-      {schema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      )}
       <h2 className="text-2xl font-bold text-gray-900 mb-6">{title}</h2>
       <div className="space-y-3">
         {faqs.map((faq, i) => (
