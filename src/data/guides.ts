@@ -804,7 +804,7 @@ export const guides: Guide[] = [
     slug: 'best-hop-on-hop-off-london',
     title: 'Best Hop-On Hop-Off Bus Tours in London: 2026 Comparison',
     metaTitle: 'Best Hop-On Hop-Off Bus Tours London 2026 | Big Bus vs Original vs Golden',
-    metaDescription: 'Comparing London\'s three main hop-on hop-off bus operators: Big Bus Tours, The Original Tour, and Golden Tours. Covers routes, prices, features, and which is best for your trip.',
+    metaDescription: 'Big Bus, The Original, or Golden Tours? Compare all three London hop-on hop-off operators: prices from £27 to £50, routes, frequency, and which is best for families or first-timers. Book online for free cancellation.',
     excerpt: 'Three companies run hop-on hop-off buses in London. Here is how they compare and which one to choose.',
     sections: [
       {
