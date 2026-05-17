@@ -83,8 +83,7 @@ export default function Header() {
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-14 sm:h-16 items-center justify-between gap-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-1.5 shrink-0">
-              <span className="text-xl sm:text-2xl">&#127468;&#127463;</span>
+            <Link href="/" className="flex items-center shrink-0">
               <span className="text-base sm:text-lg font-bold text-[#1e3a5f] leading-tight">
                 <span className="hidden sm:inline">Best London Tours</span>
                 <span className="sm:hidden">BLT</span>
@@ -197,8 +196,7 @@ export default function Header() {
         >
           {/* Drawer header */}
           <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100">
-            <Link href="/" className="flex items-center gap-2" onClick={() => setDrawerOpen(false)}>
-              <span className="text-xl">&#127468;&#127463;</span>
+            <Link href="/" className="flex items-center" onClick={() => setDrawerOpen(false)}>
               <span className="text-base font-bold text-[#1e3a5f]">Best London Tours</span>
             </Link>
             <button

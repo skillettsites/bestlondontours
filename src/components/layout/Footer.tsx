@@ -49,8 +49,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {/* Brand */}
             <div className="sm:col-span-2 lg:col-span-1">
-              <Link href="/" className="flex items-center gap-2 mb-3">
-                <span className="text-xl">&#127468;&#127463;</span>
+              <Link href="/" className="flex items-center mb-3">
                 <h3 className="text-white text-lg font-bold">Best London Tours</h3>
               </Link>
               <p className="text-sm leading-relaxed mb-4">
