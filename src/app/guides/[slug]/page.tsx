@@ -105,12 +105,12 @@ export default async function GuidePage({ params }: { params: Params }) {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-green-500 transition-colors whitespace-nowrap"
                   >
-                    Check availability
+                    Book now from &pound;{relatedTours[0].price}
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </a>
-                  <span className="text-xs text-green-700 font-medium">Free cancellation on most tickets</span>
+                  <span className="text-xs text-green-700 font-medium">Free cancellation &bull; Instant confirmation</span>
                 </div>
               </div>
             </div>

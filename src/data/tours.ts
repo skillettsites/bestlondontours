@@ -984,7 +984,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Art lovers', 'Photographers', 'Alternative culture seekers'],
     gygTourId: '43821',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=shoreditch+street+art+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Will I see real Banksy artworks on this tour?', answer: 'Yes, the route includes several confirmed Banksy pieces along with dozens of works by other internationally recognised street artists.' },
       { question: 'Is the street art tour suitable for children?', answer: 'Families are welcome. Children aged 8 and up usually enjoy it, though some pieces touch on political themes that younger children may not fully grasp.' },
@@ -1022,7 +1022,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Couples', 'Special occasions', 'Foodies'],
     gygTourId: '52714',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+traditional+afternoon+tea&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do I need to dress up for afternoon tea?', answer: 'Smart casual is the standard dress code. Trainers and sportswear are usually not permitted, but you do not need a suit or formal dress.' },
       { question: 'Can dietary requirements be accommodated?', answer: 'Yes, vegetarian, vegan, and gluten-free options are available. Mention any allergies or dietary needs when you book.' },
@@ -1060,7 +1060,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Photographers', 'Instagram enthusiasts', 'Creative travellers'],
     gygTourId: '61347',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+photography+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do I need a professional camera?', answer: 'Not at all. The guide tailors advice to whatever you are shooting with, including smartphones. Some of the best photos come from phones these days.' },
       { question: 'What time of day is best for the photography tour?', answer: 'Early morning and late afternoon tours offer the best light. The golden hour sessions are especially popular for dramatic skyline shots.' },
@@ -1098,7 +1098,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['History enthusiasts', 'WW2 buffs', 'Adults and older children'],
     gygTourId: '38912',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+blitz+ww2+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Does the tour visit the Churchill War Rooms?', answer: 'The tour passes the entrance to the Churchill War Rooms and covers their history, but entry is not included. You can visit them separately before or after.' },
       { question: 'Is this tour suitable for children?', answer: 'Children aged 10 and up usually find it gripping. The guide is careful with sensitive content, but some bombing stories may not suit very young children.' },
@@ -1136,7 +1136,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['History buffs', 'Tudor fans', 'Culture seekers'],
     gygTourId: '47283',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=tudor+london+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Does the Tudor tour visit the Tower of London?', answer: 'The tour finishes near the Tower and covers its Tudor history from the outside. Entry to the Tower is not included but you can visit afterwards.' },
       { question: 'Is this tour suitable for children?', answer: 'Children aged 8 and up who enjoy history will find it fascinating. The execution and scandal stories keep younger visitors engaged, though some content is quite dramatic.' },
@@ -1174,7 +1174,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Music fans', 'Beatles enthusiasts', 'Cultural explorers'],
     gygTourId: '55918',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+music+legends+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Which musicians are covered on the tour?', answer: 'The tour covers The Beatles, Rolling Stones, David Bowie, The Clash, Sex Pistols, Amy Winehouse, and many more. The guide adjusts the focus based on the group\'s interests.' },
       { question: 'Do you visit actual music venues?', answer: 'Yes, the route includes several legendary venues, recording studios, and the specific locations where iconic moments in British music happened.' },
@@ -1212,7 +1212,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Book lovers', 'English literature fans', 'Cultural explorers'],
     gygTourId: '49371',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=literary+london+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Which authors are covered on the tour?', answer: 'The core route covers Shakespeare, Dickens, Virginia Woolf, Oscar Wilde, and the Bloomsbury Group. The guide often weaves in Orwell, Keats, and contemporary authors depending on the group.' },
       { question: 'Do you visit any bookshops on the tour?', answer: 'Yes, the route includes at least two independent bookshops. You will have time to browse, and the guide recommends London-set novels worth reading.' },
@@ -1250,7 +1250,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['History lovers', 'Urban explorers', 'Architecture fans'],
     gygTourId: '72451',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=hidden+london+abandoned+tube+station+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Which tube station do you visit?', answer: 'The specific station varies by date and availability. Past tours have included Aldwych, Down Street, and Moorgate. Each has its own unique character and history.' },
       { question: 'Is the tour accessible for those with mobility issues?', answer: 'Unfortunately, the tours involve stairs, uneven surfaces, and narrow passages. There is no step-free access to the disused stations.' },
@@ -1288,7 +1288,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Gin lovers', 'Foodies', 'Couples'],
     gygTourId: '63892',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+gin+distillery+tour+tasting&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do I need to like gin to enjoy this tour?', answer: 'It helps, but even non-gin drinkers find the distillery process and history fascinating. The tasting is optional if spirits are not your thing.' },
       { question: 'Is there a minimum age requirement?', answer: 'Yes, you must be 18 or over to participate in the tasting. Under 18s are not permitted on the distillery tour.' },
@@ -1326,7 +1326,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Adventure seekers', 'Active travellers', 'Unique experience hunters'],
     gygTourId: '81234',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=thames+kayaking+tour+london&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do I need kayaking experience?', answer: 'No experience is needed. The instructors teach you the basics before you set off, and the kayaks are very stable. Complete beginners do this every day.' },
       { question: 'What if I fall in?', answer: 'The kayaks are extremely stable and capsizing is very rare. You will wear a buoyancy aid throughout, and the instructors are trained rescue professionals.' },
@@ -1364,7 +1364,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Active travellers', 'Families', 'First-time visitors'],
     gygTourId: '29145',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+highlights+bike+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do I need to be very fit for the bike tour?', answer: 'Not at all. The route is flat and the pace is gentle with regular stops. If you can ride a bike, you will be fine.' },
       { question: 'Is cycling in London safe?', answer: 'The guide uses quiet backstreets, parks, and dedicated cycle lanes. You will not be cycling in heavy traffic. The guides prioritise safety throughout.' },
@@ -1402,7 +1402,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Nature lovers', 'Families with children', 'Relaxed explorers'],
     gygTourId: '44218',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+royal+parks+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'How much walking is involved?', answer: 'The route covers about 4 kilometres at a gentle pace with plenty of stops. The paths are flat and well-maintained, so it is suitable for most fitness levels.' },
       { question: 'Is the tour suitable for children?', answer: 'Yes, children love the pelicans, squirrels, and the Peter Pan statue. The guide keeps younger visitors engaged with stories and nature spotting challenges.' },
@@ -1440,7 +1440,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Architecture enthusiasts', 'Design lovers', 'Photographers'],
     gygTourId: '57312',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+modern+architecture+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'Do you go inside any of the buildings?', answer: 'The tour visits several public areas within modern buildings, including the Sky Garden at the Walkie Talkie and the Bloomberg Arcade. Access depends on availability.' },
       { question: 'Is this tour just about skyscrapers?', answer: 'No, the guide also covers award-winning smaller buildings, bridges, and public spaces. The variety of architecture is part of what makes the tour so interesting.' },
@@ -1478,7 +1478,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['True crime fans', 'History buffs', 'Evening entertainment seekers'],
     gygTourId: '68423',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=london+true+crime+walking+tour&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'How does this differ from the Jack the Ripper tour?', answer: 'The Jack the Ripper tour focuses specifically on the Whitechapel murders of 1888. This true crime tour covers a much wider range of London crimes from the 1600s to the present day.' },
       { question: 'Is the content very graphic?', answer: 'The guide tells the stories with respect and avoids gratuitous detail. It is more detective mystery than horror, though some cases are naturally dark.' },
@@ -1516,7 +1516,7 @@ export const tours: Tour[] = [
     ],
     bestFor: ['Countryside lovers', 'Photographers', 'Couples'],
     gygTourId: '15847',
-    affiliateUrl: 'https://www.getyourguide.com/s/?q=cotswolds+day+trip+from+london&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t7319/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
     faqs: [
       { question: 'How long is the coach journey to the Cotswolds?', answer: 'The journey from central London takes approximately 2 hours each way, depending on traffic. The coach is comfortable with air conditioning and reclining seats.' },
       { question: 'Is lunch included in the price?', answer: 'Lunch is not included, but you will have free time in a village with excellent pubs and tea rooms. Budget around £10 to £20 for a meal.' },

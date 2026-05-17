@@ -174,8 +174,23 @@ const faqs = [
   },
 ];
 
-function gygUrl(search: string): string {
-  return `https://www.getyourguide.com/s/?q=${encodeURIComponent(search)}&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours`;
+// Repointed to proven converters: t6005 Jack the Ripper (atmospheric/history),
+// t511537 Westminster Walking (general daylight tours). Search URLs leaked attribution.
+const TOUR_TO_ACTIVITY: Record<string, string> = {
+  'free-westminster': 't511537',
+  'harry-potter-walk': 't52391',
+  'jack-the-ripper-walk': 't6005',
+  'ghost-tour': 't6005',
+  'borough-market-food': 't511537',
+  'street-art-east-end': 't511537',
+  'churchill-ww2': 't6005',
+  'westminster-royal': 't511537',
+  'private-walking': 't511537',
+};
+
+function gygUrl(_search: string, slug?: string): string {
+  const id = (slug && TOUR_TO_ACTIVITY[slug]) || 't511537';
+  return `https://www.getyourguide.com/activity/-${id}/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours`;
 }
 
 function slugToId(slug: string): string {
@@ -283,10 +298,55 @@ export default function BestWalkingToursLondon2026() {
           </ol>
         </nav>
 
+        {/* Top picks (proven converters) */}
+        <div className="mb-10 rounded-card-lg border border-border bg-primary-soft p-6 sm:p-7">
+          <p className="text-xs font-semibold tracking-[0.18em] uppercase text-accent mb-2">Editor's pick</p>
+          <h2 className="text-xl font-semibold text-on-surface mb-3">If you only book one walking tour</h2>
+          <p className="text-sm text-on-surface-2 mb-5">
+            These two consistently top the GetYourGuide London bestsellers and have the highest review scores in our affiliate data. If you're short on time, start here.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="rounded-card bg-surface border border-border p-5">
+              <p className="text-sm font-semibold text-on-surface">Jack the Ripper Evening Walk</p>
+              <p className="text-xs text-on-surface-2 mt-1">£12-20 &middot; 1.5-2 hours &middot; ★ 4.6 (9k+)</p>
+              <TrackedGYGLink
+                href="https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours"
+                tourName="Jack the Ripper Walk"
+                section="walking-guide-editor-pick-1"
+                variant="walking-hub-editor"
+                destination="london"
+                className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-accent hover:bg-accent-ink text-on-accent font-semibold text-sm px-4 py-2.5 transition-all active:scale-[0.98]"
+              >
+                Book Now
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </TrackedGYGLink>
+            </div>
+            <div className="rounded-card bg-surface border border-border p-5">
+              <p className="text-sm font-semibold text-on-surface">Westminster &amp; Buckingham Walking Tour</p>
+              <p className="text-xs text-on-surface-2 mt-1">£15-25 &middot; 2-2.5 hours &middot; daylight pick</p>
+              <TrackedGYGLink
+                href="https://www.getyourguide.com/activity/-t511537/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours"
+                tourName="Westminster Walking Tour"
+                section="walking-guide-editor-pick-2"
+                variant="walking-hub-editor"
+                destination="london"
+                className="mt-4 inline-flex items-center gap-1.5 rounded-xl bg-accent hover:bg-accent-ink text-on-accent font-semibold text-sm px-4 py-2.5 transition-all active:scale-[0.98]"
+              >
+                Book Now
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </TrackedGYGLink>
+            </div>
+          </div>
+        </div>
+
         {/* Practical Tips Box */}
-        <div className="mb-12 rounded-xl bg-green-50 border border-green-200 p-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-3">Quick Tips Before You Book</h2>
-          <ul className="space-y-2 text-sm text-gray-700">
+        <div className="mb-12 rounded-card-lg bg-surface-muted border border-border p-6">
+          <h2 className="text-lg font-semibold text-on-surface mb-3">Quick tips before you book</h2>
+          <ul className="space-y-2 text-sm text-on-surface-2">
             <li>Wear comfortable, broken-in shoes with good support. You will cover 3 to 8 kilometres on most tours.</li>
             <li>Bring a waterproof jacket regardless of the forecast. London weather changes quickly.</li>
             <li>Arrive 10 to 15 minutes early at the meeting point.</li>
@@ -322,10 +382,12 @@ export default function BestWalkingToursLondon2026() {
               </span>
             </div>
             <TrackedGYGLink
-              href={gygUrl(tour.search)}
+              href={gygUrl(tour.search, tour.slug)}
               tourName={tour.name}
               section={`walking-guide-2026-${tour.slug}`}
-              className="inline-block rounded-lg bg-green-700 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-green-800 transition-colors duration-200"
+              variant="walking-hub"
+              destination="london"
+              className="inline-block rounded-xl bg-accent hover:bg-accent-ink px-6 py-3 text-sm font-semibold text-white shadow-md shadow-accent/25 transition-all active:scale-[0.98]"
             >
               Reserve Your Spot, Free Cancellation
             </TrackedGYGLink>

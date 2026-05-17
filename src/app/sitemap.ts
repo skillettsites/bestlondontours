@@ -24,12 +24,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/affiliate-disclosure`, lastModified, changeFrequency: 'monthly', priority: 0.2 },
   ];
 
-  const tourPages: MetadataRoute.Sitemap = tours.map((tour) => ({
-    url: `${SITE_URL}/tours/${tour.slug}`,
-    lastModified,
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }));
+  const REDIRECTED_SLUGS = new Set([
+    'london-true-crime-tour',
+    'london-music-legends-tour',
+    'london-architecture-tour',
+    'london-royal-parks-tour',
+    'london-thames-kayak-tour',
+    'london-tudor-history-tour',
+  ]);
+
+  const tourPages: MetadataRoute.Sitemap = tours
+    .filter((tour) => !REDIRECTED_SLUGS.has(tour.slug))
+    .map((tour) => ({
+      url: `${SITE_URL}/tours/${tour.slug}`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    }));
 
   const categoryPages: MetadataRoute.Sitemap = categories.map((cat) => ({
     url: `${SITE_URL}/category/${cat.slug}`,

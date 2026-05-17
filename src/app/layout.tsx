@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Inter, Instrument_Serif } from 'next/font/google';
 
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
@@ -11,10 +11,18 @@ import CookieConsent from '@/components/CookieConsent';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import GYGScript from '@/components/GYGScript';
 import { TrackPageview } from '@/components/TrackPageview';
+import MotionConfig from '@/components/ds/MotionConfig';
 
-const geistSans = localFont({
-  src: './geist-latin.woff2',
-  variable: '--font-geist-sans',
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const instrumentSerif = Instrument_Serif({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
   display: 'swap',
 });
 
@@ -69,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable} h-full antialiased`}>
       <head>
         <script
           type="application/ld+json"
@@ -84,9 +92,11 @@ export default function RootLayout({
         <TrackPageview />
         <GoogleAnalytics />
         <GYGScript />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <MotionConfig>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </MotionConfig>
         <CookieConsent />
         <Analytics />
       </body>

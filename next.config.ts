@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=86400, stale-while-revalidate=43200',
+            value: 'public, s-maxage=3600, stale-while-revalidate=1800',
           },
         ],
       },
@@ -58,6 +58,36 @@ const nextConfig: NextConfig = {
       {
         source: '/tours/harry-potter-warner-bros-tour',
         destination: '/tours/harry-potter-studio-tour',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-true-crime-tour',
+        destination: '/guides/best-walking-tours-london-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-music-legends-tour',
+        destination: '/guides/best-walking-tours-london-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-architecture-tour',
+        destination: '/guides/best-walking-tours-london-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-royal-parks-tour',
+        destination: '/guides/best-walking-tours-london-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-thames-kayak-tour',
+        destination: '/guides/best-walking-tours-london-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/london-tudor-history-tour',
+        destination: '/guides/best-walking-tours-london-2026',
         permanent: true,
       },
     ];
