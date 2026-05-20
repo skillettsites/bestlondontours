@@ -808,6 +808,10 @@ export const guides: Guide[] = [
     excerpt: 'Three companies run hop-on hop-off buses in London. Here is how they compare and which one to choose.',
     sections: [
       {
+        heading: 'Quick Comparison: All Three Operators',
+        content: '<p>Three companies run hop-on hop-off buses in London. Here is how they compare at a glance so you can book the right one for your trip.</p><table><thead><tr><th>Operator</th><th>Best For</th><th>24-hour</th><th>48-hour</th><th>Commentary</th></tr></thead><tbody><tr><td><strong>Big Bus Tours</strong></td><td>Live guides, most stops</td><td>~£40</td><td>~£50</td><td>Live English</td></tr><tr><td><strong>The Original Tour</strong></td><td>Non-English speakers, kids</td><td>~£37</td><td>~£45</td><td>11 languages</td></tr><tr><td><strong>Golden Tours</strong></td><td>Best value, budget trips</td><td>~£30</td><td>~£36</td><td>Recorded</td></tr></tbody></table><p style="margin-top:1rem">All three include a free Thames river cruise worth £12-15. Book online to save 10-15% off walk-up prices and get free cancellation: <a href="https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours" target="_blank" rel="noopener noreferrer" style="color: #15803d; font-weight: 700; text-decoration: underline;">Compare prices and book your pass here</a>.</p>',
+      },
+      {
         heading: 'How Hop-On Hop-Off Works',
         content: 'Hop-on hop-off bus tours use open-top double-decker buses that follow set routes through central London, stopping at or near all major landmarks. You buy a pass (usually 24 or 48 hours) and can get on and off at any stop as many times as you like during that period. Each bus has live or recorded commentary explaining what you are seeing. The buses run on a loop, so you can ride the whole circuit for an overview or use them as transport between attractions. Most routes start between 8:30am and 9am and the last buses depart around 5pm to 5:30pm.',
       },
