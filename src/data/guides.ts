@@ -843,7 +843,7 @@ export const guides: Guide[] = [
       { question: 'Do hop-on hop-off buses run in the rain?', answer: 'Yes, they run in all weather. The lower deck is fully enclosed, so you stay dry. The top deck is open, and some operators provide ponchos in wet weather. Rain is part of the London experience, and the views from the top deck are still worth it with a waterproof jacket.' },
     ],
     publishedDate: '2026-03-30',
-    updatedDate: '2026-03-30',
+    updatedDate: '2026-05-21',
   },
   {
     slug: 'best-food-tours-london-2026',
