@@ -10,6 +10,7 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQ from '@/components/ui/FAQ';
 import TourCard from '@/components/ui/TourCard';
 import InlineTourCTA from '@/components/ui/InlineTourCTA';
+import StickyBookingBar from '@/components/ds/StickyBookingBar';
 
 export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));
@@ -220,6 +221,18 @@ export default async function GuidePage({ params }: { params: Params }) {
           </div>
         </article>
       </div>
+
+      {/* Sticky mobile booking bar - shown after user scrolls past the fold */}
+      {relatedTours.length > 0 && (
+        <StickyBookingBar
+          label={relatedTours[0].shortTitle}
+          sublabel="Free cancellation · Instant confirmation"
+          href={relatedTours[0].affiliateUrl}
+          price={`£${relatedTours[0].price}`}
+          ctaLabel="Book Now"
+          external
+        />
+      )}
     </>
   );
 }
