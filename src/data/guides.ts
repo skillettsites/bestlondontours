@@ -803,8 +803,8 @@ export const guides: Guide[] = [
   {
     slug: 'best-hop-on-hop-off-london',
     title: 'Best Hop-On Hop-Off Bus Tours in London: 2026 Comparison',
-    metaTitle: 'Best Hop-On Hop-Off Bus Tours London 2026 | Big Bus vs Original vs Golden',
-    metaDescription: 'Big Bus vs The Original vs Golden Tours: prices from £27, all include a free Thames cruise. Compare routes, frequency and what suits families. Book online to save 10-15% vs walk-up price. Free cancellation.',
+    metaTitle: 'London Hop-On Hop-Off Bus 2026: From £27 | Big Bus vs Original Tour vs Golden',
+    metaDescription: 'London hop-on hop-off bus from £27. Big Bus, The Original Tour, and Golden Tours compared: routes, prices, and which suits your trip. All include a free Thames cruise. Book online for free cancellation.',
     excerpt: 'Three companies run hop-on hop-off buses in London. Here is how they compare and which one to choose.',
     sections: [
       {
