@@ -11,6 +11,7 @@ import CookieConsent from '@/components/CookieConsent';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import GYGScript from '@/components/GYGScript';
 import { TrackPageview } from '@/components/TrackPageview';
+import AffiliateClickTracker from '@/components/AffiliateClickTracker';
 import MotionConfig from '@/components/ds/MotionConfig';
 
 const inter = Inter({
@@ -90,6 +91,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <TrackPageview />
+        <AffiliateClickTracker />
         <GoogleAnalytics />
         <GYGScript />
         <MotionConfig>

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 import { SITE_URL } from '@/lib/constants';
+import { directGygUrl } from '@/lib/gygDirect';
 
 const PAGE_TITLE = '7 Best Evening Tours in London 2026: After-Dark Experiences Worth Booking';
 const PAGE_DESCRIPTION =
@@ -151,7 +152,7 @@ const faqs = [
 ];
 
 function gygUrl(search: string): string {
-  return `https://www.getyourguide.com/s/?q=${encodeURIComponent(search)}&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours`;
+  return directGygUrl(search);
 }
 
 function slugToId(slug: string): string {

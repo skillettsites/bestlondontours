@@ -54,13 +54,6 @@ export function tourSchema(tour: Tour) {
       '@type': 'Organization',
       name: SITE_NAME,
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: tour.rating,
-      reviewCount: tour.reviewCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
     offers: {
       '@type': 'Offer',
       price: tour.price,

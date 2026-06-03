@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 import { SITE_URL } from '@/lib/constants';
+import { directGygUrl } from '@/lib/gygDirect';
 
 const PAGE_TITLE = '10 Best London Tours for First-Time Visitors in 2026';
 const PAGE_DESCRIPTION =
@@ -182,7 +183,7 @@ const faqs = [
 ];
 
 function gygUrl(search: string): string {
-  return `https://www.getyourguide.com/s/?q=${encodeURIComponent(search)}&partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours`;
+  return directGygUrl(search);
 }
 
 function slugToId(slug: string): string {

@@ -174,18 +174,18 @@ const faqs = [
   },
 ];
 
-// Repointed to proven converters: t6005 Jack the Ripper (atmospheric/history),
-// t511537 Westminster Walking (general daylight tours). Search URLs leaked attribution.
+// Each walking tour deep-links to its own correct GetYourGuide activity (IDs
+// verified against GYG's live activity titles). Direct links, no search URLs.
 const TOUR_TO_ACTIVITY: Record<string, string> = {
-  'free-westminster': 't511537',
-  'harry-potter-walk': 't52391',
-  'jack-the-ripper-walk': 't6005',
-  'ghost-tour': 't6005',
-  'borough-market-food': 't511537',
-  'street-art-east-end': 't511537',
-  'churchill-ww2': 't6005',
-  'westminster-royal': 't511537',
-  'private-walking': 't511537',
+  'free-westminster': 't511537', // Buckingham Palace & Westminster Guided Walking Tour
+  'harry-potter-walk': 't52391', // Warner Bros. Studio Harry Potter Tour
+  'jack-the-ripper-walk': 't6005', // Jack the Ripper Walking Tour
+  'ghost-tour': 't56795', // London Ghastly Ghosts Walking Tour
+  'borough-market-food': 't67794', // Borough Market Food Tour
+  'street-art-east-end': 't1242361', // Shoreditch Street Art & Graffiti Walking Tour
+  'churchill-ww2': 't408590', // Winston Churchill and London in WWII Walking Tour
+  'westminster-royal': 't511537', // Buckingham Palace & Westminster Guided Walking Tour
+  'private-walking': 't511537', // general guided London walking tour (no dedicated private listing)
 };
 
 function gygUrl(_search: string, slug?: string): string {
