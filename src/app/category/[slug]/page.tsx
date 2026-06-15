@@ -19,8 +19,8 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
     ],
     relatedGuides: [
       { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
-      { slug: 'london-one-day-itinerary', title: 'London in One Day Itinerary' },
-      { slug: 'free-things-to-do-london', title: 'Free Things to Do in London' },
+      { slug: 'london-3-day-itinerary', title: 'London Itinerary: 3 Days' },
+      { slug: 'free-things-to-do-in-london-2026', title: 'Free Things to Do in London' },
     ],
   },
   'river-cruises': {
@@ -29,8 +29,8 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'The most popular route runs from Westminster Pier to Greenwich, passing the Houses of Parliament, the London Eye, Tower Bridge, and the Tower of London along the way. Live commentary brings the history of each landmark to life. For a more budget-friendly option, Thames Clippers run regular services that accept Oyster cards.',
     ],
     relatedGuides: [
-      { slug: 'thames-cruise-guide', title: 'Complete Thames Cruise Guide' },
-      { slug: 'london-one-day-itinerary', title: 'London in One Day Itinerary' },
+      { slug: 'bus-tour-vs-boat-tour-london', title: 'Bus Tour vs Boat Tour' },
+      { slug: 'london-3-day-itinerary', title: 'London Itinerary: 3 Days' },
     ],
   },
   'day-trips': {
@@ -40,7 +40,7 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'For those who prefer travelling independently, Windsor and Oxford are both easily reached by direct train from London in under an hour. The Cotswolds and Stonehenge are harder to reach by public transport, making a guided coach tour the most practical option.',
     ],
     relatedGuides: [
-      { slug: 'day-trips-from-london', title: 'Best Day Trips from London' },
+      { slug: 'best-day-trips-from-london', title: 'Best Day Trips from London' },
       { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
     ],
   },
@@ -50,8 +50,8 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'Borough Market is the crown jewel of London\'s food scene. Trading since the 13th century, it brings together artisan producers from across the UK and beyond. A guided tour with tastings is the ideal introduction, giving you insider access to stalls and stories you would never find on your own.',
     ],
     relatedGuides: [
-      { slug: 'london-food-guide', title: 'London Food Guide: Markets and Hidden Gems' },
-      { slug: 'free-things-to-do-london', title: 'Free Things to Do in London' },
+      { slug: 'london-food-tours', title: 'London Food Tours: Markets and Hidden Gems' },
+      { slug: 'free-things-to-do-in-london-2026', title: 'Free Things to Do in London' },
     ],
   },
   'family-fun': {
@@ -61,8 +61,8 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'Do not forget that many of London\'s best family attractions are completely free. The Natural History Museum, Science Museum, and V&A all offer world-class exhibitions at no cost. Hyde Park and Regent\'s Park have excellent playgrounds and open spaces for burning off energy between museum visits.',
     ],
     relatedGuides: [
-      { slug: 'london-with-kids', title: 'London with Kids Guide' },
-      { slug: 'free-things-to-do-london', title: 'Free Things to Do in London' },
+      { slug: 'best-london-tours-for-kids', title: 'London with Kids' },
+      { slug: 'free-things-to-do-in-london-2026', title: 'Free Things to Do in London' },
       { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
     ],
   },
@@ -73,9 +73,9 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'Evening walking tours are particularly atmospheric. As daylight fades and the streetlights come on, London takes on a completely different character. The Jack the Ripper and ghost tours are designed specifically for the evening, using the darkness and shadows to heighten the experience.',
     ],
     relatedGuides: [
-      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
-      { slug: 'london-history-guide', title: 'London for History Buffs' },
-      { slug: 'free-things-to-do-london', title: 'Free Things to Do in London' },
+      { slug: 'best-walking-tours-london-2026', title: 'Best Walking Tours in London' },
+      { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
+      { slug: 'free-things-to-do-in-london-2026', title: 'Free Things to Do in London' },
     ],
   },
   'museums-exhibitions': {
@@ -85,9 +85,9 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'Beyond the free nationals, London also has fascinating paid museums. The Churchill War Rooms are preserved exactly as they were in 1945, offering a powerful and immersive experience. The Imperial War Museum, Sir John Soane\'s Museum, and the Museum of London are all worth adding to your itinerary.',
     ],
     relatedGuides: [
-      { slug: 'london-rainy-day-guide', title: 'London on a Rainy Day' },
-      { slug: 'london-history-guide', title: 'London for History Buffs' },
-      { slug: 'london-with-kids', title: 'London with Kids Guide' },
+      { slug: 'london-rainy-day-activities', title: 'London on a Rainy Day' },
+      { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
+      { slug: 'best-london-tours-for-kids', title: 'London with Kids' },
     ],
   },
   'evening-experiences': {
@@ -97,9 +97,9 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'For something more adventurous, London\'s evening walking tours offer a completely different kind of experience. The Jack the Ripper tour through Whitechapel and the ghost tour through haunted streets and churchyards are both designed to take advantage of the evening atmosphere. They are affordable, fascinating, and unlike anything you will experience during the day.',
     ],
     relatedGuides: [
-      { slug: 'romantic-things-london', title: 'Romantic Things to Do in London' },
-      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
-      { slug: 'thames-cruise-guide', title: 'Complete Thames Cruise Guide' },
+      { slug: 'london-tours-for-couples', title: 'London Tours for Couples' },
+      { slug: 'best-walking-tours-london-2026', title: 'Best Walking Tours in London' },
+      { slug: 'best-evening-tours-london-2026', title: 'Best Evening Tours in London' },
     ],
   },
 };

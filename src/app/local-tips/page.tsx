@@ -164,7 +164,7 @@ export default function LocalTipsPage() {
             <section id="free-london">
               <h2>Free London</h2>
               <p>
-                London has more free attractions than almost any other city in the world. The British Museum, National Gallery, Tate Modern, Natural History Museum, Science Museum, V&A, Imperial War Museum, and Museum of London are all completely free. You could spend an entire week visiting world-class museums without spending a penny on entry. Check out our <Link href="/guides/free-things-to-do-london" className="text-blue-900 font-medium hover:underline">free things to do guide</Link> for the full list.
+                London has more free attractions than almost any other city in the world. The British Museum, National Gallery, Tate Modern, Natural History Museum, Science Museum, V&A, Imperial War Museum, and Museum of London are all completely free. You could spend an entire week visiting world-class museums without spending a penny on entry. Check out our <Link href="/guides/free-things-to-do-in-london-2026" className="text-blue-900 font-medium hover:underline">free things to do guide</Link> for the full list.
               </p>
               <p>
                 London's parks are spectacular and cost nothing. Hyde Park, Regent's Park (with free entry to the beautiful rose garden), and Hampstead Heath (with panoramic views from Parliament Hill) are all worth a visit. St James's Park is the prettiest of the central parks, with views of Buckingham Palace across the lake. In spring, the cherry blossoms in Greenwich Park and Kew Gardens (Kew charges entry, though) are stunning.
@@ -248,10 +248,10 @@ export default function LocalTipsPage() {
               <Link href="/guides/first-time-visiting-london" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
                 First Time in London
               </Link>
-              <Link href="/guides/free-things-to-do-london" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              <Link href="/guides/free-things-to-do-in-london-2026" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
                 Free Things to Do
               </Link>
-              <Link href="/guides/london-food-guide" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
+              <Link href="/guides/london-food-tours" className="rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-900 transition-colors">
                 Food Guide
               </Link>
             </div>

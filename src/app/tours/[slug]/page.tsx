@@ -22,14 +22,14 @@ import RevealOnScroll from '@/components/ds/RevealOnScroll';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 
 const categoryGuideMap: Record<string, string[]> = {
-  landmarks: ['first-time-visiting-london', 'london-one-day-itinerary', 'london-history-guide'],
-  'river-cruises': ['thames-cruise-guide', 'romantic-things-london', 'london-one-day-itinerary'],
-  'day-trips': ['day-trips-from-london', 'first-time-visiting-london', 'london-three-day-itinerary'],
-  'food-tours': ['london-food-guide', 'free-things-to-do-london'],
-  'family-fun': ['london-with-kids', 'london-rainy-day-guide', 'free-things-to-do-london'],
-  'walking-tours': ['best-walking-tours-london', 'london-history-guide', 'free-things-to-do-london'],
-  'museums-exhibitions': ['london-rainy-day-guide', 'london-history-guide', 'london-with-kids'],
-  'evening-experiences': ['romantic-things-london', 'best-walking-tours-london', 'thames-cruise-guide'],
+  landmarks: ['first-time-visiting-london', 'london-3-day-itinerary', 'best-walking-tours-london-2026'],
+  'river-cruises': ['bus-tour-vs-boat-tour-london', 'london-tours-for-couples', 'london-3-day-itinerary'],
+  'day-trips': ['best-day-trips-from-london', 'first-time-visiting-london', 'london-3-day-itinerary'],
+  'food-tours': ['london-food-tours', 'free-things-to-do-in-london-2026'],
+  'family-fun': ['best-london-tours-for-kids', 'london-rainy-day-activities', 'free-things-to-do-in-london-2026'],
+  'walking-tours': ['best-walking-tours-london-2026', 'first-time-visiting-london', 'free-things-to-do-in-london-2026'],
+  'museums-exhibitions': ['london-rainy-day-activities', 'first-time-visiting-london', 'best-london-tours-for-kids'],
+  'evening-experiences': ['london-tours-for-couples', 'best-walking-tours-london-2026', 'best-evening-tours-london-2026'],
 };
 
 const REDIRECTED = new Set([

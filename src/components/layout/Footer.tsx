@@ -123,10 +123,10 @@ export default function Footer() {
               <h4 className="text-white text-sm font-semibold mb-3 uppercase tracking-wide">Travel Guides</h4>
               <ul className="space-y-2">
                 <li><Link href="/guides/first-time-visiting-london" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">First Time in London</Link></li>
-                <li><Link href="/guides/london-one-day-itinerary" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">London in One Day</Link></li>
-                <li><Link href="/guides/free-things-to-do-london" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Free Things to Do</Link></li>
-                <li><Link href="/guides/london-food-guide" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Food Guide</Link></li>
-                <li><Link href="/guides/london-with-kids" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">London with Kids</Link></li>
+                <li><Link href="/guides/london-3-day-itinerary" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">London in 3 Days</Link></li>
+                <li><Link href="/guides/free-things-to-do-in-london-2026" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Free Things to Do</Link></li>
+                <li><Link href="/guides/london-food-tours" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">Food Guide</Link></li>
+                <li><Link href="/guides/best-london-tours-for-kids" className="text-sm hover:text-white transition-colors inline-flex items-center min-h-[32px]">London with Kids</Link></li>
                 <li><Link href="/guides" className="text-sm text-amber-400 hover:text-amber-300 transition-colors inline-flex items-center min-h-[32px] font-medium">All Guides &rarr;</Link></li>
               </ul>
             </div>
