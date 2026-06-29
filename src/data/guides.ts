@@ -803,8 +803,8 @@ export const guides: Guide[] = [
   {
     slug: 'best-hop-on-hop-off-london',
     title: 'Best Hop-On Hop-Off Bus Tours in London: 2026 Comparison',
-    metaTitle: 'London Hop-On Hop-Off Bus 2026: From £27 | Big Bus vs Original Tour vs Golden',
-    metaDescription: 'London hop-on hop-off bus from £27. Big Bus, The Original Tour, and Golden Tours compared: routes, prices, and which suits your trip. All include a free Thames cruise. Book online for free cancellation.',
+    metaTitle: 'London Hop-On Hop-Off Bus 2026: From £27 | Big Bus vs Original Tour vs Golden Tours',
+    metaDescription: 'Compare London hop-on hop-off bus tours for summer 2026. Big Bus, Original Tour and Golden Tours from £27. All include a free Thames cruise. Book online and save 10-15% off walk-up prices.',
     excerpt: 'Three companies run hop-on hop-off buses in London. Here is how they compare and which one to choose.',
     sections: [
       {
@@ -833,7 +833,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'Tips for Getting the Most from Your Ticket',
-        content: 'Start early in the morning to make the most of your time window. Ride the full loop first without getting off, then use the rest of your pass to hop on and off at the stops that interest you most. Sit on the top deck for the best views and photo opportunities, but be prepared for wind and occasional rain (bring a light jacket even in summer). The front seats on the top deck fill up first, so boarding at quieter stops gives you the best chance of getting them. Combine your bus ticket with the included Thames cruise for variety. Avoid the buses during school holidays and weekends between 11am and 2pm, when they are busiest. Ready to book? <a href="https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours" target="_blank" rel="noopener noreferrer" style="color: #15803d; font-weight: 600; text-decoration: underline;">Secure your hop-on hop-off pass here</a> with free cancellation and instant confirmation.',
+        content: 'Start early in the morning to make the most of your time window. Ride the full loop first without getting off, then use the rest of your pass to hop on and off at the stops that interest you most. Sit on the top deck for the best views and photo opportunities, but be prepared for wind and occasional rain (bring a light jacket even in summer). The front seats on the top deck fill up first, so boarding at quieter stops gives you the best chance of getting them. Combine your bus ticket with the included Thames cruise for variety. Avoid the buses during school holidays and weekends between 11am and 2pm, when they are busiest. <strong>In summer 2026, buses on the main red route regularly sell out of pre-booked slots by midday</strong>, so book your pass in advance to guarantee your preferred departure. Ready to book? <a href="https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours" target="_blank" rel="noopener noreferrer" style="color: #15803d; font-weight: 600; text-decoration: underline;">Secure your hop-on hop-off pass here</a> with free cancellation and instant confirmation.',
       },
     ],
     relatedTourSlugs: ['hop-on-hop-off-bus', 'london-eye-tickets', 'tower-of-london-tickets', 'buckingham-palace-tickets'],
@@ -841,9 +841,11 @@ export const guides: Guide[] = [
       { question: 'Which hop-on hop-off bus is best in London?', answer: 'Big Bus Tours is the best overall for English speakers thanks to live guides on every bus. The Original Tour is best for non-English speakers with commentary in 11 languages. Golden Tours is the best budget option with the lowest prices.' },
       { question: 'Is 24 hours or 48 hours better for the hop-on hop-off bus?', answer: 'For most visitors, 24 hours is enough. You can ride the full loop and hop off at 3 to 4 stops in a day. The 48-hour pass is worth it if you want to ride multiple routes or use the bus as transport across two days of sightseeing.' },
       { question: 'Do hop-on hop-off buses run in the rain?', answer: 'Yes, they run in all weather. The lower deck is fully enclosed, so you stay dry. The top deck is open, and some operators provide ponchos in wet weather. Rain is part of the London experience, and the views from the top deck are still worth it with a waterproof jacket.' },
+      { question: 'How busy are hop-on hop-off buses in summer 2026?', answer: 'Summer (June to August) is the busiest period. Buses on the main red route fill up between 10am and 3pm, especially at popular stops like the London Eye and Buckingham Palace. Book your pass online in advance to avoid queuing at the stop and to lock in the best price. Online bookings include free cancellation so you can adjust if your plans change.' },
+      { question: 'What is the best price for a London hop-on hop-off bus in 2026?', answer: 'Online prices are typically 10 to 15 per cent lower than walk-up prices at the stop. For summer 2026, Golden Tours offers the cheapest 24-hour pass at around £27 to £30 online. Big Bus and The Original Tour both charge £37 to £40 for 24 hours. All include a free Thames river cruise. Book through the link on this page for the best available rate.' },
     ],
     publishedDate: '2026-03-30',
-    updatedDate: '2026-05-21',
+    updatedDate: '2026-06-29',
   },
   {
     slug: 'best-food-tours-london-2026',
