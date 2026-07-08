@@ -167,6 +167,15 @@ export default async function GuidePage({ params }: { params: Params }) {
             </section>
           )}
 
+          {/* All Tours CTA - shown above FAQ to capture users about to bounce */}
+          <div className="mt-12 rounded-xl bg-gradient-to-r from-green-700 to-emerald-800 p-5 sm:p-6 text-center text-white">
+            <p className="font-bold text-lg mb-1">Not sure which tour is right for you?</p>
+            <p className="text-sm text-green-100 mb-4">Browse all London tours and filter by type, price, and duration. Free cancellation on most.</p>
+            <Link href="/tours" className="inline-block bg-white text-green-700 font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-green-50 transition-colors">
+              See all London tours &rarr;
+            </Link>
+          </div>
+
           {/* FAQ */}
           <FAQ faqs={guide.faqs} />
 

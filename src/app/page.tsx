@@ -5,7 +5,6 @@ import { guides } from '@/data/guides';
 import { GYG_PARTNER_ID } from '@/lib/constants';
 import { trustStats } from '@/lib/trust';
 
-import Hero from '@/components/ds/Hero';
 import SectionHeader from '@/components/ds/SectionHeader';
 import TourCard from '@/components/ds/TourCard';
 import BenefitGrid from '@/components/ds/BenefitGrid';
@@ -31,6 +30,10 @@ const mostBookedTours = mostBookedSlugs
   .filter((t): t is NonNullable<typeof t> => t !== undefined);
 
 const topThree = mostBookedTours.slice(0, 3);
+
+const featuredTours = tours
+  .filter((t) => !mostBookedSlugs.includes(t.slug))
+  .slice(0, 6);
 
 const testimonials = [
   {
@@ -77,20 +80,49 @@ const benefits = [
 export default function HomePage() {
   return (
     <>
-      <Hero
-        eyebrow="The London Edit"
-        title="London,"
-        titleAccent="booked beautifully."
-        subtitle="The London Eye, Harry Potter Studio Tour, and Tower of London &mdash; the three most booked London experiences this month. Skip the queues with instant confirmation."
-        primaryCta={{ label: 'Browse all tours', href: '/tours' }}
-        secondaryCta={{ label: 'First time in London?', href: '/guides/first-time-visiting-london' }}
-        trustPill={
-          <>
+      {/* Lead: most popular tours front and centre */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-12 pb-4">
+        <div className="max-w-3xl mb-8 sm:mb-10">
+          <p className="text-xs font-semibold tracking-[0.22em] uppercase text-primary mb-3">
+            Most Booked in London
+          </p>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-on-surface">
+            Our most popular London tours
+          </h1>
+          <p className="mt-4 text-lg text-on-surface-2 leading-relaxed">
+            Skip-the-line tickets to the London Eye, the Tower of London, the Harry Potter Studio Tour and more &mdash; the experiences visitors book most, direct through GetYourGuide with instant confirmation and free cancellation.
+          </p>
+          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-surface-muted px-4 py-1.5 text-sm font-medium text-on-surface-2 ring-1 ring-border">
             <span className="text-highlight">&#9733;</span>
             <span>{trustStats.avgRating.toFixed(1)} average across {(trustStats.totalReviews / 1000).toFixed(0)}k+ verified reviews</span>
-          </>
-        }
-      />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+          {mostBookedTours.map((tour, i) => (
+            <RevealOnScroll key={tour.slug} delay={(i % 3) * 0.08}>
+              <TourCard
+                tour={tour}
+                priority={i < 3}
+                section="home-most-popular"
+                trackingVariant={`most-popular-${i + 1}`}
+              />
+            </RevealOnScroll>
+          ))}
+        </div>
+
+        <div className="mt-8 sm:mt-10 flex justify-center">
+          <Link
+            href="/tours"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-accent hover:bg-accent-ink text-on-accent font-semibold text-base px-7 py-3.5 shadow-lg shadow-accent/25 transition-all active:scale-[0.98] min-h-[52px]"
+          >
+            Browse all {tours.length} London tours
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
+        </div>
+      </section>
 
       <PartnerBadge />
 
@@ -98,39 +130,17 @@ export default function HomePage() {
         <AffiliateDisclosure />
       </div>
 
-      {/* Most booked */}
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <SectionHeader
-          eyebrow="Most Booked"
-          title="What London is booking this week"
-          subtitle="The three experiences our visitors choose most. Each one direct-booked through GetYourGuide."
-          action={{ label: 'View all tours', href: '/tours' }}
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-          {topThree.map((tour, i) => (
-            <RevealOnScroll key={tour.slug} delay={i * 0.08}>
-              <TourCard
-                tour={tour}
-                priority={i === 0}
-                section="home-most-booked"
-                trackingVariant={`most-booked-${i + 1}`}
-              />
-            </RevealOnScroll>
-          ))}
-        </div>
-      </section>
-
       {/* Featured tours */}
       <section className="bg-surface-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <SectionHeader
             eyebrow="Featured"
-            title="London's best tours, hand-picked"
+            title="More London tours, hand-picked"
             subtitle="From Crown Jewels to Thames sunsets &mdash; every tour vetted, every booking verified."
             action={{ label: `View all ${tours.length} tours`, href: '/tours' }}
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {mostBookedTours.map((tour, i) => (
+            {featuredTours.map((tour, i) => (
               <RevealOnScroll key={tour.slug} delay={(i % 3) * 0.08}>
                 <TourCard tour={tour} section="home-featured" trackingVariant="featured-grid" />
               </RevealOnScroll>
