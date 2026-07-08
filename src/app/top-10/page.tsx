@@ -6,6 +6,7 @@ import { SITE_URL, GYG_PARTNER_ID } from '@/lib/constants';
 import { itemListSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
+import TrackedGYGLink from '@/components/TrackedGYGLink';
 import StarRating from '@/components/ui/StarRating';
 import FAQ from '@/components/ui/FAQ';
 
@@ -132,7 +133,7 @@ export default function Top10Page() {
                 <div className="lg:flex">
                   {/* Image */}
                   <div className="lg:w-96 shrink-0 relative">
-                    <div className="aspect-[16/10] lg:aspect-auto lg:h-full relative">
+                    <TrackedGYGLink href={tour.affiliateUrl} tourName={tour.shortTitle} section="top10-image" className="block aspect-[16/10] lg:aspect-auto lg:h-full relative">
                       <Image
                         src={tour.imageUrl}
                         alt={tour.imageAlt}
@@ -157,7 +158,7 @@ export default function Top10Page() {
                           From &pound;{tour.price}
                         </span>
                       </div>
-                    </div>
+                    </TrackedGYGLink>
                   </div>
 
                   {/* Content */}
