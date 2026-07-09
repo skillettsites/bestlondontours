@@ -13,8 +13,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What are the must-see landmarks in London?', answer: 'The Tower of London, Westminster Abbey, St Paul\'s Cathedral, and Buckingham Palace are the essential landmarks. For views, add the London Eye or The Shard.' },
       { question: 'Should I buy landmark tickets in advance?', answer: 'Yes, booking in advance saves money and guarantees entry. Popular attractions like the Tower of London and Buckingham Palace can sell out, especially in summer.' },
-      { question: 'Which London landmarks are free?', answer: 'The British Museum, National Gallery, Tate Modern, and Natural History Museum are all free. The Changing of the Guard at Buckingham Palace is also free to watch from outside.' },
-    ],
+      { question: 'Which London landmarks are free?', answer: 'The British Museum, National Gallery, Tate Modern, and Natural History Museum are all free. The Changing of the Guard at Buckingham Palace is also free to watch from outside.' }],
   },
   {
     slug: 'river-cruises',
@@ -28,8 +27,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What is the best Thames cruise in London?', answer: 'The Westminster to Greenwich sightseeing cruise is the most popular, passing Tower Bridge and the Tower of London with live commentary. It takes about 1 hour.' },
       { question: 'Do Thames cruises run in winter?', answer: 'Yes, Thames cruises run year-round. Boats have indoor heated seating as well as open-air decks for warmer days.' },
-      { question: 'Can you use Oyster cards on Thames Clippers?', answer: 'Yes, the Thames Clippers river bus service accepts Oyster cards and contactless payment. Sightseeing cruises require separate tickets.' },
-    ],
+      { question: 'Can you use Oyster cards on Thames Clippers?', answer: 'Yes, the Thames Clippers river bus service accepts Oyster cards and contactless payment. Sightseeing cruises require separate tickets.' }],
   },
   {
     slug: 'day-trips',
@@ -39,12 +37,11 @@ export const categories: Category[] = [
     description: 'Some of England\'s greatest treasures lie just outside London. Day trips offer a chance to explore the English countryside, visit ancient monuments, and discover charming towns, all without the hassle of planning your own transport. Expert guides bring each destination to life with fascinating stories and local knowledge.',
     excerpt: 'Explore Windsor Castle, Stonehenge, Bath, and more on guided day trips from London.',
     icon: '🚌',
-    tourSlugs: ['windsor-stonehenge-bath-tour', 'harry-potter-studio-tour', 'leeds-castle-canterbury-dover-tour', 'oxford-cambridge-day-tour', 'stonehenge-bath-day-tour', 'hampton-court-palace-tickets', 'london-cotswolds-day-trip'],
+    tourSlugs: ['windsor-stonehenge-bath-tour', 'harry-potter-studio-tour', 'leeds-castle-canterbury-dover-tour', 'oxford-cambridge-day-tour', 'stonehenge-bath-day-tour', 'hampton-court-palace-tickets'],
     faqs: [
       { question: 'What are the best day trips from London?', answer: 'Windsor Castle, Stonehenge, and Bath can all be combined in one day. The Harry Potter Studio Tour is another popular choice. Oxford, Cambridge, and the Cotswolds are also excellent options.' },
       { question: 'How long are day trips from London?', answer: 'Most day trips are 10 to 12 hours, departing around 8am and returning by 7-8pm. The Harry Potter Studio Tour is approximately 7 hours.' },
-      { question: 'Are day trip entries included in the price?', answer: 'It varies by tour. Always check what is included. Stonehenge entry is typically included, while Windsor Castle entry may be extra.' },
-    ],
+      { question: 'Are day trip entries included in the price?', answer: 'It varies by tour. Always check what is included. Stonehenge entry is typically included, while Windsor Castle entry may be extra.' }],
   },
   {
     slug: 'food-tours',
@@ -58,8 +55,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What food tours are available in London?', answer: 'Borough Market food tours are the most popular, with 6+ tastings of artisan produce. There are also tours of Brick Lane, Soho, and the East End focusing on different cuisines.' },
       { question: 'Are London food tours suitable for vegetarians?', answer: 'Yes, most guides can accommodate vegetarian and vegan diets. Let them know your requirements when you book or at the start of the tour.' },
-      { question: 'Do food tours replace a meal?', answer: 'Yes, the tastings are generous enough to replace lunch. Come hungry and you will leave fully satisfied.' },
-    ],
+      { question: 'Do food tours replace a meal?', answer: 'Yes, the tastings are generous enough to replace lunch. Come hungry and you will leave fully satisfied.' }],
   },
   {
     slug: 'family-fun',
@@ -73,8 +69,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What are the best things to do in London with kids?', answer: 'The London Eye, Harry Potter Studio Tour, Natural History Museum (free), Madame Tussauds, and the Science Museum (free) are all excellent. The hop-on hop-off bus is also great for keeping kids entertained while sightseeing.' },
       { question: 'Are there discounts for children at London attractions?', answer: 'Most attractions offer reduced prices for children aged 3 to 15. Under 3s are usually free. Family tickets (2 adults + 2 children) are often available at a discount.' },
-      { question: 'What are good rainy day activities in London for families?', answer: 'Madame Tussauds, the London Dungeon, the Natural History Museum, and the Science Museum are all indoor activities perfect for rainy days.' },
-    ],
+      { question: 'What are good rainy day activities in London for families?', answer: 'Madame Tussauds, the London Dungeon, the Natural History Museum, and the Science Museum are all indoor activities perfect for rainy days.' }],
   },
   {
     slug: 'walking-tours',
@@ -84,12 +79,11 @@ export const categories: Category[] = [
     description: 'Walking tours are the best way to discover London\'s hidden stories. Expert guides take you through atmospheric streets, sharing tales that you would never find in a guidebook. From the dark alleys of Jack the Ripper\'s Whitechapel to the wartime secrets of Westminster, these tours bring London\'s past vividly to life.',
     excerpt: 'Discover London\'s hidden stories on expert-led walking tours through the city\'s most atmospheric streets.',
     icon: '🚶',
-    tourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'churchill-war-rooms-tour', 'london-street-art-tour', 'london-photography-tour', 'london-blitz-ww2-tour', 'london-tudor-history-tour', 'london-music-legends-tour', 'london-literary-tour', 'london-hidden-underground-tour', 'london-royal-parks-tour', 'london-architecture-tour', 'london-true-crime-tour'],
+    tourSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'churchill-war-rooms-tour', 'london-photography-tour', 'london-blitz-ww2-tour', 'london-tudor-history-tour', 'london-music-legends-tour', 'london-literary-tour', 'london-hidden-underground-tour', 'london-royal-parks-tour', 'london-true-crime-tour'],
     faqs: [
       { question: 'What is the best walking tour in London?', answer: 'The Jack the Ripper tour is the most popular, with thousands of reviews. The Churchill War Rooms tour offers the best combination of walking tour and museum visit. Ghost tours are perfect for evening entertainment.' },
       { question: 'Are walking tours suitable for all fitness levels?', answer: 'Most walking tours cover 1 to 2 miles on flat ground over 1.5 to 2 hours. The pace is gentle with frequent stops. They are suitable for most fitness levels.' },
-      { question: 'Do walking tours run in the rain?', answer: 'Yes, walking tours run in all weather. Guides are prepared for rain and will adjust the route if needed. Bring a waterproof jacket and comfortable shoes.' },
-    ],
+      { question: 'Do walking tours run in the rain?', answer: 'Yes, walking tours run in all weather. Guides are prepared for rain and will adjust the route if needed. Bring a waterproof jacket and comfortable shoes.' }],
   },
   {
     slug: 'museums-exhibitions',
@@ -103,8 +97,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'Why take a guided museum tour if the museum is free?', answer: 'Free entry means the museums are often crowded and overwhelming. A guide helps you navigate to the best exhibits, tells stories behind the objects, and ensures you do not miss the highlights in a museum with millions of items.' },
       { question: 'Are museum tours suitable for children?', answer: 'Yes, guides tailor their commentary for families. The Natural History Museum tour is particularly popular with children thanks to the dinosaurs, blue whale, and interactive elements.' },
-      { question: 'Do I need to book museum tours in advance?', answer: 'Yes, booking in advance is recommended as group sizes are limited. This also allows the guide to reserve priority access where available.' },
-    ],
+      { question: 'Do I need to book museum tours in advance?', answer: 'Yes, booking in advance is recommended as group sizes are limited. This also allows the guide to reserve priority access where available.' }],
   },
   {
     slug: 'evening-experiences',
@@ -118,8 +111,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What is the best evening activity in London?', answer: 'A Thames dinner cruise is the most special evening experience, perfect for couples and celebrations. For something more adventurous, the Jack the Ripper tour and ghost tours offer atmospheric evening walks.' },
       { question: 'Are evening tours safe?', answer: 'Yes, all evening tours operate in well-lit, well-populated areas with experienced guides. London is generally very safe for tourists at night, especially in central areas.' },
-      { question: 'What time do evening experiences start?', answer: 'Most evening tours and cruises begin between 7pm and 8pm, finishing by 10pm to 11pm. This leaves time for dinner before or drinks after.' },
-    ],
+      { question: 'What time do evening experiences start?', answer: 'Most evening tours and cruises begin between 7pm and 8pm, finishing by 10pm to 11pm. This leaves time for dinner before or drinks after.' }],
   },
   {
     slug: 'history-tours',
@@ -133,8 +125,7 @@ export const categories: Category[] = [
     faqs: [
       { question: 'What periods of history do London tours cover?', answer: 'London history tours cover everything from Roman and medieval times through the Tudor era, the Great Fire, the Victorian period, and both World Wars. Specialist tours focus on specific eras for a deeper experience.' },
       { question: 'Are history tours suitable for children?', answer: 'Yes, most history tours welcome children and guides are skilled at making stories engaging for younger visitors. The Tower of London and WW2 tours are particularly popular with families.' },
-      { question: 'Do I need any prior knowledge of London history?', answer: 'No prior knowledge is needed. Guides pitch their commentary for general audiences and are happy to answer questions. You will come away knowing far more than when you started.' },
-    ],
+      { question: 'Do I need any prior knowledge of London history?', answer: 'No prior knowledge is needed. Guides pitch their commentary for general audiences and are happy to answer questions. You will come away knowing far more than when you started.' }],
   },
   {
     slug: 'outdoor-adventures',
@@ -148,10 +139,8 @@ export const categories: Category[] = [
     faqs: [
       { question: 'Do I need to be fit for outdoor activities in London?', answer: 'Most outdoor experiences cater to all fitness levels. Bike tours are at a relaxed pace with frequent stops, park walks are on flat ground, and kayak tours include full instruction for beginners.' },
       { question: 'What happens if it rains on my outdoor tour?', answer: 'Tours run in light rain, and guides will provide tips on staying comfortable. In severe weather, operators may offer to reschedule. Waterproof clothing and sturdy shoes are always recommended.' },
-      { question: 'Are outdoor tours suitable for children?', answer: 'Yes, bike tours and park walks are great for families. Kayak tours typically have a minimum age of around 12. Check the specific tour listing for age requirements and family-friendly options.' },
-    ],
-  },
-];
+      { question: 'Are outdoor tours suitable for children?', answer: 'Yes, bike tours and park walks are great for families. Kayak tours typically have a minimum age of around 12. Check the specific tour listing for age requirements and family-friendly options.' }],
+  }];
 
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((c) => c.slug === slug);
