@@ -15,6 +15,7 @@ import RevealOnScroll from '@/components/ds/RevealOnScroll';
 import CategoryPill from '@/components/ds/CategoryPill';
 import PartnerBadge from '@/components/ds/PartnerBadge';
 import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
+import SisterSites from '@/components/SisterSites';
 
 const mostBookedSlugs = [
   'london-eye-tickets',
@@ -344,6 +345,10 @@ export default function HomePage() {
           </details>
         </div>
       </section>
+
+      <SisterSites currentCity="London" />
+
+
 
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 inset-x-0 z-50 sm:hidden bg-white/95 backdrop-blur border-t border-border shadow-[0_-4px_20px_rgba(0,0,0,0.1)] p-3">
