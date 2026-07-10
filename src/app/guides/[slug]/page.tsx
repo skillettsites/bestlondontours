@@ -137,10 +137,13 @@ export default async function GuidePage({ params }: { params: Params }) {
           {/* Content with inline tour CTAs */}
           <div className="guide-content">
             {guide.sections.map((section, i) => {
-              const ctaIndex = Math.floor((i - 1) / 3);
-              const showCTA = i > 0 && (i - 1) % 3 === 0 && relatedTours.length > 0;
+              const ctaIndex = Math.floor((i - 1) / 2);
+              const showCTA = i > 0 && (i - 1) % 2 === 0 && relatedTours.length > 0;
+              const secondaryTours = relatedTours.slice(1);
+              const secondary = secondaryTours.length > 0 ? secondaryTours[ctaIndex % secondaryTours.length] : undefined;
               const ctaTours = showCTA
-                ? relatedTours.slice(ctaIndex * 2, ctaIndex * 2 + 2).filter(Boolean)
+                ? [relatedTours[0], secondary].filter((t): t is NonNullable<typeof t> => !!t)
+                    .filter((t, idx, arr) => arr.findIndex((x) => x.slug === t.slug) === idx)
                 : [];
 
               return (
