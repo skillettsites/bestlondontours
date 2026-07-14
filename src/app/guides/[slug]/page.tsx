@@ -75,7 +75,10 @@ export default async function GuidePage({ params }: { params: Params }) {
         <article>
           <header className="mb-10">
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">{guide.title}</h1>
-            <p className="mt-4 text-lg text-gray-600">{guide.excerpt}</p>
+            <div className="mt-5 rounded-xl border-l-4 border-green-600 bg-green-50 px-4 py-3 sm:px-5 sm:py-4">
+              <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-1">Quick answer</p>
+              <p className="text-base sm:text-lg text-gray-800 leading-snug">{guide.excerpt.replace(/^Quick answer:\s*/i, '')}</p>
+            </div>
             <time className="mt-3 block text-sm text-gray-500" dateTime={guide.updatedDate}>
               Updated: {new Date(guide.updatedDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
             </time>
