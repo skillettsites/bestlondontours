@@ -40,6 +40,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Retired guide slug still indexed by GetYourGuide; redirect to the live itinerary guide.
+      {
+        source: '/guides/london-one-day-itinerary',
+        destination: '/guides/london-3-day-itinerary',
+        permanent: true,
+      },
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'bestlondontours.co.uk' }],
