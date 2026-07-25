@@ -555,8 +555,8 @@ export const tours: Tour[] = [
       'Access to all palace areas and exhibitions',
       'Entry to the gardens and famous Maze'],
     bestFor: ['History lovers', 'Garden enthusiasts', 'Day trippers'],
-    gygTourId: '21254',
-    affiliateUrl: 'https://www.getyourguide.com/activity/-t70032/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
+    gygTourId: '70032',
+    affiliateUrl: 'https://www.getyourguide.com/activity/-t70032/?partner_id=LPT26IL&utm_medium=online_publisher&cmp=best_london_tours',
     faqs: [
       { question: 'How do I get to Hampton Court Palace from London?', answer: 'Take a direct train from London Waterloo to Hampton Court station; the journey takes about 35 minutes. The palace is a 5-minute walk from the station.' },
       { question: 'Is Hampton Court Palace worth visiting?', answer: 'Absolutely. It is one of England\'s most impressive palaces, with over 500 years of royal history, stunning gardens, and the famous Maze. Many visitors say it rivals the Tower of London.' },
