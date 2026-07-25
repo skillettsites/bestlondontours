@@ -1054,6 +1054,206 @@ export const guides: Guide[] = [
       { question: 'Which is better for children?', answer: 'The Tower of London for most families. The Beefeater tours are entertaining for children aged 6 and up, the ravens and armour displays hold attention well, and the visit is short. Windsor works better for teenagers and gives younger children the Long Walk to burn off energy, but the State Apartments are a slower, quieter experience.' }],
     publishedDate: '2026-07-20',
     updatedDate: '2026-07-20',
+  },
+  {
+    slug: 'how-much-does-it-cost-to-visit-buckingham-palace',
+    title: 'How Much Does It Cost to Visit Buckingham Palace in 2026?',
+    metaTitle: 'Buckingham Palace Cost 2026 | Tickets, Free Options & Prices',
+    metaDescription: 'How much does Buckingham Palace cost to visit in 2026? Full price breakdown of State Rooms tickets, the free Changing of the Guard, the Royal Mews, and how to save.',
+    excerpt: 'The only bookable part of Buckingham Palace is the State Rooms, open in summer only, from £33 per adult. The Changing of the Guard outside the gates is completely free, so you can experience the Palace for nothing if you are happy to watch from the railings.',
+    sections: [
+      {
+        heading: 'The Honest Cost Breakdown',
+        content: 'Visiting Buckingham Palace is cheaper than most people expect, because the single most famous experience, the Changing of the Guard, costs nothing at all. The confusion comes from the fact that the Palace has several separate paid attractions, and only one of them opens to the public. Here is the reality for 2026. The State Rooms cost from £33 per adult and are the only part of the Palace interior you can book. The Changing of the Guard ceremony outside the gates is free. The Royal Mews and The King\'s Gallery are separate paid sites next to the Palace. So your total spend ranges from zero, if you only watch the ceremony, to roughly £33 to £70 if you want to go inside and add one of the neighbouring attractions.',
+      },
+      {
+        heading: 'The State Rooms Ticket: What You Actually Pay For',
+        content: 'The State Rooms are the 19 grand rooms the Royal Family uses to receive and entertain guests, including the Throne Room, the White Drawing Room, and the Picture Gallery with its Rembrandts and Canalettos. Tickets start from £33 per adult and include a multimedia guide and a walk through part of the Palace garden at the end. The catch is timing: the State Rooms only open for about ten weeks each year, roughly late July to early October, while the King is at Balmoral. Outside that window there is no way to go inside, at any price. If your trip falls in the summer opening, book ahead, because dated timed-entry slots sell out on the busiest days.',
+      },
+      {
+        heading: 'The Free Option: Changing of the Guard',
+        content: 'If you are visiting outside summer, or you simply do not want to pay, the Changing of the Guard delivers the classic Buckingham Palace experience for free. The ceremony features the Foot Guards in their red tunics and bearskin hats, a full military band, and about 45 minutes of drill and music. It usually runs on set mornings through the week and daily in peak summer, starting around 11am, though the schedule changes with weather and events, so check the official timetable the day before. Arrive by 10.15am to claim a spot against the railings or on the Victoria Memorial steps, which give the best view over the forecourt. It costs nothing and is the single most photographed thing most visitors do here.',
+      },
+      {
+        heading: 'The Royal Mews and The King\'s Gallery',
+        content: 'Two smaller paid attractions sit right beside the Palace and open for far more of the year than the State Rooms. The Royal Mews is the working stables, home to the Gold State Coach and the Diamond Jubilee State Coach, and it is a genuine hit with families and anyone interested in the ceremonial side of the monarchy. The King\'s Gallery shows rotating exhibitions drawn from the Royal Collection. Each is a modest add-on rather than a full-day cost, and both are useful alternatives if you visit when the State Rooms are closed. If your main interest is walking through the Palace itself, though, neither replaces the State Rooms tour.',
+      },
+      {
+        heading: 'Is It Worth the Money?',
+        content: 'For most first-time visitors, the honest answer is that the free Changing of the Guard is unmissable and the paid State Rooms are a worthwhile splurge only if you are genuinely interested in royal interiors and happen to be in London during the short summer opening. At £33, the State Rooms are priced similarly to Westminster Abbey at £31 and cheaper than the Tower of London at £37, both of which are open all year and, for many people, deliver more history per pound. If you have limited time and budget, watch the ceremony for free and put your ticket money toward the Tower of London or Westminster Abbey instead.',
+      },
+      {
+        heading: 'How to Book and Save',
+        content: 'Book the State Rooms in advance for the summer window, choosing the earliest morning slot for the quietest rooms and the best light in the garden. Combine your visit with the free Changing of the Guard by arriving mid-morning, watching the ceremony, then entering the State Rooms afterwards. A hop-on hop-off bus pass from £27 is a practical way to reach the Palace and link it with Westminster Abbey and the Tower of London in one day without paying multiple single Tube fares. Whatever you do, do not pay a tout or a third-party reseller a premium: the Palace uses simple dated tickets, and the free ceremony never requires a ticket of any kind.',
+      }],
+    relatedTourSlugs: ['buckingham-palace-tickets', 'westminster-abbey-tickets', 'hop-on-hop-off-bus', 'tower-of-london-tickets'],
+    faqs: [
+      { question: 'How much does it cost to go inside Buckingham Palace?', answer: 'The State Rooms cost from £33 per adult and are the only part of the interior open to visitors. They open for roughly ten weeks each summer, usually late July to early October. Outside that window you cannot go inside at any price.' },
+      { question: 'Is the Changing of the Guard free?', answer: 'Yes. The Changing of the Guard takes place outside the Palace gates and is completely free to watch. Arrive by around 10.15am for a good viewing spot against the railings or on the Victoria Memorial.' },
+      { question: 'Can you visit Buckingham Palace all year round?', answer: 'The State Rooms only open in summer. However, the free Changing of the Guard runs for much of the year, and the neighbouring Royal Mews and The King\'s Gallery open for far more of the calendar than the State Rooms.' },
+      { question: 'Is Buckingham Palace worth it compared to other London attractions?', answer: 'The free ceremony is worth seeing for everyone. The paid State Rooms are best for royal-history enthusiasts visiting in summer. If your budget is tight, the all-year Tower of London (£37) or Westminster Abbey (£31) often deliver more for the money.' }],
+    publishedDate: '2026-07-25',
+    updatedDate: '2026-07-25',
+  },
+  {
+    slug: 'is-the-shard-worth-it-vs-sky-garden',
+    title: 'Is The Shard Worth It, or Should You Do the Free Sky Garden?',
+    metaTitle: 'The Shard vs Sky Garden 2026 | Is The View Worth Paying For?',
+    metaDescription: 'The Shard costs from £19 while the Sky Garden is free. Which London viewpoint is actually worth it? An honest comparison of height, views, booking, and value.',
+    excerpt: 'If you want the single highest open-air view in London and the Shard itself is not in your photos, pay the £19 for The Shard. If you want a genuinely good free view with the Shard included in the skyline, book the Sky Garden instead. Doing both is the honest ideal, because they show you two different Londons.',
+    sections: [
+      {
+        heading: 'The Quick Verdict',
+        content: 'This is one of the most common London viewpoint questions, and the honest answer depends on one thing: whether you want to look down on London from the very top, or look across London with the famous skyline in front of you. The View from The Shard, from £19, puts you higher than anything else in Western Europe, with an open-air deck on level 72. The Sky Garden, at 20 Fenchurch Street, is free and sits lower, but it has a lush indoor garden, bars, and, crucially, a view that includes The Shard itself. Neither is objectively better. They are different experiences, and if you have a spare morning, doing both costs you only £19 plus a little planning.',
+      },
+      {
+        heading: 'The View from The Shard: What £19 Buys',
+        content: 'The Shard rises to 244 metres, and the viewing experience takes you to floors 68, 69, and 72. Level 72 is a partially open-air sky deck, which is the single biggest thing the Sky Garden cannot match: you feel the wind and hear the city rather than looking through glass. On a clear day the views reach up to 40 miles, taking in Tower Bridge, St Paul\'s, the Thames snaking east and west, and, on the clearest days, Wembley Stadium. Tickets start from £19, which is genuinely reasonable for the highest public viewpoint in the country. Sunset slots are the most popular and the most romantic, and they sell out first, so book ahead if you want that golden-hour timing.',
+      },
+      {
+        heading: 'The Sky Garden: What Free Actually Means',
+        content: 'The Sky Garden occupies the top three floors of the Walkie Talkie building at 20 Fenchurch Street. It is genuinely free, but free comes with a condition: you must book a timed slot in advance online, and popular slots vanish quickly, released a few weeks ahead. What you get is a three-storey indoor garden filled with subtropical plants, an open-air terrace, and several bars and restaurants where you can buy a drink, though you are never obliged to. At roughly 155 metres it is lower than The Shard, but that lower angle is arguably more photogenic, because The Shard and Tower Bridge both sit in your frame rather than beneath your feet. It is the best free view in central London.',
+      },
+      {
+        heading: 'Height, Photos, and the Honest Trade-Off',
+        content: 'Height is not everything. From the very top of The Shard, some landmarks are so far below that they shrink, and you obviously cannot photograph The Shard because you are standing in it. From the Sky Garden, the composition is friendlier: you are high enough for a sweeping panorama but low enough that individual buildings still read clearly, with The Shard as a dramatic centrepiece. If your priority is a bucket-list altitude and an open-air deck, The Shard wins. If your priority is the best free photo of the London skyline, the Sky Garden wins. Weather matters more than either: on a grey, low-cloud day, save your money and your slot for a clearer one, because both views depend entirely on visibility.',
+      },
+      {
+        heading: 'What About the London Eye and St Paul\'s?',
+        content: 'These two are not the only games in town. The London Eye, from £29, gives a slowly rotating capsule view from 135 metres right on the river, which many couples prefer for its unhurried, semi-private feel. St Paul\'s Cathedral, from £27, is a different proposition again: you climb 528 steps to the Golden Gallery around the dome for a 360-degree outdoor view, so you earn the panorama and get a cathedral tour on the way up. If you are ranking purely on value, the free Sky Garden and the £19 Shard sit at the top, with the London Eye and St Paul\'s as strong paid alternatives when you want a specific experience rather than just altitude.',
+      },
+      {
+        heading: 'How to Do Both in One Morning',
+        content: 'The smartest plan is to combine them. Book a free morning Sky Garden slot, enjoy the gardens and a coffee, then walk about 15 minutes across to London Bridge for a booked Shard slot, ideally timed so the second one lands near sunset. That way you get the friendly, skyline-in-frame free view and the highest open-air deck in the country in a single outing, for a total of £19. If you can only choose one and money is tight, take the free Sky Garden slot. If you can only choose one and you want the definitive top-of-London moment, pay for The Shard.',
+      }],
+    relatedTourSlugs: ['the-shard-tickets', 'london-eye-tickets', 'st-pauls-cathedral-tickets', 'thames-sightseeing-cruise'],
+    faqs: [
+      { question: 'Is The Shard worth the money?', answer: 'Yes, if you want the highest public viewpoint in Western Europe and an open-air deck on level 72. At £19 it is reasonably priced for what it offers. On a cloudy day, though, the view is limited, so pick a clear day.' },
+      { question: 'Is the Sky Garden really free?', answer: 'Yes, entry is free, but you must book a timed slot in advance online. Slots are released a few weeks ahead and go quickly. You can buy food and drink there, but you are never required to.' },
+      { question: 'Which has the better view, The Shard or the Sky Garden?', answer: 'The Shard is higher with an open-air deck, so it wins on altitude. The Sky Garden is lower but includes The Shard in your skyline photos, so it often wins for pictures. They show two different views of London.' },
+      { question: 'Can you visit both The Shard and the Sky Garden in one day?', answer: 'Easily. They are about a 15-minute walk apart. Book a free morning Sky Garden slot and a paid Shard slot near sunset to get the best of both for a total of £19.' }],
+    publishedDate: '2026-07-25',
+    updatedDate: '2026-07-25',
+  },
+  {
+    slug: 'warner-bros-harry-potter-studio-tour-worth-it',
+    title: 'Is the Warner Bros. Harry Potter Studio Tour Worth It in 2026?',
+    metaTitle: 'Harry Potter Studio Tour Worth It? 2026 Cost & Honest Review',
+    metaDescription: 'Is the Warner Bros. Harry Potter Studio Tour worth £98 in 2026? An honest look at what the coach package includes, how long it takes, and who should book it.',
+    excerpt: 'For Harry Potter fans, the Studio Tour is one of the best attractions in the country and well worth it. The £98 package with return coach transfer is the stress-free choice for visitors staying in central London. If you are not a fan of the films, though, it is a long half-day and your money is better spent elsewhere.',
+    sections: [
+      {
+        heading: 'The Verdict First',
+        content: 'The Warner Bros. Studio Tour is the real film sets, props, and costumes from all eight Harry Potter movies, housed at Leavesden about 20 miles northwest of central London. For anyone who grew up with the books or films, it is genuinely one of the best days out in the country, and the answer to whether it is worth it is a clear yes. For someone with no attachment to the series, it is a three to four hour walk through a film studio plus two to three hours of travel, and the £98 is better spent on central London attractions. The tour does not really do half-measures: your enjoyment tracks almost exactly with how much you love the films.',
+      },
+      {
+        heading: 'What the £98 Package Includes',
+        content: 'The headline number to understand is that £98 is not just the studio ticket. This package includes return coach transfer on a branded bus from central London plus your timed studio entry, which is what makes it convenient. Studio admission bought on its own is cheaper, but then you must get yourself to Watford Junction by train and take a shuttle to the studio, adding cost, changes, and planning. For a family or anyone not keen on navigating the rail network out of the city, bundling the coach at £98 removes all of that friction. The full excursion, travel included, runs about seven hours door to door, with roughly three to four of those hours inside the studio itself.',
+      },
+      {
+        heading: 'What You Actually See Inside',
+        content: 'The tour is self-paced, so you linger wherever you like. You walk through the Great Hall, stand on Diagon Alley, see Dumbledore\'s office, the Gryffindor common room, the Ministry of Magic, and the Forbidden Forest with a full-size Aragog and Buckbeak. You board the Hogwarts Express at a recreated Platform 9 3/4, and near the end you reach the vast, breathtaking scale model of Hogwarts Castle that appeared in aerial shots throughout the films. Butterbeer is available in the backlot, and there is a large gift shop at the exit, so budget extra if you are visiting with children. The level of detail, from handwritten props to real costumes, is what pushes it from good to genuinely impressive.',
+      },
+      {
+        heading: 'Who Should Skip It',
+        content: 'Be honest with yourself before booking. If you have never seen the films, or you are only mildly curious, the Studio Tour is a big time and money commitment for a payoff that depends on nostalgia you may not have. The same £98 could cover a Tower of London ticket at £37 plus a Thames sightseeing cruise at £17 and still leave change, giving you two central London experiences with no long coach ride. Families with very young children under five may also find the day long, though most kids aged six and up are captivated. If you are on a tight two or three day London trip, weigh the near full day this eats against everything central London offers.',
+      },
+      {
+        heading: 'Booking Tips That Save Hassle',
+        content: 'Book early. Studio slots sell out weeks ahead, and the Hogwarts in the Snow season from mid-November to January and the summer school holidays are the hardest to get. Morning entry slots, around 9am to 10am, are the quietest inside. The tour is fully self-paced, so there is no rush and no guided-group pressure. If you are combining it with other Harry Potter experiences in the city, such as a Platform 9 3/4 photo at King\'s Cross, which is free, spread it over two days rather than trying to cram a walking tour and the studio into one. Photography is allowed throughout, so bring a charged phone or camera.',
+      },
+      {
+        heading: 'The Bottom Line',
+        content: 'The Warner Bros. Studio Tour is worth it for fans, full stop, and the £98 coach package is the right choice for most visitors based in central London who want zero travel hassle. It rates as one of the top attractions near the capital for good reason, and even film crew and production nerds who are not die-hard fans tend to come away impressed by the craft. The only people who should hesitate are those with no real connection to Harry Potter, for whom a day of central London sightseeing will deliver more, for less, with far less time on a coach.',
+      }],
+    relatedTourSlugs: ['harry-potter-studio-tour', 'madame-tussauds-tickets', 'london-eye-tickets', 'tower-of-london-tickets'],
+    faqs: [
+      { question: 'Is the Harry Potter Studio Tour worth £98?', answer: 'For fans of the books or films, yes. The £98 package includes return coach transfer from central London plus studio entry, which removes all travel hassle. Non-fans may prefer to spend the money on central London attractions.' },
+      { question: 'What does the £98 Studio Tour package include?', answer: 'It includes a return coach transfer on a branded bus from central London and timed entry to the Warner Bros. Studio Tour. The full excursion takes about seven hours, with three to four hours inside the studio.' },
+      { question: 'How long do you need for the Harry Potter Studio Tour?', answer: 'Most visitors spend three to four hours inside the self-paced studio. Including the coach travel each way, the whole day runs about seven hours door to door.' },
+      { question: 'Should I book the Studio Tour in advance?', answer: 'Yes, always. Slots sell out weeks ahead, especially during the summer holidays and the Hogwarts in the Snow season from mid-November to January. Morning slots are the quietest inside.' }],
+    publishedDate: '2026-07-25',
+    updatedDate: '2026-07-25',
+  },
+  {
+    slug: 'is-a-thames-river-cruise-worth-it',
+    title: 'Is a Thames River Cruise Worth It? Which One to Book in 2026',
+    metaTitle: 'Is a Thames River Cruise Worth It? 2026 Guide & Prices',
+    metaDescription: 'Is a Thames river cruise worth it in London? Compare the £17 sightseeing cruise, the £70 dinner cruise, and hop-on hop-off river passes to pick the right one.',
+    excerpt: 'Yes, a Thames cruise is one of the best-value ways to see London, but only if you pick the right one. The £17 Westminster to Greenwich sightseeing cruise is the sweet spot for most visitors. Save the £70 dinner cruise for a special evening, and skip it entirely if you only have an hour and a hop-on hop-off bus already covers your route.',
+    sections: [
+      {
+        heading: 'The Short Answer',
+        content: 'A river cruise is worth it for a simple reason: London was built around the Thames, and seeing landmarks like the Houses of Parliament, Tower Bridge, and the Tower of London from the water gives you a perspective the Tube and pavement never will. The catch is that Thames boats vary hugely in price and purpose, from a £17 one-way sightseeing hop to a £70 three-course dinner cruise. Choosing the wrong one is where people feel short-changed. Match the boat to what you actually want, a quick scenic transfer, a leisurely sightseeing loop, or a special night out, and a cruise becomes one of the highlights of a London trip rather than a tourist tax.',
+      },
+      {
+        heading: 'The Best Value: Westminster to Greenwich Sightseeing Cruise',
+        content: 'For most visitors, the Westminster to Greenwich sightseeing cruise, from £17, is the one to book. Over about an hour you sail from Westminster Pier past the London Eye, under Tower Bridge, and alongside the Tower of London and Canary Wharf, with live commentary pointing out the sights and sharing London\'s maritime history. The genius of this route is that it doubles as transport: it drops you in historic Greenwich, home to the Cutty Sark, the Royal Observatory, and Greenwich Market, so your sightseeing boat also delivers you to a whole extra district worth exploring. You can return by boat, DLR, or train. Pound for pound, it is one of the best-value experiences in the city.',
+      },
+      {
+        heading: 'The Special-Occasion Option: Thames Dinner Cruise',
+        content: 'If you want an evening rather than a sightseeing trip, the Thames dinner cruise, from £70, is a different proposition entirely. You board at Westminster Pier as the sun sets, enjoy a welcome drink and a three-course British dinner, and watch Tower Bridge, the London Eye, and the Houses of Parliament glide past illuminated against the night sky, with a live singer and cabaret entertainment throughout. It runs about three hours, usually departing around 7.30pm to 8pm. Is it worth £70? For an anniversary, a proposal, or a one-off celebration, absolutely, because you are paying for dinner, a show, and the view together. As a pure sightseeing exercise, it is far more than you need.',
+      },
+      {
+        heading: 'Hop-On Hop-Off River Passes and When to Skip a Cruise',
+        content: 'A third option is a river roamer or hop-on hop-off river pass, which lets you use the boats like a bus along the Thames, hopping off at piers such as Westminster, London Bridge, and Greenwich throughout the day. This suits visitors who want flexibility and plan to use the river as their main way of getting around. It is worth checking, though, whether you actually need it: if you have already bought a hop-on hop-off bus pass from £27 that covers your key routes, a separate river pass can be redundant. In that case, a single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport you already have.',
+      },
+      {
+        heading: 'How to Get the Most From the Water',
+        content: 'A few small choices make a cruise much better. Sit on the open-air upper deck if the weather allows, because the views and photos are dramatically better than through glass, though every boat has covered indoor seating for the frequent London drizzle. Aim for a clear day or the golden hour before sunset, when the light on the river is at its best. If you are pairing the cruise with other attractions, note that the sightseeing route ends at Greenwich, so build in time to explore there rather than turning straight around. And do not expect a full meal on the sightseeing boats: they carry only a small bar, so the dinner cruise is the one to choose if food is part of the plan.',
+      },
+      {
+        heading: 'The Bottom Line',
+        content: 'A Thames cruise earns its place on almost every London itinerary, provided you book with intent. For sightseeing and value, take the £17 Westminster to Greenwich cruise, which shows you the river landmarks and delivers you to Greenwich in one go. For romance and celebration, book the £70 dinner cruise. For flexible all-day river travel, consider a hop-on hop-off river pass, but only if a bus pass is not already covering your movements. Get the match right and the river becomes the best seat in London.',
+      }],
+    relatedTourSlugs: ['thames-sightseeing-cruise', 'thames-dinner-cruise', 'the-shard-tickets', 'hop-on-hop-off-bus'],
+    faqs: [
+      { question: 'Is a Thames river cruise worth it?', answer: 'Yes, seeing London\'s landmarks from the water is a genuine highlight, and the £17 Westminster to Greenwich sightseeing cruise is excellent value because it doubles as transport to Greenwich. Just match the boat to what you want.' },
+      { question: 'Which Thames cruise is best value?', answer: 'The Westminster to Greenwich sightseeing cruise from £17 is the best value. In about an hour you pass the main river landmarks with live commentary and arrive in historic Greenwich, ready to explore further.' },
+      { question: 'Is the Thames dinner cruise worth £70?', answer: 'For a special occasion such as an anniversary or proposal, yes, because the £70 covers a three-course dinner, live entertainment, and illuminated night views over about three hours. As pure sightseeing it is more than most people need.' },
+      { question: 'Do I need a river pass if I have a hop-on hop-off bus ticket?', answer: 'Often not. If a bus pass from £27 already covers your routes, a separate river pass can be redundant. A single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport.' }],
+    publishedDate: '2026-07-25',
+    updatedDate: '2026-07-25',
+  },
+  {
+    slug: 'is-the-london-pass-worth-it',
+    title: 'Is the London Pass Worth It in 2026? Do the Maths First',
+    metaTitle: 'Is the London Pass Worth It? 2026 Sightseeing Pass Maths',
+    metaDescription: 'Is the London Pass worth it in 2026? A clear, honest breakdown of when a sightseeing pass saves money versus buying individual attraction tickets, with real prices.',
+    excerpt: 'A sightseeing pass like the London Pass is only worth it if you visit roughly three or more paid attractions per day and pick expensive ones. If you plan a slower trip, lean on free museums, or only want two or three big sights, buying individual tickets almost always costs less. The pass rewards fast, attraction-heavy sightseeing, and punishes a relaxed pace.',
+    sections: [
+      {
+        heading: 'How a Sightseeing Pass Actually Works',
+        content: 'The London Pass and similar sightseeing passes bundle entry to a long list of paid attractions, often 90 or more, into a single price for a set number of days. The pitch is simple: pay once, then walk into as many included attractions as you can fit. We do not sell the pass, and we sell individual attraction tickets, so we have no stake in which you choose, which is exactly why this maths matters. A pass only saves money if the total gate price of everything you visit exceeds what the pass costs. That sounds obvious, but it is where most travellers get it wrong, because the pass encourages you to rush from sight to sight to justify the outlay.',
+      },
+      {
+        heading: 'The Break-Even Maths',
+        content: 'Here is the honest calculation using real London gate prices. The Tower of London is about £37, St Paul\'s Cathedral around £27, Westminster Abbey £31, The Shard £19, and a hop-on hop-off bus pass £27. Visit the Tower, St Paul\'s, and Westminster Abbey in a single day and you are already at roughly £95 in tickets, which is the kind of total where a day pass can pull ahead. Do only one or two of those, and individual tickets win comfortably. The break-even point, in other words, sits around three paid attractions per day at the pricier end. Anything less and you are effectively pre-paying for entries you will not use.',
+      },
+      {
+        heading: 'When the Pass Wins',
+        content: 'A pass genuinely pays off for a specific kind of traveller: energetic sightseers on a short trip who want to cram in the maximum number of big-ticket paid attractions and do not mind a brisk pace. If your dream London day is the Tower of London in the morning, St Paul\'s at midday, a river cruise in the afternoon, and another paid landmark before closing, a pass can save real money and also save time through included fast-track entry at some sites. Families visiting several paid attractions back to back can benefit too. The key traits are speed, appetite for paid sights, and a plan that front-loads expensive entries rather than free ones.',
+      },
+      {
+        heading: 'When to Skip It',
+        content: 'Skip the pass if your trip is relaxed, museum-led, or short on paid sights. London\'s greatest asset for budget travellers is that its major museums, the British Museum, the National Gallery, Tate Modern, the V&A, and the Natural History Museum, are all free, and no pass adds value to something that already costs nothing. If your itinerary leans on free museums, parks, markets, and walking, with just two or three paid highlights, buy those tickets individually. You will pay less, move at your own pace, and avoid the low-key pressure to visit attractions you do not really care about simply to get your money\'s worth out of a pass.',
+      },
+      {
+        heading: 'The Middle-Ground Strategy',
+        content: 'For many visitors the smartest approach is neither a full pass nor scattered full-price tickets, but a deliberate mix. Build your days around London\'s free museums and parks, then pre-book the two or three paid attractions you actually want, such as the Tower of London at £37 or The Shard at £19, at their individual prices. Add a hop-on hop-off bus pass from £27 if you want easy sightseeing transport that doubles as a tour. This keeps your spend tied directly to what you value, avoids paying for a long list of attractions you will never reach, and still lets you hit the headline sights without queueing at the gate.',
+      },
+      {
+        heading: 'The Bottom Line',
+        content: 'The London Pass is worth it only if you do the maths for your own itinerary and it comes out ahead, which realistically means visiting around three or more pricier paid attractions per day. For fast, attraction-hungry sightseers on a tight schedule, it can save both money and time. For everyone else, and especially for anyone leaning on London\'s superb free museums, individual tickets are cheaper, more flexible, and free of the pressure to keep visiting things just to break even. Add up the gate prices of what you genuinely want to see, compare it to the pass, and let the numbers decide.',
+      }],
+    relatedTourSlugs: ['tower-of-london-tickets', 'st-pauls-cathedral-tickets', 'westminster-abbey-tickets', 'the-shard-tickets', 'hop-on-hop-off-bus'],
+    faqs: [
+      { question: 'Is the London Pass worth it?', answer: 'Only if you visit roughly three or more pricier paid attractions per day. Add up the individual gate prices of what you actually want to see and compare it to the pass cost. For relaxed or museum-led trips, individual tickets usually cost less.' },
+      { question: 'How many attractions do I need to visit for a pass to pay off?', answer: 'As a rule of thumb, around three paid attractions per day at the pricier end. For example, the Tower of London (£37), St Paul\'s (£27), and Westminster Abbey (£31) in one day total roughly £95, which is where a pass can pull ahead.' },
+      { question: 'Do London passes cover the free museums?', answer: 'No, and they do not need to. The British Museum, National Gallery, Tate Modern, V&A, and Natural History Museum are already free. A pass only adds value for paid attractions, so a museum-heavy trip rarely benefits.' },
+      { question: 'What is the best alternative to a London Pass?', answer: 'A deliberate mix: build your days around free museums and parks, pre-book the two or three paid attractions you truly want at individual prices, and add a hop-on hop-off bus pass from £27 for easy sightseeing transport.' }],
+    publishedDate: '2026-07-25',
+    updatedDate: '2026-07-25',
   }];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

@@ -63,7 +63,7 @@ export function GET(): Response {
     'Long-form itinerary and how-to-book guides for first-timers, families, budget travellers, ' +
       'and special-interest visitors.',
     '',
-    ...guides.slice(0, 20).map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.excerpt}`),
+    ...guides.map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.excerpt}`),
     '',
     '## Comparison & Planning Tools',
     `- [Compare all tours side-by-side](${SITE_URL}/compare): price, duration, rating compared.`,
