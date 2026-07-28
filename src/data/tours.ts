@@ -1,6 +1,6 @@
 import { Tour } from '@/lib/types';
 
-export const tours: Tour[] = [
+const allTours: Tour[] = [
   {
     slug: 'tower-of-london-tickets',
     title: 'Tower of London & Crown Jewels Exhibition Ticket',
@@ -1311,6 +1311,21 @@ export const tours: Tour[] = [
       { question: 'Do you go inside any of the buildings?', answer: "No. It is an external walking tour, so entry inside the attractions and buildings on the route is not included, and nor are food, drinks or your own refreshments during the break. It meets outside St Paul's Underground station." }],
     relatedSlugs: ['jack-the-ripper-tour', 'london-ghost-tour', 'london-blitz-ww2-tour'],
   }];
+
+// These slugs permanently redirect (see next.config.ts) and are excluded from the sitemap,
+// so they must never be advertised as bookable cards: a visitor clicking one is bounced
+// away from the product they just chose. Filtering here covers every listing surface
+// (/tours, /compare, /budget, /family and the category pages) in one place.
+const REDIRECTED_TOUR_SLUGS = new Set([
+  'london-true-crime-tour',
+  'london-music-legends-tour',
+  'london-architecture-tour',
+  'london-royal-parks-tour',
+  'london-thames-kayak-tour',
+  'london-tudor-history-tour',
+]);
+
+export const tours: Tour[] = allTours.filter((t) => !REDIRECTED_TOUR_SLUGS.has(t.slug));
 
 export function getTourBySlug(slug: string): Tour | undefined {
   return tours.find((t) => t.slug === slug);
