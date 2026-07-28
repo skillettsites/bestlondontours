@@ -71,12 +71,12 @@ const walkingTours: WalkingTour[] = [
     name: 'London Ghost Tour',
     slug: 'ghost-tour',
     search: 'London ghost walking tour',
-    price: '£15 to £20',
+    price: '£25',
     duration: '2 hours',
     bestFor: 'Couples and groups of friends',
     description: [
       'London\'s ghost tour takes you through some of the oldest and most haunted parts of the city. Over 2 hours, you will visit plague pits, execution sites, and haunted pubs while hearing chilling true stories that span centuries. With a 4.6 rating and over 4,500 reviews, it is one of the top-rated evening walks available.',
-      'The route covers areas around the City of London and Southwark, where the history is particularly dark and atmospheric after sunset. Ghost tours are popular with couples looking for something different and groups of friends who enjoy being spooked. Prices start from £15 per person, and the tour leaves plenty of time for dinner afterwards.',
+      'The route covers areas around the City of London and Southwark, where the history is particularly dark and atmospheric after sunset. Ghost tours are popular with couples looking for something different and groups of friends who enjoy being spooked. Prices start from £25 per person, and the tour leaves plenty of time for dinner afterwards.',
     ],
   },
   {
@@ -308,7 +308,7 @@ export default function BestWalkingToursLondon2026() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-card bg-surface border border-border p-5">
               <p className="text-sm font-semibold text-on-surface">Jack the Ripper Evening Walk</p>
-              <p className="text-xs text-on-surface-2 mt-1">£12-20 &middot; 1.5-2 hours &middot; ★ 4.6 (9k+)</p>
+              <p className="text-xs text-on-surface-2 mt-1">£15 &middot; 1.5 hours &middot; ★ 4.3</p>
               <TrackedGYGLink
                 href="https://www.getyourguide.com/activity/-t6005/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours"
                 tourName="Jack the Ripper Walk"

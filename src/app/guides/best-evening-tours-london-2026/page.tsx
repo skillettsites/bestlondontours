@@ -65,7 +65,7 @@ const eveningTours: EveningTour[] = [
     bestFor: 'Romantic evenings and celebrations',
     description: [
       'A Thames dinner cruise is one of the most romantic evening experiences London has to offer. As you glide past the Houses of Parliament, Tower Bridge, the London Eye, and the Shard, you will enjoy a freshly prepared multi-course meal with panoramic views through floor-to-ceiling windows. Most cruises include live music or a DJ, creating the feel of a floating restaurant.',
-      'Prices range from £60 to £120 per person depending on the menu and drinks package. Premium options include Champagne receptions, window seats, and five-course tasting menus. For a more budget-friendly option, consider a sunset cruise with drinks and canapes, which typically runs 1.5 hours for around £35 to £50 per person. Book at least 2 weeks in advance for weekend dates, as the best cruises sell out quickly.',
+      'The Thames dinner cruise on this site starts from £95 per person, and other operators range higher depending on the menu and drinks package. Premium options include Champagne receptions, window seats, and five-course tasting menus. For a more budget-friendly option, consider a sunset cruise with drinks and canapes, which typically runs 1.5 hours for around £35 to £50 per person. Book at least 2 weeks in advance for weekend dates, as the best cruises sell out quickly.',
     ],
   },
   {
@@ -122,7 +122,7 @@ const faqs = [
   {
     question: 'What is the best evening tour in London?',
     answer:
-      'The Jack the Ripper walking tour is the most popular and highest-rated evening experience, with a 4.6 rating from nearly 9,000 reviews. It offers outstanding value at just £12 to £20 per person for a 2-hour guided walk through Whitechapel.',
+      'The Jack the Ripper walking tour is the most popular and highest-rated evening experience, with a 4.3 rating on GetYourGuide. It offers outstanding value at just £15 per person for a 1.5-hour guided walk through Whitechapel.',
   },
   {
     question: 'Are evening tours in London safe?',
@@ -132,7 +132,7 @@ const faqs = [
   {
     question: 'How much do evening tours in London cost?',
     answer:
-      'Evening walking tours like the Jack the Ripper and ghost tours cost £12 to £20 per person. Thames dinner cruises range from £60 to £120. Sunset views from The Shard cost £30 to £50. Historic pub crawls cost £25 to £50 with some drinks included.',
+      'Evening walking tours like the Jack the Ripper and ghost tours cost £12 to £20 per person. Thames dinner cruises start from £95. Sunset views from The Shard cost £30 to £50. Historic pub crawls cost £25 to £50 with some drinks included.',
   },
   {
     question: 'Do I need to book evening tours in advance?',

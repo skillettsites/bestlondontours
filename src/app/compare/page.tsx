@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Compare London Tours - Find Your Perfect Experience | Best London Tours',
-  description: 'Compare all London tours side by side. Sort by price, rating, and duration to find your perfect tour. From £17 per person with instant booking.',
+  description: 'Compare all London tours side by side. Sort by price, rating, and duration to find your perfect tour. From £15 per person with instant booking.',
   alternates: { canonical: `${SITE_URL}/compare` },
   openGraph: {
     title: 'Compare London Tours - Find Your Perfect Experience',
