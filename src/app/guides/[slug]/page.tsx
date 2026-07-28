@@ -212,7 +212,22 @@ export default async function GuidePage({ params }: { params: Params }) {
 
           {/* Related Guides */}
           {(() => {
-            const otherGuides = guides.filter(g => g.slug !== guide.slug).slice(0, 4);
+            // Relevance first (guides that recommend the same tours), then a rotating window so
+            // every guide in the array receives inbound links, not just the first four.
+            const overlap = (g: typeof guide) =>
+              g.relatedTourSlugs.filter((s) => guide.relatedTourSlugs.includes(s)).length;
+            const currentIndex = guides.findIndex((g) => g.slug === guide.slug);
+            const picked: typeof guides = guides
+              .filter((g) => g.slug !== guide.slug && overlap(g) > 0)
+              .sort((a, b) => overlap(b) - overlap(a))
+              .slice(0, 2);
+            for (let step = 1; step <= guides.length && picked.length < 4; step++) {
+              const candidate = guides[(currentIndex + step) % guides.length];
+              if (candidate.slug === guide.slug) continue;
+              if (picked.some((g) => g.slug === candidate.slug)) continue;
+              picked.push(candidate);
+            }
+            const otherGuides = picked.slice(0, 4);
             return otherGuides.length > 0 ? (
               <section className="mt-12 bg-gray-50 rounded-xl p-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">More London Guides</h2>

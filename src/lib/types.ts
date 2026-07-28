@@ -64,4 +64,6 @@ export interface GuideSection {
 export interface FAQ {
   question: string;
   answer: string;
+  /** Optional internal follow-on link rendered under the answer (not included in FAQ schema text). */
+  link?: { href: string; label: string };
 }

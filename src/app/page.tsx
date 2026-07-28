@@ -33,6 +33,25 @@ const mostBookedTours = mostBookedSlugs
 
 const topThree = mostBookedTours.slice(0, 3);
 
+// Cost and worth-it guides, linked explicitly by slug so they are never cut off by a slice.
+const decisionGuideSlugs = [
+  'how-much-does-it-cost-to-visit-buckingham-palace',
+  'is-the-shard-worth-it-vs-sky-garden',
+  'warner-bros-harry-potter-studio-tour-worth-it',
+  'is-a-thames-river-cruise-worth-it',
+  'is-the-london-pass-worth-it',
+];
+
+const decisionGuides = decisionGuideSlugs
+  .map((slug) => guides.find((g) => g.slug === slug))
+  .filter((g): g is NonNullable<typeof g> => g !== undefined);
+
+// Guide link list: the first ten plus every decision guide, deduped, order preserved.
+const guideLinkList = [
+  ...guides.slice(0, 10),
+  ...decisionGuides.filter((g) => !guides.slice(0, 10).some((x) => x.slug === g.slug)),
+];
+
 const featuredTours = tours
   .filter((t) => !mostBookedSlugs.includes(t.slug))
   .slice(0, 6);
@@ -287,6 +306,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Decision guides: cost and worth-it answers, linked by slug */}
+      {decisionGuides.length > 0 && (
+        <section className="bg-surface-muted">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <SectionHeader
+              eyebrow="Decide"
+              title="Is it worth it? Straight answers before you book"
+              subtitle="What each London attraction actually costs, and whether it is worth the money."
+              action={{ label: 'All guides', href: '/guides' }}
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {decisionGuides.map((guide, i) => (
+                <RevealOnScroll key={guide.slug} delay={(i % 3) * 0.08}>
+                  <Link
+                    href={`/guides/${guide.slug}`}
+                    className="group flex h-full flex-col bg-surface rounded-card-lg border border-border p-5 hover:shadow-card-hover transition-shadow"
+                  >
+                    <h3 className="font-semibold text-on-surface group-hover:text-primary transition-colors">
+                      {guide.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-on-surface-2 leading-relaxed line-clamp-3">
+                      {guide.excerpt.replace(/^Quick answer:\s*/i, '')}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                      Read the answer
+                      <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                    </span>
+                  </Link>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* SEO internal links */}
       <section className="bg-surface-muted">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -321,7 +377,7 @@ export default function HomePage() {
               <div>
                 <h3 className="font-semibold text-on-surface mb-3 text-sm uppercase tracking-wider">Guides</h3>
                 <ul className="space-y-2">
-                  {guides.slice(0, 10).map((guide) => (
+                  {guideLinkList.map((guide) => (
                     <li key={guide.slug}>
                       <Link href={`/guides/${guide.slug}`} className="text-primary hover:text-primary-ink hover:underline text-sm">
                         {guide.title}

@@ -21,15 +21,16 @@ import ViewerCounter from '@/components/ds/ViewerCounter';
 import RevealOnScroll from '@/components/ds/RevealOnScroll';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 
+// Decision guides come first in each list so the cost and worth-it answers get the internal links.
 const categoryGuideMap: Record<string, string[]> = {
-  landmarks: ['first-time-visiting-london', 'london-3-day-itinerary', 'best-walking-tours-london-2026'],
-  'river-cruises': ['bus-tour-vs-boat-tour-london', 'london-tours-for-couples', 'london-3-day-itinerary'],
-  'day-trips': ['best-day-trips-from-london', 'first-time-visiting-london', 'london-3-day-itinerary'],
+  landmarks: ['how-much-does-it-cost-to-visit-buckingham-palace', 'is-the-shard-worth-it-vs-sky-garden', 'is-the-london-pass-worth-it', 'first-time-visiting-london', 'london-3-day-itinerary', 'best-walking-tours-london-2026'],
+  'river-cruises': ['is-a-thames-river-cruise-worth-it', 'bus-tour-vs-boat-tour-london', 'london-tours-for-couples', 'london-3-day-itinerary'],
+  'day-trips': ['warner-bros-harry-potter-studio-tour-worth-it', 'best-day-trips-from-london', 'first-time-visiting-london', 'london-3-day-itinerary'],
   'food-tours': ['london-food-tours', 'free-things-to-do-in-london-2026'],
-  'family-fun': ['best-london-tours-for-kids', 'london-rainy-day-activities', 'free-things-to-do-in-london-2026'],
-  'walking-tours': ['best-walking-tours-london-2026', 'first-time-visiting-london', 'free-things-to-do-in-london-2026'],
-  'museums-exhibitions': ['london-rainy-day-activities', 'first-time-visiting-london', 'best-london-tours-for-kids'],
-  'evening-experiences': ['london-tours-for-couples', 'best-walking-tours-london-2026', 'best-evening-tours-london-2026'],
+  'family-fun': ['warner-bros-harry-potter-studio-tour-worth-it', 'best-hop-on-hop-off-london', 'best-london-tours-for-kids', 'london-rainy-day-activities', 'free-things-to-do-in-london-2026'],
+  'walking-tours': ['is-the-london-pass-worth-it', 'best-walking-tours-london-2026', 'first-time-visiting-london', 'free-things-to-do-in-london-2026'],
+  'museums-exhibitions': ['warner-bros-harry-potter-studio-tour-worth-it', 'london-rainy-day-activities', 'first-time-visiting-london', 'best-london-tours-for-kids'],
+  'evening-experiences': ['is-a-thames-river-cruise-worth-it', 'london-tours-for-couples', 'best-walking-tours-london-2026', 'best-evening-tours-london-2026'],
 };
 
 const REDIRECTED = new Set([
@@ -318,7 +319,7 @@ export default async function TourPage({ params }: { params: Params }) {
           const relevantGuides = Array.from(guideSlugSet)
             .map((gs) => guides.find((g) => g.slug === gs))
             .filter((g): g is NonNullable<typeof g> => g !== undefined)
-            .slice(0, 3);
+            .slice(0, 6);
           if (relevantGuides.length === 0) return null;
 
           return (

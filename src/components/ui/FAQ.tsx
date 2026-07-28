@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { FAQ as FAQType } from '@/lib/types';
 
 export default function FAQ({ faqs, title = 'Frequently Asked Questions' }: { faqs: FAQType[]; title?: string }) {
@@ -29,11 +30,18 @@ export default function FAQ({ faqs, title = 'Frequently Asked Questions' }: { fa
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
               </svg>
             </button>
-            {openIndex === i && (
-              <div className="px-4 pb-4 text-gray-600 leading-relaxed">
-                {faq.answer}
-              </div>
-            )}
+            {/* Answer stays in the HTML at all times so the copy and any internal link are crawlable */}
+            <div className={`px-4 pb-4 text-gray-600 leading-relaxed ${openIndex === i ? '' : 'hidden'}`}>
+              {faq.answer}
+              {faq.link && (
+                <>
+                  {' '}
+                  <Link href={faq.link.href} className="font-semibold text-green-700 hover:underline">
+                    {faq.link.label}
+                  </Link>
+                </>
+              )}
+            </div>
           </div>
         ))}
       </div>

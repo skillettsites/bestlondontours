@@ -6,4 +6,4 @@ export const GYG_CAMPAIGN = 'best_london_tours';
 export const GYG_LOCATION_ID = '57';
 export const GYG_CITY_URL = `https://www.getyourguide.com/london-l${GYG_LOCATION_ID}/?partner_id=${GYG_PARTNER_ID}&utm_medium=online_publisher&cmp=${GYG_CAMPAIGN}`;
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
-export const CONTENT_DATE = '2026-05-17';
+export const CONTENT_DATE = '2026-07-28';

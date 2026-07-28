@@ -236,7 +236,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'When Free Tours Can Lead to Unforgettable Paid Experiences',
-        content: 'While London offers an incredible amount for free, some of the best value paid tours start from as little as £15. Free tip-based walking tours (where you pay what you think the tour is worth) are an excellent bridge between free and paid. After exploring London\'s free museums and parks, consider treating yourself to one or two standout paid experiences. The Jack the Ripper tour at £15 is one of the best value evening activities in any city. Book at /tours/jack-the-ripper-tour. The Thames sightseeing cruise at £17 gives you a completely different perspective on London from the water. Book at /tours/thames-sightseeing-cruise. For families, the Natural History Museum guided tour at £30 transforms a free museum visit into an expert-led adventure at /tours/natural-history-museum-tour. And the hop-on hop-off bus at £27 saves you money on Tube fares while doubling as a sightseeing tour. Book at /tours/hop-on-hop-off-bus. The key is to use London\'s free attractions as your foundation and spend selectively on the paid experiences that will create the most memorable moments.',
+        content: 'While London offers an incredible amount for free, some of the best value paid tours start from as little as £15. Free tip-based walking tours (where you pay what you think the tour is worth) are an excellent bridge between free and paid. After exploring London\'s free museums and parks, consider treating yourself to one or two standout paid experiences. The Jack the Ripper tour at £15 is one of the best value evening activities in any city. Book at /tours/jack-the-ripper-tour. The Thames sightseeing cruise at £17 gives you a completely different perspective on London from the water. Book at /tours/thames-sightseeing-cruise. For families, the Natural History Museum guided tour at £30 transforms a free museum visit into an expert-led adventure at /tours/natural-history-museum-tour. And the hop-on hop-off bus at £25 saves you money on Tube fares while doubling as a sightseeing tour. Book at /tours/hop-on-hop-off-bus. The key is to use London\'s free attractions as your foundation and spend selectively on the paid experiences that will create the most memorable moments.',
       }],
     relatedTourSlugs: ['thames-sightseeing-cruise', 'jack-the-ripper-tour', 'natural-history-museum-tour', 'the-shard-tickets', 'hop-on-hop-off-bus'],
     faqs: [
@@ -375,7 +375,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'Hop-On Hop-Off Bus and Tower of London',
-        content: 'The hop-on hop-off bus is a brilliant family option because it combines sightseeing with transport. Children love sitting on the open top deck of a red double-decker bus, and the audio commentary keeps them engaged between stops. Jump off at any stop that catches their eye, explore, then catch the next bus. A 24-hour pass starts from £27 at /tours/hop-on-hop-off-bus. The Tower of London is one of the most child-friendly historic attractions in the city. The Beefeater tours are entertaining and packed with gruesome stories that children find fascinating (executions, torture, prisoners, and ravens). The Crown Jewels exhibition is genuinely impressive for all ages. The medieval walls and towers are fun to explore, and there are often interactive displays and events for families. Under-5s enter free. Tickets start from £37 at /tours/tower-of-london-tickets. Allow 2 to 3 hours for a family visit.',
+        content: 'The hop-on hop-off bus is a brilliant family option because it combines sightseeing with transport. Children love sitting on the open top deck of a red double-decker bus, and the audio commentary keeps them engaged between stops. Jump off at any stop that catches their eye, explore, then catch the next bus. A 24-hour pass starts from £25 at /tours/hop-on-hop-off-bus. The Tower of London is one of the most child-friendly historic attractions in the city. The Beefeater tours are entertaining and packed with gruesome stories that children find fascinating (executions, torture, prisoners, and ravens). The Crown Jewels exhibition is genuinely impressive for all ages. The medieval walls and towers are fun to explore, and there are often interactive displays and events for families. Under-5s enter free. Tickets start from £37 at /tours/tower-of-london-tickets. Allow 2 to 3 hours for a family visit.',
       },
       {
         heading: 'Madame Tussauds and the London Dungeon',
@@ -811,7 +811,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'Price Comparison',
-        content: 'City Sightseeing and Golden Tours are the joint-cheapest, with 24-hour tickets from £25 when booked online. Big Bus starts from around £32 for 24 hours. Upgrading to a 48-hour pass typically adds £6 to £12 with any operator, and it is worth it if you want to use the bus as transport across two full days. All three offer online discounts of 10 to 15% versus paying at the stop. Family tickets (2 adults, 2 children) are available from all operators, and children under 5 travel free on all services. Where a Thames cruise is included it is worth £12 to £15 on its own, so factor that into the value comparison. <a href="https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours" target="_blank" rel="noopener noreferrer" style="color: #15803d; font-weight: 600; text-decoration: underline;">Book the £25 City Sightseeing pass here</a> or compare the operator links in the table above.',
+        content: 'City Sightseeing and Golden Tours are the joint-cheapest, with 24-hour tickets from £25 when booked online. Big Bus starts from around £32 for 24 hours. Upgrading to a 48-hour pass typically adds £6 to £12 with any operator, and it is worth it if you want to use the bus as transport across two full days. All three offer online discounts of 10 to 15% versus paying at the stop. Family tickets (2 adults, 2 children) are available from all operators, and children under 5 travel free on all services. Where a Thames cruise is included it is worth £12 to £15 on its own, so factor that into the value comparison. <a href="https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours" target="_blank" rel="noopener noreferrer" style="color: #15803d; font-weight: 600; text-decoration: underline;">Book the £25 City Sightseeing pass here</a> or compare the operator links in the table above. Want the full ticket breakdown first? Our <a href="/tours/hop-on-hop-off-bus" style="color: #15803d; font-weight: 600; text-decoration: underline;">City Sightseeing hop-on hop-off bus page</a> lists what the pass includes, the route it covers, and live availability.',
       },
       {
         heading: 'Which to Choose for Families',
@@ -829,7 +829,7 @@ export const guides: Guide[] = [
       { question: 'How busy are hop-on hop-off buses in summer 2026?', answer: 'Summer (June to August) is the busiest period. Buses on the main red route fill up between 10am and 3pm, especially at popular stops like the London Eye and Buckingham Palace. Book your pass online in advance to avoid queuing at the stop and to lock in the best price. Online bookings include free cancellation so you can adjust if your plans change.' },
       { question: 'What is the best price for a London hop-on hop-off bus in 2026?', answer: 'Online prices are typically 10 to 15 per cent lower than walk-up prices at the stop. For summer 2026, City Sightseeing and Golden Tours both sell 24-hour passes from £25 online, and Big Bus starts from around £32. Book through the operator links on this page for the best available rate with free cancellation.' }],
     publishedDate: '2026-03-30',
-    updatedDate: '2026-07-20',
+    updatedDate: '2026-07-28',
   },
   {
     slug: 'best-food-tours-london-2026',
@@ -1104,7 +1104,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'How to Book and Save',
-        content: 'Book the State Rooms in advance for the summer window, choosing the earliest morning slot for the quietest rooms and the best light in the garden. Combine your visit with the free Changing of the Guard by arriving mid-morning, watching the ceremony, then entering the State Rooms afterwards. A hop-on hop-off bus pass from £27 is a practical way to reach the Palace and link it with Westminster Abbey and the Tower of London in one day without paying multiple single Tube fares. Whatever you do, do not pay a tout or a third-party reseller a premium: the Palace uses simple dated tickets, and the free ceremony never requires a ticket of any kind.',
+        content: 'Book the State Rooms in advance for the summer window, choosing the earliest morning slot for the quietest rooms and the best light in the garden. Combine your visit with the free Changing of the Guard by arriving mid-morning, watching the ceremony, then entering the State Rooms afterwards. A hop-on hop-off bus pass from £25 is a practical way to reach the Palace and link it with Westminster Abbey and the Tower of London in one day without paying multiple single Tube fares. Whatever you do, do not pay a tout or a third-party reseller a premium: the Palace uses simple dated tickets, and the free ceremony never requires a ticket of any kind.',
       }],
     relatedTourSlugs: ['buckingham-palace-tickets', 'westminster-abbey-tickets', 'hop-on-hop-off-bus', 'tower-of-london-tickets'],
     faqs: [
@@ -1216,7 +1216,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'Hop-On Hop-Off River Passes and When to Skip a Cruise',
-        content: 'A third option is a river roamer or hop-on hop-off river pass, which lets you use the boats like a bus along the Thames, hopping off at piers such as Westminster, London Bridge, and Greenwich throughout the day. This suits visitors who want flexibility and plan to use the river as their main way of getting around. It is worth checking, though, whether you actually need it: if you have already bought a hop-on hop-off bus pass from £27 that covers your key routes, a separate river pass can be redundant. In that case, a single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport you already have.',
+        content: 'A third option is a river roamer or hop-on hop-off river pass, which lets you use the boats like a bus along the Thames, hopping off at piers such as Westminster, London Bridge, and Greenwich throughout the day. This suits visitors who want flexibility and plan to use the river as their main way of getting around. It is worth checking, though, whether you actually need it: if you have already bought a hop-on hop-off bus pass from £25 that covers your key routes, a separate river pass can be redundant. In that case, a single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport you already have.',
       },
       {
         heading: 'How to Get the Most From the Water',
@@ -1231,7 +1231,7 @@ export const guides: Guide[] = [
       { question: 'Is a Thames river cruise worth it?', answer: 'Yes, seeing London\'s landmarks from the water is a genuine highlight, and the £17 Westminster to Greenwich sightseeing cruise is excellent value because it doubles as transport to Greenwich. Just match the boat to what you want.' },
       { question: 'Which Thames cruise is best value?', answer: 'The Westminster to Greenwich sightseeing cruise from £17 is the best value. In about an hour you pass the main river landmarks with live commentary and arrive in historic Greenwich, ready to explore further.' },
       { question: 'Is the Thames dinner cruise worth £70?', answer: 'For a special occasion such as an anniversary or proposal, yes, because the £70 covers a three-course dinner, live entertainment, and illuminated night views over about three hours. As pure sightseeing it is more than most people need.' },
-      { question: 'Do I need a river pass if I have a hop-on hop-off bus ticket?', answer: 'Often not. If a bus pass from £27 already covers your routes, a separate river pass can be redundant. A single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport.' }],
+      { question: 'Do I need a river pass if I have a hop-on hop-off bus ticket?', answer: 'Often not. If a bus pass from £25 already covers your routes, a separate river pass can be redundant. A single £17 one-way sightseeing cruise gives you the on-the-water experience without paying twice for transport.' }],
     publishedDate: '2026-07-25',
     updatedDate: '2026-07-25',
   },
@@ -1248,7 +1248,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'The Break-Even Maths',
-        content: 'Here is the honest calculation using real London gate prices. The Tower of London is about £37, St Paul\'s Cathedral around £27, Westminster Abbey £31, The Shard £19, and a hop-on hop-off bus pass £27. Visit the Tower, St Paul\'s, and Westminster Abbey in a single day and you are already at roughly £95 in tickets, which is the kind of total where a day pass can pull ahead. Do only one or two of those, and individual tickets win comfortably. The break-even point, in other words, sits around three paid attractions per day at the pricier end. Anything less and you are effectively pre-paying for entries you will not use.',
+        content: 'Here is the honest calculation using real London gate prices. The Tower of London is about £37, St Paul\'s Cathedral around £27, Westminster Abbey £31, The Shard £19, and a hop-on hop-off bus pass £25. Visit the Tower, St Paul\'s, and Westminster Abbey in a single day and you are already at roughly £95 in tickets, which is the kind of total where a day pass can pull ahead. Do only one or two of those, and individual tickets win comfortably. The break-even point, in other words, sits around three paid attractions per day at the pricier end. Anything less and you are effectively pre-paying for entries you will not use.',
       },
       {
         heading: 'When the Pass Wins',
@@ -1260,7 +1260,7 @@ export const guides: Guide[] = [
       },
       {
         heading: 'The Middle-Ground Strategy',
-        content: 'For many visitors the smartest approach is neither a full pass nor scattered full-price tickets, but a deliberate mix. Build your days around London\'s free museums and parks, then pre-book the two or three paid attractions you actually want, such as the Tower of London at £37 or The Shard at £19, at their individual prices. Add a hop-on hop-off bus pass from £27 if you want easy sightseeing transport that doubles as a tour. This keeps your spend tied directly to what you value, avoids paying for a long list of attractions you will never reach, and still lets you hit the headline sights without queueing at the gate.',
+        content: 'For many visitors the smartest approach is neither a full pass nor scattered full-price tickets, but a deliberate mix. Build your days around London\'s free museums and parks, then pre-book the two or three paid attractions you actually want, such as the Tower of London at £37 or The Shard at £19, at their individual prices. Add a hop-on hop-off bus pass from £25 if you want easy sightseeing transport that doubles as a tour. This keeps your spend tied directly to what you value, avoids paying for a long list of attractions you will never reach, and still lets you hit the headline sights without queueing at the gate.',
       },
       {
         heading: 'The Bottom Line',
@@ -1271,7 +1271,7 @@ export const guides: Guide[] = [
       { question: 'Is the London Pass worth it?', answer: 'Only if you visit roughly three or more pricier paid attractions per day. Add up the individual gate prices of what you actually want to see and compare it to the pass cost. For relaxed or museum-led trips, individual tickets usually cost less.' },
       { question: 'How many attractions do I need to visit for a pass to pay off?', answer: 'As a rule of thumb, around three paid attractions per day at the pricier end. For example, the Tower of London (£37), St Paul\'s (£27), and Westminster Abbey (£31) in one day total roughly £95, which is where a pass can pull ahead.' },
       { question: 'Do London passes cover the free museums?', answer: 'No, and they do not need to. The British Museum, National Gallery, Tate Modern, V&A, and Natural History Museum are already free. A pass only adds value for paid attractions, so a museum-heavy trip rarely benefits.' },
-      { question: 'What is the best alternative to a London Pass?', answer: 'A deliberate mix: build your days around free museums and parks, pre-book the two or three paid attractions you truly want at individual prices, and add a hop-on hop-off bus pass from £27 for easy sightseeing transport.' }],
+      { question: 'What is the best alternative to a London Pass?', answer: 'A deliberate mix: build your days around free museums and parks, pre-book the two or three paid attractions you truly want at individual prices, and add a hop-on hop-off bus pass from £25 for easy sightseeing transport.' }],
     publishedDate: '2026-07-25',
     updatedDate: '2026-07-25',
   }];
