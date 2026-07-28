@@ -36,8 +36,8 @@ const tours: Tour[] = [
     name: 'Hop-on Hop-off Bus Tour',
     slug: 'hop-on-hop-off',
     search: 'London hop on hop off bus',
-    price: '£30\u2013£45',
-    duration: '24\u201348 hours',
+    price: '£25\u2013£32',
+    duration: '1 to 3 days',
     bestFor: 'Orientation and sightseeing',
     description: [
       'A hop-on hop-off bus tour is the ideal way to get your bearings when you first arrive in London. These open-top double-decker buses follow routes covering every major landmark, from Buckingham Palace to St Paul\u2019s Cathedral. Most tickets are valid for 24 or 48 hours, letting you explore at your own pace.',
@@ -72,7 +72,7 @@ const tours: Tour[] = [
     name: 'Westminster & Big Ben Walking Tour',
     slug: 'westminster-walking',
     search: 'Westminster walking tour London',
-    price: '£15\u2013£25',
+    price: '£15\u2013£60',
     duration: '2\u20132.5 hours',
     bestFor: 'Architecture and politics',
     description: [
@@ -84,8 +84,8 @@ const tours: Tour[] = [
     name: 'Harry Potter Studio Tour',
     slug: 'harry-potter',
     search: 'Harry Potter studio tour London',
-    price: '£50\u2013£55',
-    duration: '3\u20134 hours',
+    price: 'From £85',
+    duration: '7 to 9 hours with transfers',
     bestFor: 'Families and film fans',
     description: [
       'Warner Bros. Studio Tour London is located in Leavesden, just outside the city. This is where all eight Harry Potter films were produced, and the studio tour lets you walk through original sets including the Great Hall, Diagon Alley, and Dumbledore\u2019s office.',
@@ -108,8 +108,8 @@ const tours: Tour[] = [
     name: 'Borough Market Food Tour',
     slug: 'borough-market',
     search: 'Borough Market food tour London',
-    price: '£55\u2013£75',
-    duration: '2.5\u20133 hours',
+    price: 'From £92',
+    duration: '3 hours',
     bestFor: 'Foodies and culture lovers',
     description: [
       'Borough Market has been a fixture of London\u2019s food scene for over 1,000 years. A guided food tour takes you behind the scenes at this celebrated market, with tastings at up to 10 different vendors. Expect everything from artisan cheeses and fresh oysters to handmade chocolates and craft ciders.',
@@ -144,8 +144,8 @@ const tours: Tour[] = [
     name: 'London Eye Skip-the-Line',
     slug: 'london-eye',
     search: 'London Eye skip the line tickets',
-    price: '£30\u2013£50',
-    duration: '30\u201345 minutes',
+    price: 'From £25',
+    duration: '30 minutes',
     bestFor: 'Views and photo opportunities',
     description: [
       'Standing 135 metres tall on the South Bank, the London Eye offers panoramic views stretching up to 25 miles on a clear day. A single rotation takes about 30 minutes, giving you plenty of time to spot landmarks including Buckingham Palace, The Shard, and Wembley Stadium.',

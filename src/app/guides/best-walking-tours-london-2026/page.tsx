@@ -59,12 +59,12 @@ const walkingTours: WalkingTour[] = [
     name: 'Jack the Ripper Evening Walk',
     slug: 'jack-the-ripper-walk',
     search: 'Jack the Ripper tour London',
-    price: '£12 to £20',
+    price: '£15',
     duration: '1.5 to 2 hours',
     bestFor: 'True crime and history enthusiasts',
     description: [
       'The Jack the Ripper walking tour is one of London\'s highest-rated evening experiences, with a 4.6 rating from nearly 9,000 reviews. Expert Ripperologist guides lead you through the dark streets of Whitechapel, retracing the steps of the infamous 1888 murders with a blend of historical evidence, forensic analysis, and vivid storytelling.',
-      'Tours depart after dark for maximum atmosphere, typically starting around 7pm. The narrow lanes and courtyards of the East End feel genuinely atmospheric at night. Starting from just £12 per person, this is one of the best-value evening activities in London. Finish the night at a nearby Whitechapel pub for the full experience.',
+      'Tours depart after dark for maximum atmosphere, typically starting around 7pm. The narrow lanes and courtyards of the East End feel genuinely atmospheric at night. Starting from £15 per person, this is one of the best-value evening activities in London. Finish the night at a nearby Whitechapel pub for the full experience.',
     ],
   },
   {
@@ -83,7 +83,7 @@ const walkingTours: WalkingTour[] = [
     name: 'Borough Market Food Tour',
     slug: 'borough-market-food',
     search: 'Borough Market food tour London',
-    price: '£55 to £75',
+    price: '£92',
     duration: '2.5 to 3 hours',
     bestFor: 'Foodies and culture lovers',
     description: [
@@ -107,20 +107,20 @@ const walkingTours: WalkingTour[] = [
     name: 'Churchill and WW2 Walking Tour',
     slug: 'churchill-ww2',
     search: 'Churchill War Rooms walking tour London',
-    price: '£35 to £45',
+    price: '£29',
     duration: '3 hours',
     bestFor: 'History enthusiasts',
     description: [
       'This premium walking tour combines a guided walk through Westminster\'s hidden WW2 sites with a visit to the underground Cabinet War Rooms where Churchill directed the war effort. Rated 4.8 with nearly 3,000 reviews, it is one of the highest-rated tours in London.',
-      'The 3-hour experience covers hidden wartime landmarks above ground before descending into the preserved bunker below. You will learn about the Blitz, Churchill\'s leadership, and the secret operations that shaped the course of the war. At around £40 per person, it is a premium experience that history lovers consistently rate as worth every penny.',
+      'This walk covers Blitz-era Westminster above ground, passing the entrance to the Churchill War Rooms, though entry to the bunker is not included in this ticket. You will learn about the Blitz, Churchill\'s leadership, and the secret operations that shaped the course of the war. At £29 per person it is strong value, and there is a separate combined tour on this site that bundles War Rooms entry.',
     ],
   },
   {
     name: 'Westminster and Royal London Walk',
     slug: 'westminster-royal',
     search: 'Westminster Royal London walking tour',
-    price: '£15 to £25',
-    duration: '2 to 2.5 hours',
+    price: 'From £60',
+    duration: '2 hours',
     bestFor: 'Architecture and royal history fans',
     description: [
       'The classic Westminster walk covers the greatest concentration of London landmarks in a single route. Expect to pass Big Ben, the Houses of Parliament, Westminster Abbey, Buckingham Palace, St James\'s Park, and Trafalgar Square, all with expert historical commentary and insider stories about the Royal Family.',
@@ -136,7 +136,7 @@ const walkingTours: WalkingTour[] = [
     bestFor: 'Special occasions and small groups',
     description: [
       'Private walking tours offer a completely tailored experience with a dedicated guide. You choose the route, pace, and focus, whether that is architecture, royal history, literary London, photography, or something entirely personal. Blue Badge guides are the gold standard in London, having completed a rigorous two-year training programme.',
-      'Private tours are ideal for anniversaries, birthdays, family reunions, or anyone who prefers not to walk with a large group. Expect to pay £150 to £300 for a 3-hour walk. The best private guides can be customized around your specific interests and fitness level. Book well in advance for spring and summer visits, as the top guides fill their calendars early.',
+      'Private tours are ideal for anniversaries, birthdays, family reunions, or anyone who prefers not to walk with a large group. Expect to pay £150 to £300 for a 3-hour private walk booked direct with a guide. The booking link here goes to a small-group guided Westminster walk from £60, which is the closest bookable option on GetYourGuide. The best private guides can be customized around your specific interests and fitness level. Book well in advance for spring and summer visits, as the top guides fill their calendars early.',
     ],
   },
 ];
