@@ -84,8 +84,33 @@ export default async function GuidePage({ params }: { params: Params }) {
             </time>
           </header>
 
+          {/* Above-fold verdict box: best pick per use case, each linking straight to its GYG booking page */}
+          {guide.quickPicks && guide.quickPicks.length > 0 && (
+            <div className="mb-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {guide.quickPicks.map((pick) => (
+                <a
+                  key={pick.useCase}
+                  href={pick.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col rounded-xl border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 p-4 hover:border-green-400 hover:shadow-sm transition-all duration-300"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-1">Best for {pick.useCase}</p>
+                  <p className="font-bold text-gray-900">{pick.operator}</p>
+                  <p className="mt-1 text-sm text-gray-600 flex-1">{pick.verdict}</p>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-bold text-green-700">
+                    Book now
+                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          )}
+
           {/* Above-fold booking CTA for guides with a primary tour */}
-          {relatedTours.length > 0 && (
+          {!guide.quickPicks && relatedTours.length > 0 && (
             <div className="mb-10 rounded-xl border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 p-5 sm:p-6">
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="flex-1 min-w-0">

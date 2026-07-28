@@ -772,6 +772,26 @@ export const guides: Guide[] = [
     metaTitle: 'London Hop-On Hop-Off Bus 2026: From £25 | Big Bus vs City Sightseeing vs Golden Tours',
     metaDescription: 'Compare London hop-on hop-off bus tours for summer 2026. City Sightseeing and Golden Tours from £25, Big Bus from £32. Real traveller ratings, route differences, and direct booking links.',
     excerpt: 'Quick answer: City Sightseeing is the best all-rounder (from £25, rated 4.3 from over 8,000 reviews), Big Bus Tours has the widest route coverage (from £32), and Golden Tours is the budget pick (from £25). All three offer free cancellation when booked online.',
+    quickPicks: [
+      {
+        useCase: 'First-time visitor',
+        operator: 'City Sightseeing',
+        verdict: 'Highest rated (4.3 from 8,000+ reviews) and joint-cheapest at £25. The safest all-round pick.',
+        href: 'https://www.getyourguide.com/london-l57/city-sightseeing-london-hop-on-hop-off-bus-bookable-extras-t400017/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
+      },
+      {
+        useCase: 'Families',
+        operator: 'Big Bus Tours',
+        verdict: 'Most frequent departures and the widest stop coverage, so less standing around with restless kids. From £32.',
+        href: 'https://www.getyourguide.com/london-l57/london-big-bus-hop-on-hop-off-with-optional-river-cruise-t5089/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
+      },
+      {
+        useCase: 'Budget trip',
+        operator: 'Golden Tours',
+        verdict: 'From £25 with combo deals bundling in attractions like Madame Tussauds and the London Eye.',
+        href: 'https://www.getyourguide.com/london-l57/london-golden-tours-gray-line-hop-on-hop-off-bus-tour-t13102/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours',
+      },
+    ],
     sections: [
       {
         heading: 'Quick Comparison: All Three Operators',

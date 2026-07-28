@@ -46,6 +46,14 @@ export interface Guide {
   faqs: FAQ[];
   publishedDate: string;
   updatedDate: string;
+  quickPicks?: QuickPick[];
+}
+
+export interface QuickPick {
+  useCase: string;
+  operator: string;
+  verdict: string;
+  href: string;
 }
 
 export interface GuideSection {
