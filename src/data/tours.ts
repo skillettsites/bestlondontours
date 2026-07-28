@@ -994,7 +994,7 @@ export const tours: Tour[] = [
       { question: 'Does the tour visit the Churchill War Rooms?', answer: 'The tour passes the entrance to the Churchill War Rooms and covers their history, but entry is not included. You can visit them separately before or after.' },
       { question: 'Is this tour suitable for children?', answer: 'The operator sets no minimum age, and the guide is careful with sensitive content, but some bombing stories may not suit very young children.' },
       { question: 'Is the tour accessible?', answer: 'No. GetYourGuide lists it as not suitable for wheelchair users or people with mobility impairments. It meets by the Boadicea and Her Daughters statue in Westminster and covers the district on foot.' }],
-    relatedSlugs: ['churchill-war-rooms-tour', 'london-tudor-history-tour', 'london-ghost-tour'],
+    relatedSlugs: ['churchill-war-rooms-tour', 'london-ghost-tour'],
   },
   {
     slug: 'london-tudor-history-tour',
@@ -1064,7 +1064,7 @@ export const tours: Tour[] = [
       { question: 'Which musicians are covered on the tour?', answer: 'The Rolling Stones, The Beatles, Pink Floyd, Led Zeppelin, David Bowie, Queen, Jimi Hendrix, Elton John, John Lennon, Eric Clapton, Keith Moon and the Sex Pistols all feature. The guide adjusts the focus to the group.' },
       { question: 'Do you visit actual music venues?', answer: 'Yes, the route includes several legendary venues, recording studios, and the specific locations where iconic moments in British music happened.' },
       { question: 'Is there a minimum age?', answer: 'Yes. GetYourGuide lists this tour as not suitable for children under 15. It meets at Centre Point by Tottenham Court Road station, where your guide holds an open umbrella beneath the big digital screens.' }],
-    relatedSlugs: ['london-true-crime-tour', 'london-ghost-tour'],
+    relatedSlugs: ['london-ghost-tour'],
   },
   {
     slug: 'london-literary-tour',
@@ -1099,7 +1099,7 @@ export const tours: Tour[] = [
       { question: 'Which authors are covered on the tour?', answer: 'Charles Dickens, Samuel Johnson, Bram Stoker and Oscar Wilde are the backbone, alongside the penny-dreadful writers of Fleet Street and the legend of Sweeney Todd. The focus is gothic fiction, Victorian crime writing and scandal.' },
       { question: 'Do you go inside the British Museum?', answer: 'No. The route includes an exterior visit only, and entry to the British Museum is not included. Food, drinks and gratuities are also not included.' },
       { question: 'Is this tour suitable for someone who is not a big reader?', answer: 'Absolutely. The guide focuses on the stories behind the writers, which are full of scandal, rivalry, and drama. You do not need to have read the books to enjoy it.' }],
-    relatedSlugs: ['london-tudor-history-tour', 'london-ghost-tour', 'london-true-crime-tour'],
+    relatedSlugs: ['london-ghost-tour'],
   },
   {
     slug: 'london-hidden-underground-tour',
@@ -1239,7 +1239,7 @@ export const tours: Tour[] = [
       { question: 'Do I need to be very fit for the bike tour?', answer: 'Not at all. The route is flat and the pace is gentle with regular stops. If you can ride a bike, you will be fine.' },
       { question: 'Is cycling in London safe?', answer: 'The guide uses quiet backstreets, parks, and dedicated cycle lanes. You will not be cycling in heavy traffic. The guides prioritise safety throughout.' },
       { question: 'What should I wear and where does it start?', answer: 'Open-toed shoes are not permitted, so wear trainers or closed shoes. The tour starts from the operator office at 135 Mepham Street beside Waterloo station, and lunch is not included.' }],
-    relatedSlugs: ['london-thames-kayak-tour', 'hop-on-hop-off-bus', 'london-royal-parks-tour'],
+    relatedSlugs: ['hop-on-hop-off-bus'],
   },
   {
     slug: 'london-royal-parks-tour',
