@@ -11,6 +11,7 @@ import FAQ from '@/components/ui/FAQ';
 import TourCard from '@/components/ui/TourCard';
 import InlineTourCTA from '@/components/ui/InlineTourCTA';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
+import TrackedGYGLink from '@/components/TrackedGYGLink';
 
 export function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));
@@ -88,11 +89,12 @@ export default async function GuidePage({ params }: { params: Params }) {
           {guide.quickPicks && guide.quickPicks.length > 0 && (
             <div className="mb-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
               {guide.quickPicks.map((pick) => (
-                <a
+                <TrackedGYGLink
                   key={pick.useCase}
                   href={pick.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  tourName={pick.operator}
+                  section="guide-quickpick"
+                  destination={pick.useCase}
                   className="flex flex-col rounded-xl border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 p-4 hover:border-green-400 hover:shadow-sm transition-all duration-300"
                 >
                   <p className="text-xs font-bold uppercase tracking-wide text-green-700 mb-1">Best for {pick.useCase}</p>
@@ -104,7 +106,7 @@ export default async function GuidePage({ params }: { params: Params }) {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </span>
-                </a>
+                </TrackedGYGLink>
               ))}
             </div>
           )}
@@ -128,17 +130,17 @@ export default async function GuidePage({ params }: { params: Params }) {
                   </div>
                 </div>
                 <div className="flex flex-col items-start sm:items-end gap-1">
-                  <a
+                  <TrackedGYGLink
                     href={relatedTours[0].affiliateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    tourName={relatedTours[0].shortTitle}
+                    section="guide-above-fold-cta"
                     className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-green-500 transition-colors whitespace-nowrap"
                   >
                     Book now from &pound;{relatedTours[0].price}
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
-                  </a>
+                  </TrackedGYGLink>
                   <span className="text-xs text-green-700 font-medium">Free cancellation &bull; Instant confirmation</span>
                 </div>
               </div>
