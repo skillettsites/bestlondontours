@@ -924,7 +924,7 @@ const allTours: Tour[] = [
       { question: 'Where is the afternoon tea served?', answer: 'In the Palace Lounge at The Rubens at the Palace Hotel, a 5-star venue beside Buckingham Palace Road. A host or greeter meets you on arrival and the sitting lasts about 1.5 hours.' },
       { question: 'Is Champagne included?', answer: 'Only if you choose the inclusive option. The standard booking includes the full afternoon tea plus tea or coffee, and GetYourGuide lists Champagne as included on the Champagne option only.' },
       { question: 'Can dietary requirements be accommodated?', answer: 'The published menu is a sample and can change. Contact the hotel through GetYourGuide with any allergies or dietary needs once you have booked, so the kitchen can confirm what it can adapt.' }],
-    relatedSlugs: ['borough-market-food-tour', 'london-gin-distillery-tour', 'thames-dinner-cruise'],
+    relatedSlugs: ['borough-market-food-tour', 'thames-dinner-cruise'],
   },
   {
     slug: 'london-photography-tour',
@@ -1323,6 +1323,7 @@ const REDIRECTED_TOUR_SLUGS = new Set([
   'london-royal-parks-tour',
   'london-thames-kayak-tour',
   'london-tudor-history-tour',
+  'london-gin-distillery-tour',
 ]);
 
 export const tours: Tour[] = allTours.filter((t) => !REDIRECTED_TOUR_SLUGS.has(t.slug));

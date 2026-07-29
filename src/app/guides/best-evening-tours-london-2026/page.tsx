@@ -104,18 +104,6 @@ const eveningTours: EveningTour[] = [
       'In the City of London, Ye Olde Cheshire Cheese on Fleet Street has served customers since 1667 and was a favourite of Charles Dickens. The Lamb and Flag in Covent Garden dates to 1623. The George Inn in Southwark is London\'s last surviving galleried coaching inn. Most tours focus on a theme: literary pubs, haunted pubs, or the drinking holes of a particular neighbourhood. Prices range from £25 to £50 per person, with some drinks included.',
     ],
   },
-  {
-    name: 'London Gin Distillery Tour',
-    slug: 'gin-distillery',
-    search: 'London gin distillery tour tasting',
-    price: '£30 to £45',
-    duration: '1.5 to 2 hours',
-    bestFor: 'Cocktail enthusiasts and couples',
-    description: [
-      'London is the birthplace of the gin and tonic, and the city is home to a thriving craft gin scene. Distillery tours take you behind the scenes at small-batch producers where you will learn about the botanicals, distillation process, and history of London gin. Most tours include guided tastings of 3 to 5 different gins paired with premium tonics.',
-      'Several distilleries also offer gin-making workshops where you can create your own bespoke bottle to take home. Tours typically run in the early evening and make an excellent pre-dinner activity. With prices starting from £30 per person, a distillery tour is a sophisticated alternative to a standard bar visit and a memorable way to start your evening in London.',
-    ],
-  },
 ];
 
 const faqs = [

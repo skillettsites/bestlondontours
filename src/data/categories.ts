@@ -51,7 +51,7 @@ export const categories: Category[] = [
     description: 'London is one of the world\'s great food cities, and the best way to discover it is with a local guide. Food tours take you beyond the tourist traps to the markets, delis, and street food stalls that Londoners love. Meet the producers, taste incredible food, and learn about the cultures that have shaped London\'s diverse food scene.',
     excerpt: 'Taste London\'s best food with expert local guides at markets and hidden gems.',
     icon: '🍽️',
-    tourSlugs: ['borough-market-food-tour', 'london-afternoon-tea-experience', 'london-gin-distillery-tour'],
+    tourSlugs: ['borough-market-food-tour', 'london-afternoon-tea-experience'],
     faqs: [
       { question: 'What food tours are available in London?', answer: 'Borough Market food tours are the most popular, with 6+ tastings of artisan produce. There are also tours of Brick Lane, Soho, and the East End focusing on different cuisines.' },
       { question: 'Are London food tours suitable for vegetarians?', answer: 'Yes, most guides can accommodate vegetarian and vegan diets. Let them know your requirements when you book or at the start of the tour.' },
@@ -107,7 +107,7 @@ export const categories: Category[] = [
     description: 'London transforms after dark. The city\'s landmarks light up, the atmosphere shifts, and a different side of London emerges. Evening experiences let you see the city at its most magical, whether you are dining on the Thames, exploring haunted streets, or following in the footsteps of Jack the Ripper through the East End.',
     excerpt: 'See London after dark with dinner cruises, ghost tours, and atmospheric evening walks.',
     icon: '🌙',
-    tourSlugs: ['thames-dinner-cruise', 'jack-the-ripper-tour', 'london-ghost-tour', 'london-gin-distillery-tour'],
+    tourSlugs: ['thames-dinner-cruise', 'jack-the-ripper-tour', 'london-ghost-tour'],
     faqs: [
       { question: 'What is the best evening activity in London?', answer: 'A Thames dinner cruise is the most special evening experience, perfect for couples and celebrations. For something more adventurous, the Jack the Ripper tour and ghost tours offer atmospheric evening walks.' },
       { question: 'Are evening tours safe?', answer: 'Yes, all evening tours operate in well-lit, well-populated areas with experienced guides. London is generally very safe for tourists at night, especially in central areas.' },

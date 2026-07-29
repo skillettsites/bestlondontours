@@ -13,8 +13,6 @@ const SEARCH_TO_ID: Record<string, string> = {
   'London afternoon tea experience': '860156',
   'London bike tour': '15875',
   'London ghost walking tour': '56795',
-  'London gin distillery tour': '1107345',
-  'London gin distillery tour tasting': '1107345',
   'London historic pub tour': '27204',
   'London hop on hop off bus': '400017',
   'London hop on hop off bus tour': '400017',

@@ -108,6 +108,15 @@ const nextConfig: NextConfig = {
         destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
+      // GetYourGuide product 1107345 is dead. Its affiliate URL still answers
+      // 200 but silently lands on the generic London city page rather than an
+      // activity, so a link checker never flags it. Sent to the food and drink
+      // category, which is the closest live equivalent.
+      {
+        source: '/tours/london-gin-distillery-tour',
+        destination: '/category/food-tours',
+        permanent: true,
+      },
     ];
   },
 };

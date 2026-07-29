@@ -112,19 +112,6 @@ const summerTours: SummerTour[] = [
     ],
   },
   {
-    name: 'London Gin Distillery Tour',
-    slug: 'london-gin-distillery-tour',
-    search: 'London gin distillery tour',
-    price: 'From £30',
-    duration: '1.5 hours',
-    bestFor: 'Cocktail enthusiasts and couples',
-    category: 'food',
-    description: [
-      'London is the birthplace of gin, and a craft distillery tour is a refreshing way to spend a summer afternoon. Go behind the scenes at a working distillery to learn about the botanicals, distillation process, and history behind London dry gin. The Sipsmith tour on this site opens with a seasonal gin welcome drink and includes a guided tasting of four gins, one of them an innovation gin.',
-      'You take home a gift bag with two samples and can pick up a bottle in the distillery shop on the way out. At £30 per person, this is a sophisticated alternative to a standard bar visit and pairs perfectly with dinner in the local neighbourhood afterwards. You must be 18 or over, and popular slots fill up quickly.',
-    ],
-  },
-  {
     name: 'London Afternoon Tea Experience',
     slug: 'london-afternoon-tea-experience',
     search: 'London afternoon tea experience',
