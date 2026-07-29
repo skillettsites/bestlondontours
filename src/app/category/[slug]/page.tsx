@@ -73,7 +73,7 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
       'Evening walking tours are particularly atmospheric. As daylight fades and the streetlights come on, London takes on a completely different character. The Jack the Ripper and ghost tours are designed specifically for the evening, using the darkness and shadows to heighten the experience.',
     ],
     relatedGuides: [
-      { slug: 'best-walking-tours-london-2026', title: 'Best Walking Tours in London' },
+      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
       { slug: 'first-time-visiting-london', title: 'First Time Visiting London' },
       { slug: 'free-things-to-do-in-london-2026', title: 'Free Things to Do in London' },
     ],
@@ -98,7 +98,7 @@ const categorySeoContent: Record<string, { paragraphs: string[]; relatedGuides: 
     ],
     relatedGuides: [
       { slug: 'london-tours-for-couples', title: 'London Tours for Couples' },
-      { slug: 'best-walking-tours-london-2026', title: 'Best Walking Tours in London' },
+      { slug: 'best-walking-tours-london', title: 'Best Walking Tours in London' },
       { slug: 'best-evening-tours-london-2026', title: 'Best Evening Tours in London' },
     ],
   },

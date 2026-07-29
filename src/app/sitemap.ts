@@ -2,7 +2,9 @@ import { MetadataRoute } from 'next';
 import { tours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
+import { monthPages } from '@/data/london-months';
 import { SITE_URL, CONTENT_DATE } from '@/lib/constants';
+import { HUB_PATH, SEASON_UPDATED } from '@/lib/season';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date(CONTENT_DATE);
@@ -56,5 +58,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...tourPages, ...categoryPages, ...guidePages];
+  // Seasonal hub and the ten evergreen month guides. No year appears in any of these
+  // URLs, so they are refreshed annually in place rather than replaced.
+  const seasonLastModified = new Date(SEASON_UPDATED);
+  const seasonPages: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}${HUB_PATH}`, lastModified: seasonLastModified, changeFrequency: 'monthly', priority: 0.9 },
+    ...monthPages.map((m) => ({
+      url: `${SITE_URL}/${m.slug}`,
+      lastModified: seasonLastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+
+  return [...staticPages, ...seasonPages, ...tourPages, ...categoryPages, ...guidePages];
 }

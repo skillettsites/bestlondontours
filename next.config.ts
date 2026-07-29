@@ -46,6 +46,17 @@ const nextConfig: NextConfig = {
         destination: '/guides/london-3-day-itinerary',
         permanent: true,
       },
+      // The walking-tours guide used to carry the year in its URL, which orphaned its
+      // accumulated authority every January. It now lives on a yearless slug and the year
+      // survives in the title tag only. The old URL is indexed and ranking, so this 301
+      // must not be removed.
+      // Explicit 301 rather than Next's default 308, because this URL is indexed and
+      // ranking on Bing and DuckDuckGo and 301 is the status every crawler understands.
+      {
+        source: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
+        statusCode: 301,
+      },
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'bestlondontours.co.uk' }],
@@ -69,32 +80,32 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/tours/london-true-crime-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
       {
         source: '/tours/london-music-legends-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
       {
         source: '/tours/london-architecture-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
       {
         source: '/tours/london-royal-parks-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
       {
         source: '/tours/london-thames-kayak-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
       {
         source: '/tours/london-tudor-history-tour',
-        destination: '/guides/best-walking-tours-london-2026',
+        destination: '/guides/best-walking-tours-london',
         permanent: true,
       },
     ];

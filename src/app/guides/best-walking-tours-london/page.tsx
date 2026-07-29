@@ -6,7 +6,7 @@ import { SITE_URL } from '@/lib/constants';
 const PAGE_TITLE = '9 Best Walking Tours in London 2026: From Free to Premium';
 const PAGE_DESCRIPTION =
   'Discover the best walking tours in London for 2026. Covers free walking tours, Harry Potter walks, Jack the Ripper tours, ghost tours, food tours, street art, and private options with booking links.';
-const PAGE_URL = `${SITE_URL}/guides/best-walking-tours-london-2026`;
+const PAGE_URL = `${SITE_URL}/guides/best-walking-tours-london`;
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

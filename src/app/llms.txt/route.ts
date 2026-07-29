@@ -2,6 +2,8 @@ import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import { tours } from '@/data/tours';
 import { categories } from '@/data/categories';
 import { guides } from '@/data/guides';
+import { monthPages } from '@/data/london-months';
+import { HUB_PATH } from '@/lib/season';
 
 export const dynamic = 'force-static';
 
@@ -64,6 +66,21 @@ export function GET(): Response {
       'and special-interest visitors.',
     '',
     ...guides.map((g) => `- [${g.title}](${SITE_URL}/guides/${g.slug}): ${g.excerpt}`),
+    '',
+    '## Seasonal Planning: London Month by Month',
+    'Evergreen month guides with verified climate figures (ERA5 2015-2024 means), daylight and sunset ' +
+      'times for the 15th of each month (timeanddate.com), dated events, and the attraction closures most ' +
+      'guides miss. No year appears in any of these URLs. Key facts: the London Eye is closed for the whole ' +
+      'of January for annual maintenance; the Buckingham Palace State Rooms open only for a summer season ' +
+      '(9 July to 27 September in 2026); Changing the Guard runs Monday, Wednesday and Friday, not daily; ' +
+      'on 25 December there is no Underground, bus or National Rail service anywhere in London; the Tower of ' +
+      'London closes on 24, 25 and 26 December and returns to summer hours on 1 March.',
+    '',
+    `- [Best time to visit London, month by month](${SITE_URL}${HUB_PATH}): all twelve months compared on ` +
+      'temperature, rainfall, wet days, daylight and sunset, with a verdict for each.',
+    ...monthPages.map(
+      (m) => `- [London in ${m.month}](${SITE_URL}/${m.slug}): ${m.metaDescription}`
+    ),
     '',
     '## Comparison & Planning Tools',
     `- [Compare all tours side-by-side](${SITE_URL}/compare): price, duration, rating compared.`,

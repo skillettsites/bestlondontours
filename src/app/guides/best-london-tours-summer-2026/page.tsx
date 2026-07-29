@@ -468,7 +468,7 @@ export default function BestLondonToursSummer2026() {
         <section className="mt-12 mb-12 rounded-xl bg-gray-50 border border-gray-200 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4">Related Guides</h2>
           <div className="space-y-3">
-            <Link href="/guides/best-walking-tours-london-2026" className="block text-blue-900 hover:underline font-medium">
+            <Link href="/guides/best-walking-tours-london" className="block text-blue-900 hover:underline font-medium">
               Best Walking Tours in London 2026
             </Link>
             <Link href="/guides/best-evening-tours-london-2026" className="block text-blue-900 hover:underline font-medium">

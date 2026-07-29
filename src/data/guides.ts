@@ -41,7 +41,7 @@ export const guides: Guide[] = [
     updatedDate: '2026-03-19',
   },
   {
-    slug: 'best-walking-tours-london-2026',
+    slug: 'best-walking-tours-london',
     title: 'Best Walking Tours in London 2026: From Free to Premium',
     metaTitle: 'Best Walking Tours in London 2026 | Free, Themed & Private Walks',
     metaDescription: 'Discover the best walking tours in London for 2026. Covers free walking tours, Harry Potter walks, Jack the Ripper tours, street art, food tours, and private options with booking links.',
