@@ -769,8 +769,8 @@ export const guides: Guide[] = [
   {
     slug: 'best-hop-on-hop-off-london',
     title: 'Best Hop-On Hop-Off Bus Tours in London: 2026 Comparison',
-    metaTitle: 'London Hop-On Hop-Off Bus 2026: From £25 | Big Bus vs City Sightseeing vs Golden Tours',
-    metaDescription: 'Compare London hop-on hop-off bus tours for summer 2026. City Sightseeing and Golden Tours from £25, Big Bus from £32. Real traveller ratings, route differences, and direct booking links.',
+    metaTitle: 'Cheapest Hop-On Hop-Off London Bus 2026: From £25',
+    metaDescription: 'Cheapest London hop-on hop-off bus 2026: City Sightseeing and Golden Tours from £25, Big Bus from £32. Compare prices, ratings and book online.',
     excerpt: 'Quick answer: City Sightseeing is the best all-rounder (from £25, rated 4.3 from over 8,000 reviews), Big Bus Tours has the widest route coverage (from £32), and Golden Tours is the budget pick (from £25). All three offer free cancellation when booked online.',
     quickPicks: [
       {
