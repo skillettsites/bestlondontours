@@ -540,9 +540,15 @@ const allTours: Tour[] = [
   },
   {
     slug: 'hampton-court-palace-tickets',
-    title: 'Hampton Court Palace and Gardens Entrance Ticket',
+    // GetYourGuide sells no standalone Hampton Court entry ticket. The live
+    // product is a 5.5-hour half-day coach trip from London at £80 with entry
+    // included, which is what the description and excerpt below already say.
+    // The old "Entrance Ticket" / "Tickets" titles promised something the
+    // product does not offer. The page's top query is "hampton court palace
+    // tour", so the accurate framing is also the better-matched one.
+    title: 'Hampton Court Palace Half-Day Trip from London',
     shortTitle: 'Hampton Court Palace',
-    metaTitle: 'Hampton Court Palace Tickets 2026 | Henry VIII\'s Tudor Palace',
+    metaTitle: 'Hampton Court Palace Tour from London 2026 | Palace Entry Included',
     metaDescription: 'Book a Hampton Court Palace half-day trip from London from \u00a380. Return air-conditioned minibus plus palace entry included: Henry VIII\'s Tudor palace, the famous Maze and the award-winning gardens.',
     description: 'This is a half-day trip out of London with your Hampton Court Palace entry ticket included. You meet near Victoria Station and travel by luxury air-conditioned minibus, with pickup and drop-off at designated London meeting points. At the palace you explore the magnificent Tudor home of Henry VIII, then head outside to lose yourself in the award-winning gardens, the world-famous Hampton Court Maze, the sparkling fountains and the serene riverside views, before re-joining the coach back to the city. GetYourGuide lists the whole trip as 5.5 hours.',
     excerpt: 'Half-day trip from London with palace entry included: Henry VIII\'s Tudor palace, the Maze and the gardens.',
