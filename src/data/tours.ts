@@ -13,7 +13,7 @@ const allTours: Tour[] = [
     currency: 'GBP',
     duration: '2-3 hours',
     rating: 4.6,
-    reviewCount: 31489,
+    reviewCount: 31716,
     imageAlt: 'Tower of London fortress on the Thames riverbank',
     imageUrl: 'https://images.unsplash.com/photo-1747857340643-6072b555d34b?w=800&q=80',
     categories: ['landmarks'],
