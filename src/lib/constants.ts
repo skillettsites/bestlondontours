@@ -6,4 +6,7 @@ export const GYG_CAMPAIGN = 'best_london_tours';
 export const GYG_LOCATION_ID = '57';
 export const GYG_CITY_URL = `https://www.getyourguide.com/london-l${GYG_LOCATION_ID}/?partner_id=${GYG_PARTNER_ID}&utm_medium=online_publisher&cmp=${GYG_CAMPAIGN}`;
 export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || '';
-export const CONTENT_DATE = '2026-07-28';
+export const CONTENT_DATE = '2026-08-07';
+// The date every tour price, rating and review count was last re-verified
+// against live GetYourGuide data. Only move this when that check is actually rerun.
+export const DATA_CHECKED = '2026-08-07';
