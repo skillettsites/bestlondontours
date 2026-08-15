@@ -13,8 +13,16 @@ import InlineTourCTA from '@/components/ui/InlineTourCTA';
 import StickyBookingBar from '@/components/ds/StickyBookingBar';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 
+const DEDICATED_GUIDE_SLUGS = new Set([
+  'best-buckingham-palace-ticket-which-to-book',
+  'best-evening-tours-london-2026',
+  'best-london-tours-summer-2026',
+  'best-tours-first-time-visitors-2026',
+  'best-walking-tours-london',
+]);
+
 export function generateStaticParams() {
-  return guides.map((guide) => ({ slug: guide.slug }));
+  return guides.filter((guide) => !DEDICATED_GUIDE_SLUGS.has(guide.slug)).map((guide) => ({ slug: guide.slug }));
 }
 
 type Params = Promise<{ slug: string }>;
