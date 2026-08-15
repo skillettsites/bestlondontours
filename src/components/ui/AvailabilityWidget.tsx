@@ -1,6 +1,6 @@
 'use client';
 
-import { GYG_PARTNER_ID } from '@/lib/constants';
+import { GYG_CITY_URL, GYG_PARTNER_ID } from '@/lib/constants';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 
 export default function AvailabilityWidget({
@@ -36,7 +36,7 @@ export default function AvailabilityWidget({
         >
           <span>
             Powered by{' '}
-            <a target="_blank" rel="sponsored" href="https://www.getyourguide.com/london-l57/">
+            <a target="_blank" rel="sponsored" href={GYG_CITY_URL}>
               GetYourGuide
             </a>
           </span>
