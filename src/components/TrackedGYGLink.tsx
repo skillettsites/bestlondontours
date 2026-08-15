@@ -49,15 +49,22 @@ export default function TrackedGYGLink({
       url_type: deriveUrlType(href),
       page_path: typeof window !== 'undefined' ? window.location.pathname : undefined,
     });
-    try {
-      navigator.sendBeacon('/api/track-click', payload);
-    } catch {
+    const postWithFetch = () => {
       fetch('/api/track-click', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: payload,
         keepalive: true,
       }).catch(() => {});
+    };
+    try {
+      const queued = navigator.sendBeacon(
+        '/api/track-click',
+        new Blob([payload], { type: 'application/json' }),
+      );
+      if (!queued) postWithFetch();
+    } catch {
+      postWithFetch();
     }
     if (onClick) onClick(e);
   };
@@ -69,6 +76,9 @@ export default function TrackedGYGLink({
       rel="noopener noreferrer sponsored"
       onClick={handleClick}
       className={className}
+      data-gyg-city={tourName}
+      data-gyg-section={section}
+      data-gyg-tracked="1"
     >
       {children}
     </a>
