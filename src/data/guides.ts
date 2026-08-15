@@ -1628,6 +1628,50 @@ export const guides: Guide[] = [
     ],
     publishedDate: '2026-08-15',
     updatedDate: '2026-08-15',
+  },
+  {
+    slug: 'best-london-eye-tickets',
+    title: 'Which London Eye Ticket Is Actually the Best in 2026?',
+    metaTitle: 'Which London Eye Ticket to Book 2026 | Top 3 Compared',
+    metaDescription: 'Standard, fast track, champagne, or a river-cruise combo? An honest top 3 of the London Eye tickets people actually book on GetYourGuide, with live ratings and who each one is for.',
+    excerpt: 'Quick answer: book the London Eye entry ticket if you want the ride. Standard and fast track are options on that same listing. Book the champagne experience if you want fast track and a glass included. Book the Eye, river cruise and bus combo only if you want a boat and a hop-on hop-off pass in one booking. Most visitors should take the entry ticket.',
+    quickPicks: [
+      { useCase: 'the ride', operator: 'London Eye entry ticket', verdict: 'Standard or fast-track admission on one listing. Rated 4.6 from 39,504 reviews.', href: 'https://www.getyourguide.com/london-l57/coca-cola-london-eye-standard-or-fast-track-admission-t170451/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'fast track and a drink', operator: 'London Eye champagne experience', verdict: 'Same 30-minute flight, with fast track and Moët. Rated 4.9 from 891 reviews.', href: 'https://www.getyourguide.com/london-l57/coca-cola-london-eye-champagne-experience-t193415/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'a boat and a bus too', operator: 'Eye, river cruise and bus', verdict: 'The wheel plus a Thames cruise and a Big Bus pass. Rated 4.4 from 6,441 reviews.', href: 'https://www.getyourguide.com/london-l57/london-eye-big-bus-hop-on-hop-off-with-river-cruise-t292175/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+    ],
+    sections: [
+      {
+        heading: 'The short version',
+        content: 'Three GetYourGuide products cover almost every London Eye booking. The entry ticket is the one people actually book, and it is the one almost everyone should take. Standard and fast track are options on that same listing. The champagne experience is the same 30-minute flight with fast track and a glass included. The Eye, river cruise and hop-on hop-off bus combo is the bundle people book when they want more than the wheel.',
+      },
+      {
+        heading: '1. London Eye entry ticket: best for almost everyone',
+        content: 'London: The London Eye Entry Ticket is the official-style 30-minute ride. You choose standard or fast-track admission at checkout, then board a shared glass capsule on the South Bank. This is the product people mean when they ask which London Eye ticket to book, and it is the most reviewed London Eye listing on GetYourGuide.',
+      },
+      {
+        heading: '2. Champagne experience: best if you want fast track and a drink',
+        content: 'The London Eye Champagne Experience is the same rotation with fast-track boarding, a host and a glass of Moët & Chandon. It is a different ticket tier, not a private capsule. Book it if you already want the Eye and would buy fast track plus a drink anyway.',
+      },
+      {
+        heading: '3. Eye, river cruise and bus: only if you want all three',
+        content: 'London: London Eye, River Cruise and Hop-on/Hop-off Bus Tour is the combo people book for a sightseeing bundle. You still reserve the Eye time slot after checkout. Most visitors who only want the ride should book the entry ticket on its own.',
+      },
+      {
+        heading: 'Private capsules, river cruises and January',
+        content: 'A private tour of the London Eye on GetYourGuide is a hired capsule, not a walking tour. That listing has 13 reviews. A Thames cruise with an optional Eye add-on is sold separately, and the starting price on that product is the boat. The Eye itself is closed for the whole of January for annual maintenance.',
+      },
+    ],
+    relatedTourSlugs: ['london-eye-tickets', 'thames-sightseeing-cruise', 'the-shard-tickets', 'hop-on-hop-off-bus'],
+    faqs: [
+      { question: 'Which London Eye ticket is the best?', answer: 'The London Eye entry ticket is the best for almost everyone. Standard and fast track are options on that same GetYourGuide listing. Book the champagne experience only if you want fast track and a drink included. Book the river-cruise and bus combo only if you want those extras in one booking.' },
+      { question: 'Is fast track a different London Eye ticket?', answer: 'Not as a separate product on GetYourGuide. Fast track is an option on the main entry ticket. The champagne experience also includes fast-track boarding. Fast track shortens the main queue. It does not skip security, and it does not give you a private capsule.' },
+      { question: 'Do I need a London Eye tour, or just a ticket?', answer: 'Most people need a ticket, not a tour. The ride is a 30-minute rotation in a shared capsule. A private tour of the London Eye is a hired capsule with a host, not a walking tour of the South Bank. GetYourGuide lists that private-capsule product separately, with only 13 reviews.' },
+      { question: 'Does GetYourGuide sell a London Eye river-cruise combo?', answer: 'Yes. The combo people actually book pairs the Eye with a Thames cruise and a hop-on hop-off bus. There is also a river cruise with an optional London Eye add-on, where the starting price is the boat. If you only want the wheel, book the entry ticket.' },
+      { question: 'Is the London Eye closed in January?', answer: 'Yes. The London Eye shuts for the whole of January for annual maintenance. Book another month, or pick a different viewpoint such as The Shard if your dates fall then.' },
+    ],
+    publishedDate: '2026-08-15',
+    updatedDate: '2026-08-15',
   }];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
