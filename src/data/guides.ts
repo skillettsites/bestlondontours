@@ -1540,6 +1540,50 @@ export const guides: Guide[] = [
     ],
     publishedDate: '2026-08-15',
     updatedDate: '2026-08-15',
+  },
+  {
+    slug: 'best-kensington-palace-tickets',
+    title: 'Which Kensington Palace Ticket Is Actually the Best in 2026?',
+    metaTitle: 'Which Kensington Palace Ticket to Book 2026 | Top 3 Compared',
+    metaDescription: 'Entrance ticket, afternoon tea walk, or VIP gardens high tea? An honest top 3 of the Kensington Palace tickets people actually book on GetYourGuide, with live ratings and who each one is for.',
+    excerpt: 'Quick answer: book the sightseeing entrance ticket if you want to go inside. Book the afternoon tea walk if you want Kensington Gardens and tea. Book the VIP gardens high tea only if you want a smaller, higher-rated tea tour. Most visitors should take the entrance ticket. Kensington Gardens themselves are free.',
+    quickPicks: [
+      { useCase: 'going inside', operator: 'Kensington Palace entrance ticket', verdict: 'Sightseeing entry to the State Apartments. Rated 4.4 from 4,687 reviews.', href: 'https://www.getyourguide.com/london-l57/kensington-palace-90-minute-sightseeing-tour-t21251/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'tea and the gardens', operator: 'Afternoon tea and gardens walk', verdict: 'Guided Kensington Gardens walk, then tea. Rated 4.6 from 367 reviews.', href: 'https://www.getyourguide.com/london-l57/london-kensington-palace-afternoon-tea-guided-walk-t268097/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'a smaller high tea', operator: 'VIP gardens high tea', verdict: 'Higher rated, thinner sample: gardens walk, then high tea. Rated 4.7 from 71 reviews.', href: 'https://www.getyourguide.com/london-l57/london-vip-kensington-palace-gardens-tour-royal-high-tea-t52953/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+    ],
+    sections: [
+      {
+        heading: 'The short version',
+        content: 'Three GetYourGuide products cover almost every Kensington Palace booking. The sightseeing entrance ticket is the one that takes you inside the State Apartments, and it is the one almost everyone should book. The afternoon tea walk is a guided stretch of Kensington Gardens plus tea. The VIP gardens high tea is the higher-rated tea tour, with a thinner review sample. Kensington Gardens themselves are free.',
+      },
+      {
+        heading: '1. Sightseeing entrance ticket: best for almost everyone',
+        content: 'London: Kensington Palace Sightseeing Entrance Tickets is the official-style timed sightseeing ticket. You go into the King\'s and Queen\'s State Apartments with an audio guide. GetYourGuide lists it as a one-day ticket. This is the product people mean when they ask which Kensington Palace ticket to book, and it is the most reviewed Kensington Palace listing on GetYourGuide.',
+      },
+      {
+        heading: '2. Afternoon tea walk: best if you want tea and the gardens',
+        content: 'London: Kensington Palace Afternoon Tea and Guided Walk is a 2-4 hour gardens walk, then tea. Palace interiors are not automatic. Select the option that includes entry if you want the State Apartments as well. Book it for the walk and the tea, not because the palace rooms are different.',
+      },
+      {
+        heading: '3. VIP gardens high tea: only if you want both',
+        content: 'London: VIP Kensington Palace Gardens Tour and Royal High Tea is the higher-rated gardens-and-tea tour, at 2-3 hours. It has 71 reviews. Most visitors should book the entrance ticket on its own.',
+      },
+      {
+        heading: 'Gardens, skip-the-line and combos',
+        content: 'Kensington Gardens are free. You do not need a ticket to walk the park or photograph the palace from outside. There is no separate skip-the-line add-on on GetYourGuide. If you want the Changing of the Guard as well, there is a 5.5-hour combo (Kensington Palace Tour, Guard Change and Afternoon Tea). The ceremony is at Buckingham Palace, not Kensington. Most visitors do not need it.',
+      },
+    ],
+    relatedTourSlugs: ['kensington-palace-tickets', 'buckingham-palace-tickets', 'hampton-court-palace-tickets', 'hop-on-hop-off-bus'],
+    faqs: [
+      { question: 'Which Kensington Palace ticket is the best?', answer: 'The sightseeing entrance ticket is the best for almost everyone. It is the product that takes you inside the State Apartments. Book the afternoon tea walk only if you want Kensington Gardens and tea. Book the VIP gardens high tea only if you want a smaller, higher-rated tea tour.' },
+      { question: 'Do I need a ticket for Kensington Gardens?', answer: 'No. Kensington Gardens are free and open daily. You only need a ticket to go inside Kensington Palace, or if you have booked a guided walk and tea.' },
+      { question: 'Is Kensington Palace open all year?', answer: 'Yes, for most of the year. It is not limited to a short summer opening the way the Buckingham Palace State Rooms are. Check the current exhibition dates before you go, because displays change.' },
+      { question: 'Does the afternoon tea walk include palace entry?', answer: 'Not automatically. The walk covers Kensington Gardens, then tea. Palace entry is an option you select at checkout. If you only want the State Apartments, book the sightseeing entrance ticket.' },
+      { question: 'Do I need a skip-the-line ticket for Kensington Palace?', answer: 'Not as a separate product. The sightseeing ticket is already the entry product people book on GetYourGuide. There is no extra skip-the-line add-on to buy on top.' },
+    ],
+    publishedDate: '2026-08-15',
+    updatedDate: '2026-08-15',
   }];
 
 export function getGuideBySlug(slug: string): Guide | undefined {

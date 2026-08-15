@@ -14,6 +14,7 @@ import StickyBookingBar from '@/components/ds/StickyBookingBar';
 import TrackedGYGLink from '@/components/TrackedGYGLink';
 
 const DEDICATED_GUIDE_SLUGS = new Set([
+  'best-kensington-palace-tickets',
   'best-leeds-castle-day-trip',
   'best-shard-ticket-which-to-book',
   'best-buckingham-palace-ticket-which-to-book',
