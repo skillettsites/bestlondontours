@@ -1496,6 +1496,50 @@ export const guides: Guide[] = [
     ],
     publishedDate: '2026-08-15',
     updatedDate: '2026-08-15',
+  },
+  {
+    slug: 'best-leeds-castle-day-trip',
+    title: 'Which Leeds Castle Day Trip Is Actually the Best in 2026?',
+    metaTitle: 'Which Leeds Castle Day Trip to Book 2026 | Top 3 Compared',
+    metaDescription: 'Classic three-stop, Greenwich boat, or a Greenwich walking combo? An honest top 3 of the Leeds Castle day trips people actually book on GetYourGuide, with live ratings and who each one is for.',
+    excerpt: 'Quick answer: book the classic Leeds Castle, Canterbury and Dover coach if you want the three-stop Kent day. Book the Greenwich boat trip if you want a Thames cruise home on the same ticket. Book the Greenwich walking combo only if you want time on foot in Greenwich. Most visitors should take the classic three-stop.',
+    quickPicks: [
+      { useCase: 'the classic Kent day', operator: 'Leeds Castle, Canterbury & Dover', verdict: 'Castle, cathedral city and the White Cliffs. Rated 4.4 from 790 reviews.', href: 'https://www.getyourguide.com/london-l57/leeds-castle-private-viewing-canterbury-cathedral-dover-t2257/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'Kent plus a boat', operator: 'Greenwich boat day trip', verdict: 'Same Kent spine, then a Thames boat to Embankment. Rated 4.4 from 331 reviews.', href: 'https://www.getyourguide.com/london-l57/leeds-castle-canterbury-dover-greenwich-free-snack-pack-t969/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'a Greenwich walk too', operator: 'Greenwich walking day trip', verdict: 'Higher rated, thinner sample: Greenwich on foot, then a cruise. Rated 4.6 from 114 reviews.', href: 'https://www.getyourguide.com/london-l57/leeds-castle-canterbury-dover-and-greenwich-t1309/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+    ],
+    sections: [
+      {
+        heading: 'The short version',
+        content: 'Three GetYourGuide products cover almost every Leeds Castle day trip from London. The classic Leeds Castle, Canterbury Cathedral and Dover coach is the one people actually book, and it is the one almost everyone should take. The Greenwich boat trip adds a Thames cruise home. The Greenwich walking combo is the higher-rated four-stop, with a thinner review sample.',
+      },
+      {
+        heading: '1. Classic three-stop: best for almost everyone',
+        content: 'From London: Leeds Castle, Canterbury Cathedral and Dover is the 10-hour coach people mean when they ask which Leeds Castle day trip to book. Leeds Castle entry is included, with a VIP drop-off at the entrance. Canterbury Cathedral entry is an option you select at checkout. Dover is a short White Cliffs photo stop, not a long cliff walk.',
+      },
+      {
+        heading: '2. Greenwich boat trip: best if you want a river cruise too',
+        content: 'Leeds Castle, Canterbury, Dover and Greenwich Boat Ride keeps the same Kent spine, then finishes with Greenwich and a Thames boat to Embankment. A snack pack is included on the coach. Book it for the boat, not because the castle visit is different.',
+      },
+      {
+        heading: '3. Greenwich walking trip: only if you want both',
+        content: 'From London: Leeds Castle, Canterbury, Dover and Greenwich is the higher-rated Greenwich combo, with a walking stretch in Greenwich and a Thames cruise. It has 114 reviews. Most visitors should book the classic three-stop on its own.',
+      },
+      {
+        heading: 'Independent travel and extras',
+        content: 'Canterbury is easy by high-speed train from St Pancras. Leeds Castle is a train plus a taxi. Stitching castle, cathedral and cliffs yourself is a long day of connections. Cathedral entry is optional on all three GetYourGuide products. None of them is a long White Cliffs walk or a Dover Castle visit.',
+      },
+    ],
+    relatedTourSlugs: ['leeds-castle-canterbury-dover-tour', 'windsor-stonehenge-bath-tour', 'stonehenge-bath-day-tour', 'oxford-cambridge-day-tour'],
+    faqs: [
+      { question: 'Which Leeds Castle day trip is the best?', answer: 'The classic Leeds Castle, Canterbury and Dover coach is the best for almost everyone. It is the most reviewed Kent combo on GetYourGuide. Book the Greenwich boat trip only if you want a Thames cruise on the same ticket. Book the Greenwich walking combo only if you want time on foot in Greenwich.' },
+      { question: 'Is Canterbury Cathedral entry included?', answer: 'Not automatically. GetYourGuide lists cathedral entry as included only if you select that option. Leeds Castle entry is included on all three tours in this comparison. Check the option name before you book if you want to go inside the cathedral.' },
+      { question: 'How long is the Dover stop?', answer: 'Short. These tours use Dover as a White Cliffs photo halt, not a long walk or a visit inside Dover Castle. If you want hours on the cliffs, book a different day.' },
+      { question: 'Can I do Leeds Castle independently from London?', answer: 'Yes, but it is fiddly. Trains run from London Victoria to Bearsted or Hollingbourne, then you need a taxi to the castle. Canterbury is the easy independent trip: high-speed from St Pancras in under an hour. The coach is what you are paying for if you want all three stops in one day.' },
+      { question: 'Do I need a skip-the-line ticket for Leeds Castle?', answer: 'Not as a separate product. The classic coach includes Leeds Castle entry and a VIP drop-off at the entrance, with early access on that itinerary. There is no extra skip-the-line add-on to buy on top.' },
+    ],
+    publishedDate: '2026-08-15',
+    updatedDate: '2026-08-15',
   }];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
