@@ -35,6 +35,7 @@ const topThree = mostBookedTours.slice(0, 3);
 
 // Cost and worth-it guides, linked explicitly by slug so they are never cut off by a slice.
 const decisionGuideSlugs = [
+  'best-leeds-castle-day-trip',
   'best-shard-ticket-which-to-book',
   'best-buckingham-palace-ticket-which-to-book',
   'how-much-does-it-cost-to-visit-buckingham-palace',
