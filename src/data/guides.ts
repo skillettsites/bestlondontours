@@ -1408,6 +1408,50 @@ export const guides: Guide[] = [
       { question: 'What is the best alternative to a London Pass?', answer: 'A deliberate mix: build your days around free museums and parks, pre-book the two or three paid attractions you truly want at individual prices, and add a hop-on hop-off bus pass from £25 for easy sightseeing transport.' }],
     publishedDate: '2026-07-25',
     updatedDate: '2026-08-07',
+  },
+  {
+    slug: 'best-buckingham-palace-ticket-which-to-book',
+    title: 'Which Buckingham Palace Ticket Is Actually the Best in 2026?',
+    metaTitle: 'Which Buckingham Palace Ticket to Book 2026 | Top 3 Compared',
+    metaDescription: 'State Rooms, Changing of the Guard tour, or Royal Mews? An honest top 3 of the Buckingham Palace tickets people actually book on GetYourGuide, with live ratings and who each one is for.',
+    excerpt: 'Quick answer: book the State Rooms if you want to go inside and they are open. Book the Changing of the Guard walking tour if you want the classic palace visit with a guide. Book the Royal Mews if you want the official year-round royal ticket. GetYourGuide does not sell the official Royal Day Out bundle.',
+    quickPicks: [
+      { useCase: 'going inside', operator: 'State Rooms', verdict: 'Official palace entry, summer opening only. Rated 4.6 from 8,257 reviews.', href: 'https://www.getyourguide.com/london-l57/entrance-ticket-the-state-rooms-buckingham-palace-t53844/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'a guided visit', operator: 'Changing of the Guard tour', verdict: 'The guided palace walk people actually book. Rated 4.4 from 4,387 reviews. You stay outside.', href: 'https://www.getyourguide.com/london-l57/london-the-royals-guided-walking-tour-t530998/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+      { useCase: 'a year-round official ticket', operator: 'Royal Mews', verdict: 'Official stables and carriages, open most of the year. Rated 4.3 from 2,067 reviews.', href: 'https://www.getyourguide.com/london-l57/the-royal-mews-buckingham-palace-entrance-ticket-t53857/?partner_id=LPT26IL&utm_medium=travel_agent&cmp=best_london_tours' },
+    ],
+    sections: [
+      {
+        heading: 'The short version',
+        content: 'Three GetYourGuide products cover almost every Buckingham Palace booking. The State Rooms ticket is the only one that takes you inside, and it only runs in the summer opening. The Changing of the Guard walking tour is the guided option people actually book, with more reviews than any other palace ceremony tour we compared. The Royal Mews is the official year-round royal ticket. The official Royal Day Out bundle (State Rooms plus The King\'s Gallery plus the Royal Mews) is sold by the Royal Collection Trust, not GetYourGuide.',
+      },
+      {
+        heading: '1. State Rooms: best if you want to go inside',
+        content: 'Buckingham Palace: The State Rooms Entrance Ticket is the official timed-entry ticket for the 19 State Rooms, including the Throne Room, the White Drawing Room and the Picture Gallery, plus a walk through part of the garden. GetYourGuide lists it at 2.5 hours. Entry is by timed slot and late arrivals are not admitted. Book this only if your dates fall in the summer opening, typically July to late September.',
+      },
+      {
+        heading: '2. Changing of the Guard tour: best guided option',
+        content: 'London: Buckingham Palace and Changing of the Guard Experience is a 2-hour guided walk. You see the palace from outside and watch the ceremony with someone who knows where to stand. The ceremony itself is free. You are paying for the guide and a better viewing plan. The usual days are Monday, Wednesday, Friday and Sunday, and the army can cancel it for weather or official duties.',
+      },
+      {
+        heading: '3. Royal Mews: best year-round official ticket',
+        content: 'Buckingham Palace: The Royal Mews Entrance Ticket is the official working-stables visit next to the palace. You see the Gold State Coach, the Diamond Jubilee State Coach and the horses that pull them. It is open for far more of the year than the State Rooms. It does not include palace interiors or the Changing of the Guard.',
+      },
+      {
+        heading: 'Skip-the-line and combos',
+        content: 'The State Rooms already use timed entry, so there is no separate skip-the-line add-on. If you want palace entry and the ceremony in one GetYourGuide booking, there is a 2.5-hour combo (Buckingham Palace Entry and Changing of the Guard Tour). Most visitors do not need it: the official State Rooms ticket is cheaper, and the ceremony is free to watch on its own.',
+      },
+    ],
+    relatedTourSlugs: ['buckingham-palace-tickets', 'westminster-abbey-tickets', 'hop-on-hop-off-bus', 'kensington-palace-tickets'],
+    faqs: [
+      { question: 'Which Buckingham Palace ticket is the best?', answer: 'The State Rooms ticket is the best if you want to go inside and the palace is open. If it is closed, or you mainly want the ceremony, book the Changing of the Guard walking tour. The Royal Mews is the official year-round royal ticket on GetYourGuide.' },
+      { question: 'Can you go inside Buckingham Palace all year?', answer: 'No. The State Rooms open for a short summer season, typically July to late September, while the King is at Balmoral. Outside that window you cannot go inside on a standard ticket.' },
+      { question: 'Is the Changing of the Guard free?', answer: 'Yes. The ceremony outside the gates is free to watch. A guided tour costs money because you are paying for a guide and a planned viewing spot, not for a ticket to the ceremony itself.' },
+      { question: 'Does GetYourGuide sell the Royal Day Out ticket?', answer: 'No. The official Royal Day Out bundle is sold by the Royal Collection Trust and combines the State Rooms, The King\'s Gallery and the Royal Mews. On GetYourGuide the official year-round royal ticket is the Royal Mews, and the official summer ticket is the State Rooms.' },
+      { question: 'Do I need a skip-the-line ticket for Buckingham Palace?', answer: 'Not as a separate product. State Rooms entry is already a timed slot. Arrive early enough to exchange your voucher at Gate A, because late arrivals are not admitted.' },
+    ],
+    publishedDate: '2026-08-15',
+    updatedDate: '2026-08-15',
   }];
 
 export function getGuideBySlug(slug: string): Guide | undefined {
