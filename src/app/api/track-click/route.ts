@@ -18,9 +18,15 @@ async function insert(payload: Record<string, unknown>) {
   });
 }
 
+async function readBody(req: NextRequest): Promise<Record<string, unknown>> {
+  const text = await req.text();
+  if (!text) return {};
+  return JSON.parse(text) as Record<string, unknown>;
+}
+
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
+    const body = await readBody(req);
     const { type, city, section, variant, destination, activity_id, url_type, page_path } = body;
 
     const geo_city = req.headers.get('x-vercel-ip-city') || null;

@@ -1,50 +1,40 @@
 'use client';
 
 import { useEffect } from 'react';
+import { deriveActivityId, deriveUrlType, postAffiliateClick } from '@/lib/postAffiliateClick';
 
-function deriveActivityId(href: string): string | undefined {
-  const m = href.match(/-t(\d+)(?:\/|\?|$)/);
-  return m ? `t${m[1]}` : undefined;
+function gygAnchor(e: Event): HTMLAnchorElement | null {
+  const target = e.target as HTMLElement | null;
+  return (target?.closest?.('a[href*="getyourguide.com"]') as HTMLAnchorElement | null) || null;
 }
 
-function deriveUrlType(href: string): 'direct' | 'search' | 'other' {
-  if (/getyourguide\.com\/s\/\?/.test(href)) return 'search';
-  if (/getyourguide\.com\/.+-t\d+/.test(href)) return 'direct';
-  return 'other';
+function writeClick(anchor: HTMLAnchorElement) {
+  const href = anchor.href;
+  const activityId = deriveActivityId(href);
+  const urlType = deriveUrlType(href);
+  const city =
+    anchor.getAttribute('data-gyg-city') ||
+    (anchor.textContent || '').trim().slice(0, 80) ||
+    'GetYourGuide';
+
+  postAffiliateClick({
+    type: 'gyg',
+    city,
+    section: anchor.getAttribute('data-gyg-section') || 'link',
+    activity_id: activityId,
+    url_type: urlType,
+    page_path: window.location.pathname,
+  });
 }
 
-function postTrackClick(payload: string) {
-  const postWithFetch = () => {
-    fetch('/api/track-click', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: payload,
-      keepalive: true,
-    }).catch(() => {});
-  };
-  try {
-    const queued = navigator.sendBeacon(
-      '/api/track-click',
-      new Blob([payload], { type: 'application/json' }),
-    );
-    if (!queued) postWithFetch();
-  } catch {
-    postWithFetch();
-  }
-}
-
-// Global delegated click listener: fires a GA4 `affiliate_click` event for any
-// click on a GetYourGuide outbound link, regardless of which component rendered
-// it (TrackedGYGLink, raw <a>, comparison tables, etc.). Also writes Command
-// Center via /api/track-click for raw GYG <a> tags. TrackedGYGLink remains the
-// writer for wrapped links (data-gyg-tracked="1") so we do not double-count.
+// Global delegated listener: GA4 affiliate_click plus Command Center via
+// /api/track-click. Writes for TrackedGYGLink and raw GYG <a> tags. The shared
+// postAffiliateClick helper dedupes so a hydrated TrackedGYGLink plus this
+// listener still produce one affiliate_clicks row.
 export default function AffiliateClickTracker() {
   useEffect(() => {
     function onClick(e: MouseEvent) {
-      const target = e.target as HTMLElement | null;
-      const anchor = target?.closest?.('a[href*="getyourguide.com"]') as
-        | HTMLAnchorElement
-        | null;
+      const anchor = gygAnchor(e);
       if (!anchor) return;
       const href = anchor.href;
       const activityId = deriveActivityId(href);
@@ -59,28 +49,24 @@ export default function AffiliateClickTracker() {
           page_path: window.location.pathname,
         });
       }
-
-      // TrackedGYGLink already writes affiliate_clicks; skip to avoid doubles.
-      if (anchor.getAttribute('data-gyg-tracked') === '1') return;
-
-      const city =
-        anchor.getAttribute('data-gyg-city') ||
-        (anchor.textContent || '').trim().slice(0, 80) ||
-        'GetYourGuide';
-
-      postTrackClick(
-        JSON.stringify({
-          type: 'gyg',
-          city,
-          section: anchor.getAttribute('data-gyg-section') || 'link',
-          activity_id: activityId,
-          url_type: urlType,
-          page_path: window.location.pathname,
-        }),
-      );
+      writeClick(anchor);
     }
+
+    function onPointerOrAux(e: MouseEvent | PointerEvent) {
+      if (e.button !== 0 && e.button !== 1) return;
+      const anchor = gygAnchor(e);
+      if (!anchor) return;
+      writeClick(anchor);
+    }
+
     document.addEventListener('click', onClick, { capture: true });
-    return () => document.removeEventListener('click', onClick, { capture: true });
+    document.addEventListener('pointerdown', onPointerOrAux, { capture: true });
+    document.addEventListener('auxclick', onPointerOrAux, { capture: true });
+    return () => {
+      document.removeEventListener('click', onClick, { capture: true });
+      document.removeEventListener('pointerdown', onPointerOrAux, { capture: true });
+      document.removeEventListener('auxclick', onPointerOrAux, { capture: true });
+    };
   }, []);
   return null;
 }

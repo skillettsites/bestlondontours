@@ -2,6 +2,7 @@
 
 import { ReactNode } from 'react';
 import { useCurrency } from '@/components/CurrencyProvider';
+import { deriveActivityId, deriveUrlType, postAffiliateClick } from '@/lib/postAffiliateClick';
 
 interface TrackedGYGLinkProps {
   href: string;
@@ -12,17 +13,6 @@ interface TrackedGYGLinkProps {
   className?: string;
   children: ReactNode;
   onClick?: (e: React.MouseEvent) => void;
-}
-
-function deriveActivityId(href: string): string | undefined {
-  const m = href.match(/-t(\d+)(?:\/|\?|$)/);
-  return m ? `t${m[1]}` : undefined;
-}
-
-function deriveUrlType(href: string): 'direct' | 'search' | 'other' {
-  if (/getyourguide\.com\/s\/\?/.test(href)) return 'search';
-  if (/getyourguide\.com\/.+-t\d+/.test(href)) return 'direct';
-  return 'other';
 }
 
 export default function TrackedGYGLink({
@@ -38,8 +28,9 @@ export default function TrackedGYGLink({
   const { code } = useCurrency();
   const sep = href.includes('?') ? '&' : '?';
   const finalHref = code && code !== 'GBP' ? `${href}${sep}currency=${code}` : href;
-  const handleClick = (e: React.MouseEvent) => {
-    const payload = JSON.stringify({
+
+  const track = () => {
+    postAffiliateClick({
       type: 'gyg',
       city: tourName,
       section,
@@ -49,23 +40,15 @@ export default function TrackedGYGLink({
       url_type: deriveUrlType(href),
       page_path: typeof window !== 'undefined' ? window.location.pathname : undefined,
     });
-    const postWithFetch = () => {
-      fetch('/api/track-click', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: payload,
-        keepalive: true,
-      }).catch(() => {});
-    };
-    try {
-      const queued = navigator.sendBeacon(
-        '/api/track-click',
-        new Blob([payload], { type: 'application/json' }),
-      );
-      if (!queued) postWithFetch();
-    } catch {
-      postWithFetch();
-    }
+  };
+
+  const handlePointerDown = (e: React.PointerEvent) => {
+    if (e.button !== 0 && e.button !== 1) return;
+    track();
+  };
+
+  const handleClick = (e: React.MouseEvent) => {
+    track();
     if (onClick) onClick(e);
   };
 
@@ -74,6 +57,7 @@ export default function TrackedGYGLink({
       href={finalHref}
       target="_blank"
       rel="noopener noreferrer sponsored"
+      onPointerDown={handlePointerDown}
       onClick={handleClick}
       className={className}
       data-gyg-city={tourName}
