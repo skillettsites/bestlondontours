@@ -50,9 +50,13 @@ export function tourSchema(tour: Tour) {
     url: `${SITE_URL}/tours/${tour.slug}`,
     image: tour.imageUrl || `${SITE_URL}/og-image.png`,
     category: 'Tours & Activities',
+    sku: tour.gygTourId,
+    // Google needs the Brand type here, not Organization, and treats brand as the global
+    // identifier when there is no gtin or mpn. The tours are sold by GetYourGuide rather
+    // than by this site, so GetYourGuide is the accurate brand and seller.
     brand: {
-      '@type': 'Organization',
-      name: SITE_NAME,
+      '@type': 'Brand',
+      name: 'GetYourGuide',
     },
     offers: {
       '@type': 'Offer',
@@ -60,7 +64,13 @@ export function tourSchema(tour: Tour) {
       priceCurrency: tour.currency,
       availability: 'https://schema.org/InStock',
       url: tour.affiliateUrl,
+      validFrom: DATA_CHECKED,
       priceValidUntil: '2027-12-31',
+      seller: {
+        '@type': 'Organization',
+        name: 'GetYourGuide',
+        url: 'https://www.getyourguide.com',
+      },
     },
   };
 }
